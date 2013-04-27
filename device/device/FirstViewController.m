@@ -19,6 +19,7 @@
     DeviceInfo * device = [[DeviceInfo alloc]init];
     [device GetInfo];
     [device print];
+    [device PrintPro];
 }
 
 

@@ -121,16 +121,19 @@
     
     
     // app store
+    /**
     SKStoreProductViewController *skVC=[SKStoreProductViewController new];
     skVC.delegate=self;
     NSDictionary *dict = [NSDictionary dictionaryWithObject:@"573140028" forKey:SKStoreProductParameterITunesItemIdentifier];
     [skVC loadProductWithParameters:dict completionBlock:nil];
     [self presentViewController:skVC animated:YES completion:nil];
+    /**/
     //@"395133418"  可在itunes的连接中找到
     
     
     //passbook
 //    NSData *data = [NSData dataWithContentsOfURL:(NSURL *)passbookUrl];
+    /**
     NSData *data=[[NSData alloc]initWithContentsOfFile:[self passPath]];
     NSError *err;
     PKPass *pass=[[PKPass alloc]initWithData:data error:&err];
@@ -139,6 +142,12 @@
         [vc setDelegate:self];
         [self presentViewController:vc animated:YES completion:nil];
     }
+    /**/
+    
+    //weixin
+    //http://weixin.qq.com/r/ZXV7dFbE92iIh0cXnyBB       robot_9
+    NSString *str = [NSString stringWithFormat:@"weixin://qr/%@",@"ZXV7dFbE92iIh0cXnyBB"];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:str]];
 }
 
 //app store

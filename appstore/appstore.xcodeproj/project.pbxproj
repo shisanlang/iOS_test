@@ -24,6 +24,8 @@
 		CE95E84513DFB58D00C3438F /* appstoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE95E84413DFB58D00C3438F /* appstoreTests.m */; };
 		E382A94E16F2FF89003B219A /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E382A94D16F2FF89003B219A /* StoreKit.framework */; };
 		E382A95816F305E9003B219A /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E382A95716F305E9003B219A /* PassKit.framework */; };
+		E3E9D421170C2C1A0065C216 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3E9D41D170C2C1A0065C216 /* libWeChatSDK.a */; };
+		E3E9D422170C2C1A0065C216 /* libWeChatSDK_armv7_armv7s.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3E9D41E170C2C1A0065C216 /* libWeChatSDK_armv7_armv7s.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,10 @@
 		E382A95516F30448003B219A /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		E382A95616F30449003B219A /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		E382A95716F305E9003B219A /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
+		E3E9D41D170C2C1A0065C216 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		E3E9D41E170C2C1A0065C216 /* libWeChatSDK_armv7_armv7s.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK_armv7_armv7s.a; sourceTree = "<group>"; };
+		E3E9D41F170C2C1A0065C216 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		E3E9D420170C2C1A0065C216 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,8 @@
 				CE95E81613DFB58C00C3438F /* UIKit.framework in Frameworks */,
 				CE95E81813DFB58C00C3438F /* Foundation.framework in Frameworks */,
 				CE95E81A13DFB58C00C3438F /* CoreGraphics.framework in Frameworks */,
+				E3E9D421170C2C1A0065C216 /* libWeChatSDK.a in Frameworks */,
+				E3E9D422170C2C1A0065C216 /* libWeChatSDK_armv7_armv7s.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +106,7 @@
 		CE95E80613DFB58C00C3438F = {
 			isa = PBXGroup;
 			children = (
+				E3E9D41C170C2C190065C216 /* SDKExport */,
 				E382A95716F305E9003B219A /* PassKit.framework */,
 				E382A94D16F2FF89003B219A /* StoreKit.framework */,
 				CE95E81B13DFB58C00C3438F /* appstore */,
@@ -169,6 +178,18 @@
 				CE95E84113DFB58D00C3438F /* appstoreTests-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E3E9D41C170C2C190065C216 /* SDKExport */ = {
+			isa = PBXGroup;
+			children = (
+				E3E9D41D170C2C1A0065C216 /* libWeChatSDK.a */,
+				E3E9D41E170C2C1A0065C216 /* libWeChatSDK_armv7_armv7s.a */,
+				E3E9D41F170C2C1A0065C216 /* WXApi.h */,
+				E3E9D420170C2C1A0065C216 /* WXApiObject.h */,
+			);
+			name = SDKExport;
+			path = appstore/SDKExport;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -353,8 +374,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Fei Wu (76YVF944MA)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Fei Wu (76YVF944MA)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Liu Bing (MMS9337JP5)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
@@ -363,8 +384,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
-				PROVISIONING_PROFILE = "FFD02638-BAF0-423B-881F-B0490E726128";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "FFD02638-BAF0-423B-881F-B0490E726128";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "FF2BB495-3528-4EEF-AD72-294A74329D76";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -388,16 +408,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Fei Wu (76YVF944MA)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Fei Wu (76YVF944MA)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Liu Bing (MMS9337JP5)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "appstore/appstore-Prefix.pch";
 				INFOPLIST_FILE = "appstore/appstore-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/appstore/SDKExport\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "87823AF5-1EAD-447E-86E8-F0D934AA1F74";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "87823AF5-1EAD-447E-86E8-F0D934AA1F74";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "FF2BB495-3528-4EEF-AD72-294A74329D76";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -411,6 +434,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "appstore/appstore-Prefix.pch";
 				INFOPLIST_FILE = "appstore/appstore-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/appstore/SDKExport\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
