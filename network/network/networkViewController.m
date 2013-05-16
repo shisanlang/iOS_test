@@ -31,8 +31,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-
+    NSString *urlstr = @"http://www.baidu.com/你好";
+    NSStringEncoding gb2312Encode = CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingGB_18030_2000);
+    NSString *urlstr2 = [urlstr stringByReplacingPercentEscapesUsingEncoding:gb2312Encode];
+    NSLog(@"url=%@",[urlstr2 stringByAddingPercentEscapesUsingEncoding:gb2312Encode]);//NSUTF8StringEncoding
+    //ReplacingPercentEscapesUsingEncoding:
 }
 
 

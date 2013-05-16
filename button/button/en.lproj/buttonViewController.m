@@ -56,6 +56,7 @@
 	picker.showsSelectionIndicator = YES;
 
     [super viewDidLoad];
+    
 }
 
 -(void) dodo:(id)sender{

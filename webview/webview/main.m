@@ -2,16 +2,17 @@
 //  main.m
 //  webview
 //
-//  Created by shisan lang on 11-7-15.
-//  Copyright 2011年 BeiJingChaoYangQu. All rights reserved.
+//  Created by duan on 13-5-16.
+//  Copyright (c) 2013年 duan. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
+#import "AppDelegate.h"
+
 int main(int argc, char *argv[])
 {
-    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
-    int retVal = UIApplicationMain(argc, argv, nil, nil);
-    [pool release];
-    return retVal;
+    @autoreleasepool {
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
+    }
 }

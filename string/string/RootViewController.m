@@ -91,7 +91,15 @@
 //	NSLog(@"num1 = %@,\nnum1 = %d,\nnum2 = %d,\nnum3 = %d,\nnum4 = %d,\nnum5 = %d,\nnum6 = %d,\nnum7 = %d",
 //		  num1,[num1 intValue],[num2 intValue],[num3 intValue],[num4 intValue],[num5 intValue],[num6 intValue],[num7 intValue]);
 	
-	
+    
+    //urlencode
+	NSString *urlstr = @"http://www.baidu.com/你好";
+    NSStringEncoding gb2312Encode = CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingGB_18030_2000);
+    NSString *urlstr2 = [urlstr stringByReplacingPercentEscapesUsingEncoding:gb2312Encode];
+    NSLog(urlstr);
+    NSLog(@"输出UTF8编码 = %@",[urlstr2 stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]);
+    NSLog(@"输出GB2312编码 = %@",[urlstr2 stringByAddingPercentEscapesUsingEncoding:gb2312Encode]);
+    
     [super viewDidLoad];
 }
 

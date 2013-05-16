@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
-
+{
+    UIView * subView1;
+    UIImageView * image1VC;
+}
 @end
