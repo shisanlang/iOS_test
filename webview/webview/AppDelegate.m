@@ -27,7 +27,7 @@
     UINavigationController *NavVC = [[UINavigationController alloc]initWithRootViewController:RootVC];
     self.window.rootViewController = NavVC;
     [self.window makeKeyAndVisible];
-    
+//    NSLog(@"%f",self.window.frame.size.height);
     [NavVC release];
     return YES;
 }

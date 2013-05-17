@@ -10,11 +10,14 @@
 
 @interface ViewController : UIViewController
 {
-    UIWebView *webView;
+    UIWebView *WebView;
+    UIButton *ForwardButton;
+    UIButton *BackButton;
     NSArray *NewsArray;
+    UIActivityIndicatorView *activityIndicatorView;
 }
 
-@property(nonatomic,retain) UIWebView *webView;
+@property(nonatomic,retain) UIWebView *WebView;
 @property(nonatomic,retain) NSArray *NewsArray;
 
 @end
