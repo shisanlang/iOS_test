@@ -132,9 +132,7 @@
 - (void)webViewDidStartLoad:(UIWebView *)webView//;开始加载的时候执行该方法。
 {
     //
-    NSLog(@"------%d",[activityIndicatorView retainCount]);
     if (activityIndicatorView) {
-        NSLog(@"11");
         [activityIndicatorView stopAnimating];
         [activityIndicatorView removeFromSuperview];
     }
@@ -151,7 +149,6 @@
 - (void)webViewDidFinishLoad:(UIWebView *)webView//;加载完成的时候执行该方法。
 {
     if (activityIndicatorView) {
-        NSLog(@"2");
         [activityIndicatorView stopAnimating];
         [activityIndicatorView removeFromSuperview];
     }
@@ -160,7 +157,6 @@
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error//;加载出错的时候执行该方法。
 {
     if (activityIndicatorView) {
-        NSLog(@"3----%@",error.description);
         [activityIndicatorView stopAnimating];
         [activityIndicatorView removeFromSuperview];
     }
