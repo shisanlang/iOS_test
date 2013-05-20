@@ -34,14 +34,15 @@
                           [NSArray arrayWithObjects:@"金融时报(中)",@"http://www.ftchinese.com/",nil],
                       
                           //美国
-                          [NSArray arrayWithObjects:@"今日美国",@"http://www.usatoday.com/mobile/",nil],
-                          [NSArray arrayWithObjects:@"华尔街日报",@"http://m.wsj.com/",nil],
-                          [NSArray arrayWithObjects:@"时代周刊",@"http://mobile.time.com/",nil],
-                 
-                          
+                          [NSArray arrayWithObjects:@"今日美国(英)",@"http://www.usatoday.com/mobile/",nil],
+                          [NSArray arrayWithObjects:@"华尔街日报(英)",@"http://m.wsj.com/",nil],
+                          [NSArray arrayWithObjects:@"时代周刊(英)",@"http://mobile.time.com/",nil],
+                          [NSArray arrayWithObjects:@"Yahoo(英)",@"http://www.yahoo.com/",nil],
+                      
                       
                           //日本
-                          [NSArray arrayWithObjects:@"朝日新闻",@"http://dot.asahi.com/",nil],
+                          [NSArray arrayWithObjects:@"朝日新闻(日)",@"http://dot.asahi.com/",nil],
+                          [NSArray arrayWithObjects:@"Yahoo(日)",@"http://www.yahoo.co.jp/",nil],
                           
                           nil];
         
