@@ -63,9 +63,9 @@
     }
     
     //web
-    WebView = [[UIWebView alloc]init];
+//    WebView = [[UIWebView alloc]init];
 //    webView.scrollView.bounces = NO;
-    WebView.frame = self.view.frame;
+//    WebView.frame = self.view.frame;
     WebView = [[UIWebView alloc] initWithFrame:CGRectMake(0, scroll.frame.size.height, self.view.frame.size.width, XD_SCREENHEIGHT-self.navigationController.navigationBar.frame.size.height-scroll.frame.size.height)];
     [WebView setBackgroundColor:[UIColor clearColor]];
     [WebView setDelegate:self];

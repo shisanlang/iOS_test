@@ -76,6 +76,12 @@
      */
 }
 
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
+{
+//    if ([[url scheme] isEqualToString:@"todolist"]) {
+    NSLog(@"url = %@", url);
+}
+
 - (void)dealloc
 {
     [_window release];
