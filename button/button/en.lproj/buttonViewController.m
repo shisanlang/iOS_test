@@ -60,7 +60,8 @@
 }
 
 -(void) dodo:(id)sender{
-    NSLog(@"123");
+    NSLog(@"dodo:");
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"dxd://id=1209&name=me&cc=helloworld!"]];
 }
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView //返回列数
