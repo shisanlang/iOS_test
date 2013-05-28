@@ -121,15 +121,10 @@
     NSString * appleMapUrl = @"http://maps.apple.com/?daddr=San+Francisco,+CA&saddr=cupertino";
     
     
-    if ([[UIApplication sharedApplication] openURL:[NSURL URLWithString:appleMapUrl]]) {
-        ;
-    } else if ([[UIApplication sharedApplication] openURL:[NSURL URLWithString:baiduMapUrl]]) {
-        ;
-    } else if ([[UIApplication sharedApplication] openURL:[NSURL URLWithString:googleMapUrl]]) {
-        ;
-    } else if ([[UIApplication sharedApplication] openURL:[NSURL URLWithString:gdMapUrl]]) {
-        ;
-    }
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:gdMapUrl]] ||
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:baiduMapUrl]] ||
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:googleMapUrl]]||
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:appleMapUrl]];
 }
 
 

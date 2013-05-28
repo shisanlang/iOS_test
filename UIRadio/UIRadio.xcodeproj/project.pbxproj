@@ -1,0 +1,325 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E37FD65317530B0B00255A98 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E37FD65217530B0B00255A98 /* UIKit.framework */; };
+		E37FD65517530B0B00255A98 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E37FD65417530B0B00255A98 /* Foundation.framework */; };
+		E37FD65717530B0B00255A98 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E37FD65617530B0B00255A98 /* CoreGraphics.framework */; };
+		E37FD65D17530B0B00255A98 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E37FD65B17530B0B00255A98 /* InfoPlist.strings */; };
+		E37FD65F17530B0B00255A98 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E37FD65E17530B0B00255A98 /* main.m */; };
+		E37FD66317530B0B00255A98 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E37FD66217530B0B00255A98 /* AppDelegate.m */; };
+		E37FD66517530B0B00255A98 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E37FD66417530B0B00255A98 /* Default.png */; };
+		E37FD66717530B0B00255A98 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E37FD66617530B0B00255A98 /* Default@2x.png */; };
+		E37FD66917530B0B00255A98 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E37FD66817530B0B00255A98 /* Default-568h@2x.png */; };
+		E37FD66C17530B0B00255A98 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E37FD66B17530B0B00255A98 /* ViewController.m */; };
+		E37FD66F17530B0B00255A98 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E37FD66D17530B0B00255A98 /* ViewController.xib */; };
+		E37FD67817530B8B00255A98 /* UIRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E37FD67717530B8B00255A98 /* UIRadioButton.m */; };
+		E37FD67B17530CBD00255A98 /* image_check.png in Resources */ = {isa = PBXBuildFile; fileRef = E37FD67917530CBD00255A98 /* image_check.png */; };
+		E37FD67C17530CBD00255A98 /* image_checked.png in Resources */ = {isa = PBXBuildFile; fileRef = E37FD67A17530CBD00255A98 /* image_checked.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E37FD64F17530B0B00255A98 /* UIRadio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIRadio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E37FD65217530B0B00255A98 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E37FD65417530B0B00255A98 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E37FD65617530B0B00255A98 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E37FD65A17530B0B00255A98 /* UIRadio-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UIRadio-Info.plist"; sourceTree = "<group>"; };
+		E37FD65C17530B0B00255A98 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E37FD65E17530B0B00255A98 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E37FD66017530B0B00255A98 /* UIRadio-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIRadio-Prefix.pch"; sourceTree = "<group>"; };
+		E37FD66117530B0B00255A98 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E37FD66217530B0B00255A98 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E37FD66417530B0B00255A98 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		E37FD66617530B0B00255A98 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		E37FD66817530B0B00255A98 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		E37FD66A17530B0B00255A98 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E37FD66B17530B0B00255A98 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E37FD66E17530B0B00255A98 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		E37FD67617530B8B00255A98 /* UIRadioButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIRadioButton.h; sourceTree = "<group>"; };
+		E37FD67717530B8B00255A98 /* UIRadioButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIRadioButton.m; sourceTree = "<group>"; };
+		E37FD67917530CBD00255A98 /* image_check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image_check.png; sourceTree = "<group>"; };
+		E37FD67A17530CBD00255A98 /* image_checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image_checked.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E37FD64C17530B0B00255A98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E37FD65317530B0B00255A98 /* UIKit.framework in Frameworks */,
+				E37FD65517530B0B00255A98 /* Foundation.framework in Frameworks */,
+				E37FD65717530B0B00255A98 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E37FD64617530B0B00255A98 = {
+			isa = PBXGroup;
+			children = (
+				E37FD65817530B0B00255A98 /* UIRadio */,
+				E37FD65117530B0B00255A98 /* Frameworks */,
+				E37FD65017530B0B00255A98 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E37FD65017530B0B00255A98 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E37FD64F17530B0B00255A98 /* UIRadio.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E37FD65117530B0B00255A98 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E37FD65217530B0B00255A98 /* UIKit.framework */,
+				E37FD65417530B0B00255A98 /* Foundation.framework */,
+				E37FD65617530B0B00255A98 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E37FD65817530B0B00255A98 /* UIRadio */ = {
+			isa = PBXGroup;
+			children = (
+				E37FD67517530B5C00255A98 /* Radio */,
+				E37FD66117530B0B00255A98 /* AppDelegate.h */,
+				E37FD66217530B0B00255A98 /* AppDelegate.m */,
+				E37FD66A17530B0B00255A98 /* ViewController.h */,
+				E37FD66B17530B0B00255A98 /* ViewController.m */,
+				E37FD66D17530B0B00255A98 /* ViewController.xib */,
+				E37FD65917530B0B00255A98 /* Supporting Files */,
+			);
+			path = UIRadio;
+			sourceTree = "<group>";
+		};
+		E37FD65917530B0B00255A98 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E37FD65A17530B0B00255A98 /* UIRadio-Info.plist */,
+				E37FD65B17530B0B00255A98 /* InfoPlist.strings */,
+				E37FD65E17530B0B00255A98 /* main.m */,
+				E37FD66017530B0B00255A98 /* UIRadio-Prefix.pch */,
+				E37FD66417530B0B00255A98 /* Default.png */,
+				E37FD66617530B0B00255A98 /* Default@2x.png */,
+				E37FD66817530B0B00255A98 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E37FD67517530B5C00255A98 /* Radio */ = {
+			isa = PBXGroup;
+			children = (
+				E37FD67917530CBD00255A98 /* image_check.png */,
+				E37FD67A17530CBD00255A98 /* image_checked.png */,
+				E37FD67617530B8B00255A98 /* UIRadioButton.h */,
+				E37FD67717530B8B00255A98 /* UIRadioButton.m */,
+			);
+			path = Radio;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E37FD64E17530B0B00255A98 /* UIRadio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E37FD67217530B0B00255A98 /* Build configuration list for PBXNativeTarget "UIRadio" */;
+			buildPhases = (
+				E37FD64B17530B0B00255A98 /* Sources */,
+				E37FD64C17530B0B00255A98 /* Frameworks */,
+				E37FD64D17530B0B00255A98 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UIRadio;
+			productName = UIRadio;
+			productReference = E37FD64F17530B0B00255A98 /* UIRadio.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E37FD64717530B0B00255A98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = duan;
+			};
+			buildConfigurationList = E37FD64A17530B0B00255A98 /* Build configuration list for PBXProject "UIRadio" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E37FD64617530B0B00255A98;
+			productRefGroup = E37FD65017530B0B00255A98 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E37FD64E17530B0B00255A98 /* UIRadio */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E37FD64D17530B0B00255A98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E37FD65D17530B0B00255A98 /* InfoPlist.strings in Resources */,
+				E37FD66517530B0B00255A98 /* Default.png in Resources */,
+				E37FD66717530B0B00255A98 /* Default@2x.png in Resources */,
+				E37FD66917530B0B00255A98 /* Default-568h@2x.png in Resources */,
+				E37FD66F17530B0B00255A98 /* ViewController.xib in Resources */,
+				E37FD67B17530CBD00255A98 /* image_check.png in Resources */,
+				E37FD67C17530CBD00255A98 /* image_checked.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E37FD64B17530B0B00255A98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E37FD65F17530B0B00255A98 /* main.m in Sources */,
+				E37FD66317530B0B00255A98 /* AppDelegate.m in Sources */,
+				E37FD66C17530B0B00255A98 /* ViewController.m in Sources */,
+				E37FD67817530B8B00255A98 /* UIRadioButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E37FD65B17530B0B00255A98 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E37FD65C17530B0B00255A98 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E37FD66D17530B0B00255A98 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E37FD66E17530B0B00255A98 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E37FD67017530B0B00255A98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E37FD67117530B0B00255A98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E37FD67317530B0B00255A98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UIRadio/UIRadio-Prefix.pch";
+				INFOPLIST_FILE = "UIRadio/UIRadio-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E37FD67417530B0B00255A98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UIRadio/UIRadio-Prefix.pch";
+				INFOPLIST_FILE = "UIRadio/UIRadio-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E37FD64A17530B0B00255A98 /* Build configuration list for PBXProject "UIRadio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E37FD67017530B0B00255A98 /* Debug */,
+				E37FD67117530B0B00255A98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E37FD67217530B0B00255A98 /* Build configuration list for PBXNativeTarget "UIRadio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E37FD67317530B0B00255A98 /* Debug */,
+				E37FD67417530B0B00255A98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E37FD64717530B0B00255A98 /* Project object */;
+}
