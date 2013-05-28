@@ -79,6 +79,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
+    
+    //系统 Map
     map = [[MKMapView alloc] initWithFrame:[self.view bounds]];
     map.mapType = MKMapTypeStandard;//
 //    map.delegate = self;
@@ -100,7 +102,34 @@
 //    [map addAnnotation:annotation];
     
     
-    [self.view addSubview:map];
+//    [self.view addSubview:map];
+    
+    //高德
+    NSString * gdMapUrl = @"iosamap://navi?sourceApplication=map123&backScheme=dxdmap&poiname=fangheng&poiid=BGVIS&lat=36.547901&lon=104.258354&dev=1&style=2";
+    
+    //百度
+    NSString * baiduMapUrl = @"baidumap://map/direction?origin=中关村&destination=五道口&mode=driving&region=北京";
+    baiduMapUrl = [baiduMapUrl stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    
+    //Google
+    NSString * googleMapUrl = @"comgooglemaps://?center=40.765819,-73.975866&zoom=14&views=traffic";
+    
+//    NSString *googleMapUrl=[[NSString alloc] initWithFormat:@"http://maps.google.com/maps?q=%f,%f+(%@)",coords.latitude,coords.longitude,@"title"];
+//    NSString * googleMapUrl = @"baidumap://map/place/search?q=银行&region=北京";
+    
+    //iOS系统
+    NSString * appleMapUrl = @"http://maps.apple.com/?daddr=San+Francisco,+CA&saddr=cupertino";
+    
+    
+    if ([[UIApplication sharedApplication] openURL:[NSURL URLWithString:appleMapUrl]]) {
+        ;
+    } else if ([[UIApplication sharedApplication] openURL:[NSURL URLWithString:baiduMapUrl]]) {
+        ;
+    } else if ([[UIApplication sharedApplication] openURL:[NSURL URLWithString:googleMapUrl]]) {
+        ;
+    } else if ([[UIApplication sharedApplication] openURL:[NSURL URLWithString:gdMapUrl]]) {
+        ;
+    }
 }
 
 
