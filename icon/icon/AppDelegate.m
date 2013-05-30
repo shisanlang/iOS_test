@@ -14,12 +14,28 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    //
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     
+    
+    // Make this interesting.
+    UIImageView *splashView = [[UIImageView alloc] initWithFrame:CGRectMake(0,0, 320, 480)];
+    splashView.image = [UIImage imageNamed:@"Default.png"];
+    [self.window addSubview:splashView];
+    [self.window bringSubviewToFront:splashView];
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:5.0];
+    [UIView setAnimationTransition:UIViewAnimationTransitionNone forView: self.window cache:YES];
+    [UIView setAnimationDelegate:self];
+    [UIView setAnimationDidStopSelector:@selector(startupAnimationDone:finished:context:)];
+    splashView.alpha = 0.0;
+    splashView.frame = CGRectMake(-60, -85, 440, 635);
+    [UIView commitAnimations];
     
     //自动修改图标
     //时间
@@ -38,7 +54,7 @@
         image = [UIImage imageNamed:@"icon2.png"];
 //        [[UIApplication sharedApplication] setNewsstandIconImage:image];
     }
-    [[[NSApp]] setApplicationIconImage: image];
+//    [[[NSApp]] setApplicationIconImage: image];
     
     
     return YES;
