@@ -8,43 +8,23 @@
 
 #import "DxdsButton.h"
 
-@implementation DxdsButton
+@implementation UIButton(Block)
 
-- (id)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        // Initialization code
-    }
-    return self;
-}
+static char overviewKey;
 
+@dynamic event;
 
--(void) handleControlEvent:(UIControlEvents)event
-                 withBlock:(ActionBlock) action
-{
-    NSLog(@"------------%@",action);
-    _actionBlock = Block_copy(action);
-   
+- (void)handleControlEvent:(UIControlEvents)event withBlock:(ActionBlock)block {
+    objc_setAssociatedObject(self, &overviewKey, block, OBJC_ASSOCIATION_COPY_NONATOMIC);
     [self addTarget:self action:@selector(callActionBlock:) forControlEvents:event];
 }
 
--(void) callActionBlock:(id)sender{
-    _actionBlock();
-}
 
--(void) dealloc{
-    Block_release(_actionBlock);
-    [super dealloc];
+- (void)callActionBlock:(id)sender {
+    ActionBlock block = (ActionBlock)objc_getAssociatedObject(self, &overviewKey);
+    if (block) {
+        block();
+    }
 }
-
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
-}
-*/
 
 @end

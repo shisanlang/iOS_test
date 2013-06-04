@@ -7,16 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <objc/runtime.h>
 
 typedef void (^ActionBlock)();
 
-@interface DxdsButton : UIButton
-{
-    ActionBlock _actionBlock;
-}
+@interface UIButton(Block)// : UIButton
 
--(void) handleControlEvent:(UIControlEvents)event
-                 withBlock:(ActionBlock) action;
 
+@property (readonly) NSMutableDictionary *event;
+
+- (void) handleControlEvent:(UIControlEvents)controlEvent withBlock:(ActionBlock)action;
 
 @end

@@ -25,9 +25,8 @@
 //    };
 //    printXy(456);
     
-    DxdsButton *but = [DxdsButton buttonWithType:UIButtonTypeRoundedRect];
+    UIButton *but = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     but.frame = CGRectMake(20, 20, 80, 50);
-    [but setImage:@"image2" forState:UIControlStateNormal];
     [but setTitle:@"but" forState:UIControlStateNormal];
 
     [but handleControlEvent:UIControlEventTouchUpInside withBlock:^(id sender){NSLog(@"123");}];
