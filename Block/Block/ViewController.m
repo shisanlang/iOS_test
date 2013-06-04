@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "DxdsButton.h"
 
 @interface ViewController ()
 
@@ -18,6 +19,20 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+//    int x = 123;
+//    void (^printXy)(int) = ^(int y) {
+//        printf("%d %d",x , y);
+//    };
+//    printXy(456);
+    
+    DxdsButton *but = [DxdsButton buttonWithType:UIButtonTypeRoundedRect];
+    but.frame = CGRectMake(20, 20, 80, 50);
+    [but setImage:@"image2" forState:UIControlStateNormal];
+    [but setTitle:@"but" forState:UIControlStateNormal];
+
+    [but handleControlEvent:UIControlEventTouchUpInside withBlock:^(id sender){NSLog(@"123");}];
+    [self.view addSubview:but];
+    
 }
 
 - (void)didReceiveMemoryWarning
