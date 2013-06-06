@@ -19,6 +19,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     NSLog(@"v1 = %d,%i",0/7,8/7);
+    //取余
+    NSLog(@"v2 = %d",7%8);
 }
 
 - (void)viewDidUnload

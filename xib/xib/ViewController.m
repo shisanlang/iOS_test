@@ -1,13 +1,12 @@
 //
 //  ViewController.m
-//  UIRadio
+//  xib
 //
-//  Created by duan on 13-5-27.
+//  Created by duan on 13-6-5.
 //  Copyright (c) 2013年 duan. All rights reserved.
 //
 
 #import "ViewController.h"
-#import "UIRadioButton.h"
 
 @interface ViewController ()
 
@@ -19,14 +18,6 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-//    UIRadioButton *but = [[UIRadioButton alloc]initWithFrame:CGRectMake(20, 20, 0, 0)];
-//    but.backgroundColor = [UIColor redColor];
-//    [self.view addSubview:but];
-//    [but release];
-    int i=0;
-    if ((i = 0)|(i=20)||(i=3)) {
-        NSLog(@"%d",i);
-    }
 }
 
 - (void)didReceiveMemoryWarning

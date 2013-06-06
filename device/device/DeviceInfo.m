@@ -439,6 +439,15 @@
     return nil;
 }
 
+//获取手机的imei
+//[[NSUserDefaults standardUserDefaults] valueForKey:@"SBFormattedPhoneNumber"];
+//获取手机的imei
+//#import "Message/NetworkController.h"
+//NetworkController *ntc=[[NetworkController sharedInstance] autorelease];
+//NSString *imeistring = [ntc IMEI];
+//imeistring就是获取的imei。 IMEI(International Mobile Equipment Identity)是国际移动设备身份码的缩写，
+//国际移动装备辨识码，是由15位数字组成的"电子串号"，它与每台手机一一对应，而且该码是全世界唯一的。
+
 - (void)PrintPro
 {
     NSLog(@"\n/********进程信息********");

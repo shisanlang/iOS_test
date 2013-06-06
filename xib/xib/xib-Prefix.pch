@@ -1,5 +1,5 @@
 //
-// Prefix header for all source files of the 'UIRadio' target in the 'UIRadio' project
+// Prefix header for all source files of the 'xib' target in the 'xib' project
 //
 
 #import <Availability.h>

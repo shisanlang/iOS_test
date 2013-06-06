@@ -1,8 +1,8 @@
 //
 //  ViewController.h
-//  weixinweibo
+//  xib
 //
-//  Created by duan on 13-5-23.
+//  Created by duan on 13-6-5.
 //  Copyright (c) 2013年 duan. All rights reserved.
 //
 
