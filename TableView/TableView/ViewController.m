@@ -291,7 +291,8 @@
 {
     
     //这里进行插入，删除，编辑操作
-    
+    [SubItemList removeObjectAtIndex:indexPath.row];
+    [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
 }
 
 //移动
@@ -301,6 +302,13 @@
 
 //移动时数组的操作
 - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
+//    NSUInteger fromRow = [fromIndexPath row];
+//    NSUInteger toRow = [toIndexPath row];
+//    
+//    id object = [[list objectAtIndex:fromRow] retain];
+//    [list removeObjectAtIndex:fromRow];
+//    [list insertObject:object atIndex:toRow];
+//    [object release];
 }
 //////
 
