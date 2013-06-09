@@ -14,28 +14,39 @@
 
 @implementation ViewController
 
-@synthesize user=_user;
+@synthesize user=_user;//
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    self.user = @"dxd";
+    user = @"dxd";
     
-    NSLog(@"");
+    NSLog(@"view:%@",_user);
 }
 
-- (NSString *)setUser:(NSString *)username
-{
-    username = @"summer";
-    NSLog(@"set");
-    return username;
-}
+//- (void)setUser:(NSString *)username
+//{
+//    user = @"summer";
+//    NSLog(@"set");
+//}
+//
+//- (NSString *)user
+//{
+//    _user = @"new user";
+//    return _user;
+//}
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)dealloc
+{
+    [_user release];
+    [super dealloc];
 }
 
 @end

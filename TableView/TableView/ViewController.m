@@ -43,6 +43,22 @@
         [view release];
     }
     [_refreshHeaderView refreshLastUpdatedDate];
+    
+    
+    //编辑 评论
+    UIButton *CommentEditButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    CommentEditButton.frame = CGRectMake(0.0f, 0.0f, 60.0f, 30.0f);
+    //    [RefreshButton addSubview:backButtonImageView];
+    //    [backButtonImageView release];
+    [CommentEditButton setTitle:@"编辑" forState:UIControlStateNormal];
+    [CommentEditButton addTarget:self action:@selector(commentEditTouchUp) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.rightBarButtonItem = [[[UIBarButtonItem alloc] initWithCustomView:CommentEditButton] autorelease];
+}
+
+//
+- (void)commentEditTouchUp
+{
+    [ListTableView setEditing:!ListTableView.editing animated:YES];
 }
 
 
@@ -249,7 +265,43 @@
 	
 }
 
+///
+//评论表格编辑
+-(BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.row == 0)
+    {
+        return NO;
+    }
+    return YES;
+    
+}
 
+//设置编辑样式(默认为删除，也可以设插入操作等)
+
+- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    return UITableViewCellEditingStyleDelete;
+    
+}
+
+//编辑模式处理
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    //这里进行插入，删除，编辑操作
+    
+}
+
+//移动
+- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
+    return YES;
+}
+
+//移动时数组的操作
+- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
+}
 //////
 
 - (void)dealloc {

@@ -10,9 +10,9 @@
 
 @interface ViewController : UIViewController
 {
-    NSString * _user;
+    NSString * user;
 }
 
-@property(retain)NSString *user;
+@property(nonatomic,retain)NSString *user;
 
 @end
