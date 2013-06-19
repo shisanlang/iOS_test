@@ -18,6 +18,11 @@
 		E360AEF0177151F8004885DA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E360AEEF177151F8004885DA /* Default-568h@2x.png */; };
 		E360AEF3177151F8004885DA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E360AEF2177151F8004885DA /* ViewController.m */; };
 		E360AEF6177151F8004885DA /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E360AEF4177151F8004885DA /* ViewController.xib */; };
+		E360AF021771588E004885DA /* jp2013061901.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E360AEFD1771588E004885DA /* jp2013061901.jpg */; };
+		E360AF051771588E004885DA /* jp2013061904.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E360AF001771588E004885DA /* jp2013061904.jpg */; };
+		E360AF061771588E004885DA /* jp2013061905.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E360AF011771588E004885DA /* jp2013061905.jpg */; };
+		E360AF091771599D004885DA /* jp2013061902.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E360AF071771599D004885DA /* jp2013061902.jpg */; };
+		E360AF0A1771599D004885DA /* jp2013061903.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E360AF081771599D004885DA /* jp2013061903.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +42,11 @@
 		E360AEF1177151F8004885DA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		E360AEF2177151F8004885DA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E360AEF5177151F8004885DA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		E360AEFD1771588E004885DA /* jp2013061901.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jp2013061901.jpg; sourceTree = "<group>"; };
+		E360AF001771588E004885DA /* jp2013061904.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jp2013061904.jpg; sourceTree = "<group>"; };
+		E360AF011771588E004885DA /* jp2013061905.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jp2013061905.jpg; sourceTree = "<group>"; };
+		E360AF071771599D004885DA /* jp2013061902.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jp2013061902.jpg; sourceTree = "<group>"; };
+		E360AF081771599D004885DA /* jp2013061903.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jp2013061903.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +93,7 @@
 		E360AEDF177151F7004885DA /* PageViewCtrl */ = {
 			isa = PBXGroup;
 			children = (
+				E360AEFC1771588D004885DA /* images */,
 				E360AEE8177151F7004885DA /* AppDelegate.h */,
 				E360AEE9177151F7004885DA /* AppDelegate.m */,
 				E360AEF1177151F8004885DA /* ViewController.h */,
@@ -105,6 +116,18 @@
 				E360AEEF177151F8004885DA /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E360AEFC1771588D004885DA /* images */ = {
+			isa = PBXGroup;
+			children = (
+				E360AF071771599D004885DA /* jp2013061902.jpg */,
+				E360AF081771599D004885DA /* jp2013061903.jpg */,
+				E360AEFD1771588E004885DA /* jp2013061901.jpg */,
+				E360AF001771588E004885DA /* jp2013061904.jpg */,
+				E360AF011771588E004885DA /* jp2013061905.jpg */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +186,11 @@
 				E360AEEE177151F8004885DA /* Default@2x.png in Resources */,
 				E360AEF0177151F8004885DA /* Default-568h@2x.png in Resources */,
 				E360AEF6177151F8004885DA /* ViewController.xib in Resources */,
+				E360AF021771588E004885DA /* jp2013061901.jpg in Resources */,
+				E360AF051771588E004885DA /* jp2013061904.jpg in Resources */,
+				E360AF061771588E004885DA /* jp2013061905.jpg in Resources */,
+				E360AF091771599D004885DA /* jp2013061902.jpg in Resources */,
+				E360AF0A1771599D004885DA /* jp2013061903.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
