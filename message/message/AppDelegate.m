@@ -40,8 +40,50 @@
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
 
-    
+    //判断推送
+    UIRemoteNotificationType enabledTypes = [[UIApplication sharedApplication] enabledRemoteNotificationTypes];
+    NSLog(@"Noti type = %d",enabledTypes);
     return YES;
+}
+
+
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
+{
+    NSLog(@"接收到信息");
+    
+    //    MessageBox *messageBox = [MessageBox sharedInstance];
+    //    [messageBox showMessageBoxWithTitle:@"本地提醒"
+    //                                message:notif.alertBody
+    //                               delegate:self
+    //                      cancelButtonTitle:@"OK"
+    //                             msgBoxType:E_TYPE_OK];
+    
+    //    UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"推送通知"
+    //                                                    message:@"10"
+    //                                                   delegate:self
+    //                                          cancelButtonTitle:@" 关闭"
+    //                                          otherButtonTitles:@" 更新状态10",nil];
+    //    [alert show];
+    
+    //    NSLog(@" 收到推送消息 ： %@",[[userInfo objectForKey:@"aps"] objectForKey:@"alert"]);
+    //    if ([[userInfo objectForKey:@"aps"] objectForKey:@"alert"]!=NULL) {
+    //        NSString* strmessage = [[userInfo objectForKey:@"aps"] objectForKey:@"alert"];
+    //        NSRange range = [strmessage rangeOfString:@":"];
+    //        int location = range.location;
+    //        NSString* struserid = [strmessage substringToIndex:location];
+    //
+    //        [[NSUserDefaults standardUserDefaults] setObject:struserid forKey:@"tokenuserid"];
+    //    }
+    //    NSLog(@" 收到推送消息 ： %@",[[userInfo objectForKey:@"aps"] objectForKey:@"alert"]);
+    //    if ([[userInfo objectForKey:@"aps"] objectForKey:@"alert"]!=NULL) {
+    //        UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"推送通知"
+    //                                                        message:[[userInfo objectForKey:@"aps"] objectForKey:@"alert"]
+    //                                                       delegate:self
+    //                                              cancelButtonTitle:@" 关闭"
+    //                                              otherButtonTitles:@" 更新状态1",nil];
+    //        [alert show];   
+    //    }   
+    
 }
 
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo   
@@ -60,7 +102,15 @@
 
 - (void)application:(UIApplication*)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData*)deviceToken  
 {  
-    NSLog(@"My token is: %@", deviceToken);  
+   
+    
+    NSString * CurDeviceToken = [[[[deviceToken description]
+                                    stringByReplacingOccurrencesOfString: @"<" withString: @""]
+                                   stringByReplacingOccurrencesOfString: @">" withString: @""]
+                                  stringByReplacingOccurrencesOfString: @" " withString: @""];
+    
+     NSLog(@"My token is: %@\n%@", deviceToken,CurDeviceToken);
+
 }
 
 - (void)application:(UIApplication*)application didFailToRegisterForRemoteNotificationsWithError:(NSError*)error  
