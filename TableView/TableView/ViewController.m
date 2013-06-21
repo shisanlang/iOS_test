@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "CarServiceCell.h"
 
 @interface ViewController ()
 
@@ -29,7 +29,7 @@
     ListTableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, 320, XD_SCREENHEIGHT) style:UITableViewStylePlain];
 	ListTableView.dataSource = self;
 	ListTableView.delegate = self;
-//    ListTableView.separatorColor=[UIColor grayColor];
+    ListTableView.separatorColor=[UIColor clearColor];
 //    ListTableView.backgroundColor=[UIColor clearColor];
 //    ListTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 	[self.view addSubview:ListTableView];
@@ -103,12 +103,12 @@
         
         static NSString *CellIdentifier = @"DataCell";
         
-        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+        CarServiceCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
         if (cell == nil) {
-            cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+            cell = [[[CarServiceCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
         }
         
-        cell.textLabel.text = [self.SubItemList objectAtIndex:indexPath.row];
+//        cell.textLabel.text = [self.SubItemList objectAtIndex:indexPath.row];
         return cell;
     }
     
@@ -118,7 +118,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 40.0f;
+    return 85;
 }
 
 #pragma mark - Table view delegate
