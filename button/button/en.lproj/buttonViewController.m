@@ -43,6 +43,9 @@
     button.font=[UIFont systemFontOfSize:12];
     [button setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     [button setTitleColor:[UIColor colorWithRed:0 green:64 blue:128 alpha:1.0] forState:UIControlStateHighlighted];
+    //排版
+    button.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
+    button.contentEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 0);
     
     [button setBackgroundImage:[UIImage imageNamed:@"time-n.png"] forState:UIControlStateNormal];
 //    button.backgroundColor = [UIColor colorWithRed:.15 green:0.16 blue:0.23 alpha:1.0];
