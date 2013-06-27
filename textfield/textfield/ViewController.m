@@ -16,6 +16,9 @@
 
 @synthesize password;
 
+//#define VIEW_CENTER_VALUE CGPointMake(160,274+20) //i5 4'
+#define VIEW_CENTER_VALUE CGPointMake(160,230+20)   //i4 3.5'
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -32,17 +35,48 @@
     //    password.keyboardType = UIKeyboardTypeNumberPad;//键盘显示类型
     [self.view addSubview:password];
     [password release];
+    
+    NSLog(@"self = %f,%f",self.view.center.x,self.view.center.y);
+    self.view.center = VIEW_CENTER_VALUE;
 }
 
+
+//隐藏键盘
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
     [textField resignFirstResponder];
     return YES;
 }
 
+//
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     [password resignFirstResponder];
+}
+
+//键盘不被挡住
+- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField
+{
+    CGPoint centerPoint = textField.center;
+    [UIView beginAnimations:@"ResizeForKeyBoard" context:nil];
+    [UIView setAnimationDuration:0.30f];
+    self.view.center=CGPointMake(centerPoint.x, centerPoint.y-130);
+//    [textField resignFirstResponder];
+    [UIView commitAnimations];
+    return YES;
+    
+}
+
+- (BOOL)textFieldShouldEndEditing:(UITextField *)textField
+{
+//    [textField resignFirstResponder];
+    [UIView beginAnimations:@"ResizeForKeyBoard" context:nil];
+    [UIView setAnimationDuration:0.30f];
+    NSLog(@"cen1 = %f,%f",self.view.center.x,self.view.center.y);
+    self.view.center=VIEW_CENTER_VALUE;
+    NSLog(@"cen2 = %f,%f",self.view.center.x,self.view.center.y);
+    [UIView commitAnimations];
+    return YES;
 }
 
 - (void)didReceiveMemoryWarning
