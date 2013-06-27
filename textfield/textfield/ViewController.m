@@ -72,9 +72,7 @@
 //    [textField resignFirstResponder];
     [UIView beginAnimations:@"ResizeForKeyBoard" context:nil];
     [UIView setAnimationDuration:0.30f];
-    NSLog(@"cen1 = %f,%f",self.view.center.x,self.view.center.y);
     self.view.center=VIEW_CENTER_VALUE;
-    NSLog(@"cen2 = %f,%f",self.view.center.x,self.view.center.y);
     [UIView commitAnimations];
     return YES;
 }
