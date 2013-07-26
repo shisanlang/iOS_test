@@ -29,11 +29,12 @@
     [self.view addSubview:subView1];
     
     
-    image1VC = [[UIImageView alloc] initWithFrame:CGRectMake(10, 10, 40, 40)];
+    image1VC = [[UIImageView alloc] initWithFrame:CGRectMake(10, 10, 120, 40)];
     image1VC.image = [UIImage imageNamed:@"bg.png"];
     image1VC.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin;// | UIViewAutoresizingFlexibleWidth;//UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleRightMargin|UIViewAutoresizingFlexibleBottomMargin;
 //    NSLog(@"image or = %d",image1VC.image.imageOrientation);
 //    [self.view addSubview:image1VC];
+    [image1VC.image stretchableImageWithLeftCapWidth:20 topCapHeight:20];
     [subView1 addSubview:image1VC];
     
     NSLog(@"%f,%f,%f,%f",subView1.frame.origin.x,subView1.frame.origin.y,subView1.frame.size.width,subView1.frame.size.height);
