@@ -23,6 +23,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
+    
     //数据
     bReloadMore=YES;
     self.SubItemList=[[NSMutableArray alloc]initWithObjects: @"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",nil];
