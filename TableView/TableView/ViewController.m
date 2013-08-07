@@ -22,7 +22,6 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    //hei
     
     //数据
     bReloadMore=YES;
