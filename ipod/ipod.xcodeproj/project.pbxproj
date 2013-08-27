@@ -1,0 +1,303 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E36D474C17CCA3D1005AEE77 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E36D474B17CCA3D1005AEE77 /* UIKit.framework */; };
+		E36D474E17CCA3D1005AEE77 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E36D474D17CCA3D1005AEE77 /* Foundation.framework */; };
+		E36D475017CCA3D1005AEE77 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E36D474F17CCA3D1005AEE77 /* CoreGraphics.framework */; };
+		E36D475617CCA3D1005AEE77 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E36D475417CCA3D1005AEE77 /* InfoPlist.strings */; };
+		E36D475817CCA3D1005AEE77 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E36D475717CCA3D1005AEE77 /* main.m */; };
+		E36D475C17CCA3D1005AEE77 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E36D475B17CCA3D1005AEE77 /* AppDelegate.m */; };
+		E36D475E17CCA3D1005AEE77 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E36D475D17CCA3D1005AEE77 /* Default.png */; };
+		E36D476017CCA3D1005AEE77 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E36D475F17CCA3D1005AEE77 /* Default@2x.png */; };
+		E36D476217CCA3D1005AEE77 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E36D476117CCA3D1005AEE77 /* Default-568h@2x.png */; };
+		E36D476517CCA3D1005AEE77 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E36D476417CCA3D1005AEE77 /* ViewController.m */; };
+		E36D476817CCA3D1005AEE77 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E36D476617CCA3D1005AEE77 /* ViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E36D474817CCA3D1005AEE77 /* ipod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ipod.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E36D474B17CCA3D1005AEE77 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E36D474D17CCA3D1005AEE77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E36D474F17CCA3D1005AEE77 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E36D475317CCA3D1005AEE77 /* ipod-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ipod-Info.plist"; sourceTree = "<group>"; };
+		E36D475517CCA3D1005AEE77 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E36D475717CCA3D1005AEE77 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E36D475917CCA3D1005AEE77 /* ipod-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ipod-Prefix.pch"; sourceTree = "<group>"; };
+		E36D475A17CCA3D1005AEE77 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E36D475B17CCA3D1005AEE77 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E36D475D17CCA3D1005AEE77 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		E36D475F17CCA3D1005AEE77 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		E36D476117CCA3D1005AEE77 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		E36D476317CCA3D1005AEE77 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E36D476417CCA3D1005AEE77 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E36D476717CCA3D1005AEE77 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E36D474517CCA3D1005AEE77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E36D474C17CCA3D1005AEE77 /* UIKit.framework in Frameworks */,
+				E36D474E17CCA3D1005AEE77 /* Foundation.framework in Frameworks */,
+				E36D475017CCA3D1005AEE77 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E36D473F17CCA3D0005AEE77 = {
+			isa = PBXGroup;
+			children = (
+				E36D475117CCA3D1005AEE77 /* ipod */,
+				E36D474A17CCA3D1005AEE77 /* Frameworks */,
+				E36D474917CCA3D1005AEE77 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E36D474917CCA3D1005AEE77 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E36D474817CCA3D1005AEE77 /* ipod.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E36D474A17CCA3D1005AEE77 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E36D474B17CCA3D1005AEE77 /* UIKit.framework */,
+				E36D474D17CCA3D1005AEE77 /* Foundation.framework */,
+				E36D474F17CCA3D1005AEE77 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E36D475117CCA3D1005AEE77 /* ipod */ = {
+			isa = PBXGroup;
+			children = (
+				E36D475A17CCA3D1005AEE77 /* AppDelegate.h */,
+				E36D475B17CCA3D1005AEE77 /* AppDelegate.m */,
+				E36D476317CCA3D1005AEE77 /* ViewController.h */,
+				E36D476417CCA3D1005AEE77 /* ViewController.m */,
+				E36D476617CCA3D1005AEE77 /* ViewController.xib */,
+				E36D475217CCA3D1005AEE77 /* Supporting Files */,
+			);
+			path = ipod;
+			sourceTree = "<group>";
+		};
+		E36D475217CCA3D1005AEE77 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E36D475317CCA3D1005AEE77 /* ipod-Info.plist */,
+				E36D475417CCA3D1005AEE77 /* InfoPlist.strings */,
+				E36D475717CCA3D1005AEE77 /* main.m */,
+				E36D475917CCA3D1005AEE77 /* ipod-Prefix.pch */,
+				E36D475D17CCA3D1005AEE77 /* Default.png */,
+				E36D475F17CCA3D1005AEE77 /* Default@2x.png */,
+				E36D476117CCA3D1005AEE77 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E36D474717CCA3D1005AEE77 /* ipod */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E36D476B17CCA3D1005AEE77 /* Build configuration list for PBXNativeTarget "ipod" */;
+			buildPhases = (
+				E36D474417CCA3D1005AEE77 /* Sources */,
+				E36D474517CCA3D1005AEE77 /* Frameworks */,
+				E36D474617CCA3D1005AEE77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ipod;
+			productName = ipod;
+			productReference = E36D474817CCA3D1005AEE77 /* ipod.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E36D474017CCA3D0005AEE77 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = duan;
+			};
+			buildConfigurationList = E36D474317CCA3D0005AEE77 /* Build configuration list for PBXProject "ipod" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E36D473F17CCA3D0005AEE77;
+			productRefGroup = E36D474917CCA3D1005AEE77 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E36D474717CCA3D1005AEE77 /* ipod */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E36D474617CCA3D1005AEE77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E36D475617CCA3D1005AEE77 /* InfoPlist.strings in Resources */,
+				E36D475E17CCA3D1005AEE77 /* Default.png in Resources */,
+				E36D476017CCA3D1005AEE77 /* Default@2x.png in Resources */,
+				E36D476217CCA3D1005AEE77 /* Default-568h@2x.png in Resources */,
+				E36D476817CCA3D1005AEE77 /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E36D474417CCA3D1005AEE77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E36D475817CCA3D1005AEE77 /* main.m in Sources */,
+				E36D475C17CCA3D1005AEE77 /* AppDelegate.m in Sources */,
+				E36D476517CCA3D1005AEE77 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E36D475417CCA3D1005AEE77 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E36D475517CCA3D1005AEE77 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E36D476617CCA3D1005AEE77 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E36D476717CCA3D1005AEE77 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E36D476917CCA3D1005AEE77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E36D476A17CCA3D1005AEE77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E36D476C17CCA3D1005AEE77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ipod/ipod-Prefix.pch";
+				INFOPLIST_FILE = "ipod/ipod-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E36D476D17CCA3D1005AEE77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ipod/ipod-Prefix.pch";
+				INFOPLIST_FILE = "ipod/ipod-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E36D474317CCA3D0005AEE77 /* Build configuration list for PBXProject "ipod" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E36D476917CCA3D1005AEE77 /* Debug */,
+				E36D476A17CCA3D1005AEE77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E36D476B17CCA3D1005AEE77 /* Build configuration list for PBXNativeTarget "ipod" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E36D476C17CCA3D1005AEE77 /* Debug */,
+				E36D476D17CCA3D1005AEE77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E36D474017CCA3D0005AEE77 /* Project object */;
+}
