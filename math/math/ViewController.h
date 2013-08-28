@@ -10,4 +10,9 @@
 
 @interface ViewController : UIViewController
 
+@property(nonatomic, retain) NSString * str;
+@property (nonatomic, getter = aaa,setter = bbb:) NSString *name;
+
+
+
 @end
