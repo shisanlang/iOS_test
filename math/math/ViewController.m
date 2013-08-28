@@ -28,7 +28,7 @@
     
     //2
     unsigned char * s  = "12345ab11";
-    printf("%li",sizeof(s));
+//    printf("%li",sizeof(s));
     unsigned int i = (unsigned int)s;
 //    printf("%s,%i",*s,i);
     
@@ -63,7 +63,7 @@
 //    
 //    NSLog(@"*temp3 = %p", temp3);
 //    NSLog(@"temp3 = %p", &temp3);
-//    
+//
 //    
 //    //
 //    schemeurl = @"123";
@@ -87,7 +87,7 @@
     
     //7
     self.str = @"aaa";
-    NSLog(@"str = %@",_str);
+//    NSLog(@"str = %@",_str);
     
 }
 
