@@ -37,7 +37,7 @@
 @synthesize DeviceName;
 
 -(void) GetInfo {
-	self.DeviceID = [[UIDevice currentDevice]uniqueIdentifier];
+	self.DeviceID = [[UIDevice currentDevice]uniqueIdentifier];     //UDID
 	self.LocalizedModel = [[UIDevice currentDevice]localizedModel];
 	self.SystemName = [[UIDevice currentDevice]systemName];
 	self.SystemVersion = [[UIDevice currentDevice]systemVersion];

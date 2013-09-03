@@ -15,6 +15,8 @@
 
 @implementation ViewController
 
+@synthesize memberVariable;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -32,6 +34,32 @@
     [but handleControlEvent:UIControlEventTouchUpInside withBlock:^(id sender){NSLog(@"123");}];
     [self.view addSubview:but];
     
+    
+    //2
+    [self testAccessVariable];
+}
+
+- (void)testAccessVariable
+{
+    NSInteger outsideVariable = 10;
+//    __block NSInteger outsideVariable = 10;
+    NSMutableArray * outsideArray = [[NSMutableArray alloc] init];
+    
+    void (^blockObject)(void) = ^(void){
+        NSInteger insideVariable = 20;
+        NSLog(@"  > member variable = %d", self.memberVariable);
+        NSLog(@"  > outside variable = %d", outsideVariable);
+        NSLog(@"  > inside variable = %d", insideVariable);
+        
+        [outsideArray addObject:@"AddedInsideBlock"];
+    };
+    
+    outsideVariable = 30;
+    self.memberVariable = 30;
+    
+    blockObject();
+    
+    NSLog(@"  > %d items in outsideArray", [outsideArray count]);
 }
 
 - (void)didReceiveMemoryWarning

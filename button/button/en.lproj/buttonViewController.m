@@ -60,6 +60,11 @@
 
     [super viewDidLoad];
     
+    
+    //
+    NSFileManager * fm = [[NSFileManager alloc]init];
+    NSError * err = nil;
+    NSURL * suppurl = [fm URLForDirectory:NSApplicationSupportDirectory inDomain:NSUserDomainMask appropriateForURL:nil create:YES error:&err];
 }
 
 -(void) dodo:(id)sender{

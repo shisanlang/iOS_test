@@ -10,4 +10,7 @@
 
 @interface ViewController : UIViewController
 
+
+@property(nonatomic,assign) int memberVariable;
+
 @end

@@ -14,5 +14,4 @@
 @property (nonatomic, getter = aaa,setter = bbb:) NSString *name;
 
 
-
 @end

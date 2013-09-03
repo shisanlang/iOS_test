@@ -41,8 +41,8 @@
 //    printf("%li",sizeof(s3));
     
     //5
-//    NSString *schemeurl = [[NSMutableString alloc] initWithString:@"hosturl"];
-    NSString *schemeurl = [[NSString alloc] initWithString:@"hosturl"];
+    NSString *schemeurl = [[NSMutableString alloc] initWithString:@"hosturl"];
+//    NSString *schemeurl = [[NSString alloc] initWithString:@"hosturl"];
     
     NSString    *temp1 = nil;
     NSString    *temp2 = nil;
@@ -79,6 +79,17 @@
 //    NSLog(@"*temp3 = %p", temp3);
 //    NSLog(@"temp3 = %p", &temp3);
     
+    //
+//    schemeurl = @"serverurl";
+//    [schemeurl release];
+//    [schemeurl release];
+//    [schemeurl release];
+//    schemeurl = nil;
+
+//    NSLog(@"*schemeurl = %@,%d", schemeurl,schemeurl.retainCount);//schemeurl内容所在的内存地址
+//    NSLog(@"*temp1 = %@", temp1);
+//    NSLog(@"*temp2 = %@", temp2);
+//    NSLog(@"*temp3 = %@", temp3);
     
     //6
     self.name = @"aaa";
@@ -88,6 +99,10 @@
     //7
     self.str = @"aaa";
 //    NSLog(@"str = %@",_str);
+    
+    
+    //8
+    [self performSelectorOnMainThread:<#(SEL)#> withObject:<#(id)#> waitUntilDone:<#(BOOL)#>];
     
 }
 
