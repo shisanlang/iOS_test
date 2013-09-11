@@ -20,6 +20,7 @@
     [device GetInfo];
     [device print];
     [device PrintPro];
+    [device getThreadSize];
 }
 
 

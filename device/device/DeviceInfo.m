@@ -269,6 +269,26 @@
     sysctl(mib, 2, &results, &size, NULL, 0);
     return (NSUInteger) results;
 }
+//线程的堆栈大小 
+void *threadFunc(void *arg) {
+    void*  stack_base = pthread_get_stackaddr_np(pthread_self());
+    size_t stack_size = pthread_get_stacksize_np(pthread_self());
+    NSLog(@"Thread: base:%p / size:%u", stack_base, stack_size);
+    return NULL;
+}
+
+- (void) getThreadSize
+{
+    void*  stack_base = pthread_get_stackaddr_np(pthread_self());
+    size_t stack_size = pthread_get_stacksize_np(pthread_self());
+    struct rlimit limit;
+    getrlimit(RLIMIT_STACK, &limit);
+    NSLog(@"Main thread: base:%p / size:%u", stack_base, stack_size);
+    NSLog(@"  rlimit-> soft:%llu / hard:%llu", limit.rlim_cur, limit.rlim_max);
+    
+    pthread_t thread;
+    pthread_create(&thread, NULL, threadFunc, NULL);
+}
 
 //设备信息
 - (NSString *) deviceStringInfo
@@ -522,9 +542,9 @@
           [self getAddress],
           @"255.255.255.0"
           //
-          
           );
-    NSLog(@"device = %@",[self deviceStringInfo]);
+        NSLog(@"device = %@",[self deviceStringInfo]);
+//    [self getThreadSize];
 //        //获取系统info.plist文件中的键值对
 //        NSDictionary *infoDict = [[NSBundle mainBundle] infoDictionary];
 //        //获取软件的版本号
