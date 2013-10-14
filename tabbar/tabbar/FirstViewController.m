@@ -21,6 +21,7 @@
 //        self.title = NSLocalizedString(@"First", @"First");
 //        self.tabBarItem.image = [UIImage imageNamed:@"first"];
         self.navigationItem.title = @"视图";
+       
     }
     return self;
 }
@@ -29,6 +30,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = [UIColor greenColor];
+    
 }
 
 - (void)didReceiveMemoryWarning

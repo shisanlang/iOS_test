@@ -85,7 +85,7 @@
 - (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item {
     
     int selectedIndex = [tabBar.items indexOfObject:item];
-    
+//    NSLog(@"sel = %d",selectedIndex);
     if (selectedIndex==0) {
         bottomselebtn1.image=[UIImage imageNamed:@"sale_hover.png"];
         bottomselebtn2.image=[UIImage imageNamed:@"the_car.png"];

@@ -9,8 +9,8 @@
 #import "AppDelegate.h"
 
 #import "FirstViewController.h"
-
 #import "SecondViewController.h"
+#import "FavViewController.h"
 
 @implementation AppDelegate
 
@@ -28,13 +28,15 @@
     
     UIViewController *viewController1 = [[[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil] autorelease];
     UIViewController *viewController2 = [[[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil] autorelease];
-    self.tabBarController = [[[UITabBarController alloc] init] autorelease];
-    self.tabBarController.viewControllers = @[viewController1, viewController2];
+    FavViewController *viewController3 = [[[FavViewController alloc] init] autorelease];
+//    self.tabBarController = [[[UITabBarController alloc] init] autorelease];
+//    self.tabBarController.viewControllers = @[viewController1, viewController2];
     
     
     UINavigationController *nav1 = [[UINavigationController alloc]initWithRootViewController:viewController1];
     UINavigationController *nav2 = [[UINavigationController alloc]initWithRootViewController:viewController2];
-    UINavigationController *nav3 = [[UINavigationController alloc]initWithRootViewController:viewController1];
+    UINavigationController *nav3 = [[UINavigationController alloc]initWithRootViewController:viewController3];
+//    nav3.navigationBar.tintColor = [UIColor redColor];
     UINavigationController *nav4 = [[UINavigationController alloc]initWithRootViewController:viewController2];
     
     self.tabBarController = [[[MyTabBarController alloc] init] autorelease];

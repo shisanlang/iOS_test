@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E301F145180BD1B500761CE8 /* mm.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E301F144180BD1B500761CE8 /* mm.jpg */; };
+		E301F148180BD38100761CE8 /* FavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E301F147180BD38100761CE8 /* FavViewController.m */; };
 		E3BBF1B41733BA8D00AD2E27 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3BBF1B31733BA8D00AD2E27 /* UIKit.framework */; };
 		E3BBF1B61733BA8D00AD2E27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3BBF1B51733BA8D00AD2E27 /* Foundation.framework */; };
 		E3BBF1B81733BA8D00AD2E27 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3BBF1B71733BA8D00AD2E27 /* CoreGraphics.framework */; };
@@ -46,6 +48,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E301F144180BD1B500761CE8 /* mm.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mm.jpg; sourceTree = "<group>"; };
+		E301F146180BD38100761CE8 /* FavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavViewController.h; sourceTree = "<group>"; };
+		E301F147180BD38100761CE8 /* FavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavViewController.m; sourceTree = "<group>"; };
 		E3BBF1B01733BA8D00AD2E27 /* tabbar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tabbar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3BBF1B31733BA8D00AD2E27 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E3BBF1B51733BA8D00AD2E27 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -150,6 +155,8 @@
 				E3BBF1D91733BA8D00AD2E27 /* FirstViewController.xib */,
 				E3BBF1DC1733BA8D00AD2E27 /* SecondViewController.xib */,
 				E3BBF1BA1733BA8D00AD2E27 /* Supporting Files */,
+				E301F146180BD38100761CE8 /* FavViewController.h */,
+				E301F147180BD38100761CE8 /* FavViewController.m */,
 			);
 			path = tabbar;
 			sourceTree = "<group>";
@@ -180,6 +187,7 @@
 		E3BBF1E81733BBD500AD2E27 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				E301F144180BD1B500761CE8 /* mm.jpg */,
 				E3BBF2091733BC3C00AD2E27 /* nav_bar.png */,
 				E3BBF20A1733BC3C00AD2E27 /* nav_bar@2x.png */,
 				E3BBF1E91733BBD500AD2E27 /* collect.png */,
@@ -268,6 +276,7 @@
 				E3BBF1FB1733BBD500AD2E27 /* collect_hover.png in Resources */,
 				E3BBF1FC1733BBD500AD2E27 /* collect_hover@2x.png in Resources */,
 				E3BBF1FD1733BBD500AD2E27 /* more.png in Resources */,
+				E301F145180BD1B500761CE8 /* mm.jpg in Resources */,
 				E3BBF1FE1733BBD500AD2E27 /* more@2x.png in Resources */,
 				E3BBF1FF1733BBD500AD2E27 /* more_hover.png in Resources */,
 				E3BBF2001733BBD500AD2E27 /* more_hover@2x.png in Resources */,
@@ -293,6 +302,7 @@
 			files = (
 				E3BBF1C01733BA8D00AD2E27 /* main.m in Sources */,
 				E3BBF1C41733BA8D00AD2E27 /* AppDelegate.m in Sources */,
+				E301F148180BD38100761CE8 /* FavViewController.m in Sources */,
 				E3BBF1CD1733BA8D00AD2E27 /* FirstViewController.m in Sources */,
 				E3BBF1D41733BA8D00AD2E27 /* SecondViewController.m in Sources */,
 				E3BBF1E71733BB4A00AD2E27 /* MyTabBarController.m in Sources */,
@@ -424,6 +434,7 @@
 				E3BBF1E31733BA8D00AD2E27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
