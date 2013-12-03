@@ -20,9 +20,16 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    user = @"dxd";
     
-    NSLog(@"view:%@",_user);
+    
+    
+    user = @"dxd";
+    self.user = @"xd";
+    _user = @"123";
+    
+    
+//    NSLog(@"view:%@",_user);
+    NSLog(@"user = %@,%d",user,[user retainCount]);
 }
 
 //- (void)setUser:(NSString *)username
@@ -45,7 +52,7 @@
 
 - (void)dealloc
 {
-    [_user release];
+//    [_user release];
     [super dealloc];
 }
 
