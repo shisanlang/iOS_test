@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 
+
 @interface ViewController ()
 
 @end
@@ -15,6 +16,7 @@
 @implementation ViewController
 
 @synthesize user=_user;//
+
 
 - (void)viewDidLoad
 {
@@ -29,7 +31,25 @@
     
     
 //    NSLog(@"view:%@",_user);
-    NSLog(@"user = %@,%d",user,[user retainCount]);
+    NSLog(@"user = %@,%d",self.user,[user retainCount]);
+    
+    
+    //
+//    for (int i = 0; i < 20; i++)
+//    {
+//        NSString *string = @"Abc";
+//        string = [string lowercaseString];
+//        string = [string stringByAppendingString:@"xyz"];
+//        NSLog(@"%@,%d", string,[string retainCount]);
+//    }
+    
+    
+    //2
+    
+    
+    
+    //3
+    
 }
 
 //- (void)setUser:(NSString *)username
@@ -43,6 +63,8 @@
 //    _user = @"new user";
 //    return _user;
 //}
+
+
 
 - (void)didReceiveMemoryWarning
 {

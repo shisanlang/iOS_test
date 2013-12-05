@@ -296,6 +296,7 @@
 				E3EC3F3C1763355A0048F332 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

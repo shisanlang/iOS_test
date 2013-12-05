@@ -8,11 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface ViewController : UIViewController
 {
     NSString * user;
+    
 }
 
 @property(nonatomic,retain)NSString *user;
+
+
 
 @end
