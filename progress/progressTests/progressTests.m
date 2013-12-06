@@ -1,18 +1,18 @@
 //
-//  nav_ios7Tests.m
-//  nav_ios7Tests
+//  progressTests.m
+//  progressTests
 //
-//  Created by duan on 13-10-14.
+//  Created by duan on 13-12-5.
 //  Copyright (c) 2013年 duan. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface nav_ios7Tests : XCTestCase
+@interface progressTests : XCTestCase
 
 @end
 
-@implementation nav_ios7Tests
+@implementation progressTests
 
 - (void)setUp
 {
