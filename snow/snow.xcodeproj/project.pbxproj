@@ -382,6 +382,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Liu Bing (MMS9337JP5)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "snow/snow-Prefix.pch";
 				INFOPLIST_FILE = "snow/snow-Info.plist";
@@ -464,6 +465,7 @@
 				E32700C3185079CE00AB76DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E32700C4185079CE00AB76DA /* Build configuration list for PBXNativeTarget "snowTests" */ = {
 			isa = XCConfigurationList;
@@ -472,6 +474,7 @@
 				E32700C6185079CE00AB76DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

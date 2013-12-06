@@ -54,7 +54,7 @@
     
     NSLog(@"dic=%@",dic);
     
-//    [dic writeToFile:[self GetFileName] atomically:YES];
+    [dic writeToFile:[self GetFileName] atomically:YES];
     [super viewDidLoad];
 }
 
