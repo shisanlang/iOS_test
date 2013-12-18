@@ -18,6 +18,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    UILabel * txtLabel = [[UILabel alloc] init];
+    txtLabel.frame = CGRectMake(40, 40, 100, 20);
+    txtLabel.text = @"123\ue415abc";
+    [self.view addSubview:txtLabel];
 }
 
 - (void)didReceiveMemoryWarning
