@@ -460,6 +460,7 @@
 				E32893F5185561AD00B70CDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E32893F6185561AD00B70CDF /* Build configuration list for PBXNativeTarget "fileTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +469,7 @@
 				E32893F8185561AD00B70CDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

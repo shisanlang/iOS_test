@@ -45,7 +45,8 @@
     
     NSLog(@"dic=%@",dic);
     
-    [dic writeToFile:[self GetFileName] atomically:YES];
+    BOOL error = [dic writeToFile:[self GetFileName] atomically:YES];
+    NSLog(@"error = %d",error);
 }
 
 - (NSString *) GetFileName {
