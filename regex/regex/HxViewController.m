@@ -39,6 +39,12 @@
 //	NSString *matchedString = [searchString stringByMatching:regexString capture:1L];  
 //	NSLog(@"matchedString: '%@'" , matchedString); 
 	
+    
+    //
+    NSString * strAll = @"abcsdfjjfwjleabcdef12389";
+    NSString * str1 = @"abcd";
+    BOOL strAllHasStr= [strAll hasPrefix:str1];
+    NSLog(@"strAllHasStr = %d",strAllHasStr);
 }
 
 -(BOOL)isBlankString:(NSString *)string{ 
