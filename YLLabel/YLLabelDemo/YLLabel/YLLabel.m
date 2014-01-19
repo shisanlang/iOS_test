@@ -59,12 +59,24 @@
 - (void)setText:(NSString *)text
 {
     _string = [[NSMutableAttributedString alloc] initWithString:text];
+    [self doAutoResize:text];
     [self setNeedsDisplay];
 }
 
 - (void)setTextColor:(UIColor *)textColor
 {
     _textColor = textColor;
+}
+
+- (void) doAutoResize:(NSString *)text
+{
+    CGRect orgRect=self.frame;
+    CGSize  size = [text sizeWithFont:[UIFont systemFontOfSize:16] constrainedToSize:CGSizeMake(self.frame.size.width, 2000)lineBreakMode:UILineBreakModeWordWrap];
+    //行间距改1.4就可以
+    orgRect.size.height=size.height*1.4+10;//获取自适应文本内容高度
+    NSLog(@"self.frame1 = %f,%f,%f,%f",self.frame.origin.x,self.frame.origin.y,self.frame.size.width,self.frame.size.height);
+    [self setFrame:orgRect];
+    NSLog(@"self.frame2 = %f,%f,%f,%f",self.frame.origin.x,self.frame.origin.y,self.frame.size.width,self.frame.size.height);
 }
 
 - (void)formatString
@@ -115,7 +127,7 @@
 //    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:_string];
     NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
     [paragraphStyle setLineSpacing:5];//调整行间距
-    [_string addAttribute:NSParagraphStyleAttributeName value:paragraphStyle range:NSMakeRange(0, [_string length])];
+//    [_string addAttribute:NSParagraphStyleAttributeName value:paragraphStyle range:NSMakeRange(0, [_string length])];
 }
 
 @end

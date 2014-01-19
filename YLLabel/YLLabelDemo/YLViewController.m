@@ -23,9 +23,10 @@ NSString* const msg = @"壬戌之秋，七月既望，苏子与客泛舟游于�
 	// Do any additional setup after loading the view, typically from a nib.
     
     // YLLabel
-    [justifyLabel setText:msg];
+    
     justifyLabel.textColor = [UIColor darkGrayColor];
     justifyLabel.font = [UIFont systemFontOfSize:16.0f];
+    [justifyLabel setText:msg];
 }
 
 - (void)didReceiveMemoryWarning
