@@ -46,8 +46,10 @@
             photoView.frame = CGRectMake(30+(20+50)*j, 230+(50+20)*i+20, 50, 50);
             photoView.image = [UIImage imageNamed:[photoArray objectAtIndex:arc4random() % [photoArray count]]];
             [self.view addSubview:photoView];
+//            [photoView release];
         }
     }
+    
 }
 
 - (void)didReceiveMemoryWarning
