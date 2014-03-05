@@ -274,6 +274,7 @@
 				E3AE618C164A5DC800725BEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

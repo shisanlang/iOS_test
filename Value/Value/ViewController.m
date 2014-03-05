@@ -21,6 +21,9 @@
     NSLog(@"v1 = %d,%i",0/7,8/7);
     //取余
     NSLog(@"v2 = %d",7%8);
+    
+    //
+    NSLog(@"%d,%d,%d,%d",[@"" intValue],[@"null" intValue],[@"23df5" intValue],[@"abc43" intValue]);
 }
 
 - (void)viewDidUnload

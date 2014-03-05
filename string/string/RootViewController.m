@@ -100,6 +100,12 @@
     NSLog(@"输出UTF8编码 = %@",[urlstr2 stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]);
     NSLog(@"输出GB2312编码 = %@",[urlstr2 stringByAddingPercentEscapesUsingEncoding:gb2312Encode]);
     
+    
+    //!= ==
+    NSString * strCmp1 = nil;
+    NSString * strCmp2 = [[NSString alloc]init];
+    NSLog(@"strCmp = %d,%d",strCmp1 == @"",strCmp2 == @"");
+    
     [super viewDidLoad];
 }
 

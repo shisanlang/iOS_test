@@ -16,7 +16,7 @@
 	NSString * SystemVersion;	//4.2
 	NSString * Model;			//iPhone Simulator
     NSString * Version;         //软件版本1.0.0
-    
+    NSString * ShortVersion;    //软件版本1.0.0
     NSString * DeviceName;      //设备名称
 }
 
@@ -26,7 +26,7 @@
 @property(nonatomic, retain) NSString * SystemVersion;
 @property(nonatomic, retain) NSString * Model;
 @property(nonatomic, retain) NSString * Version;
-
+@property(nonatomic, retain) NSString * ShortVersion;
 @property(nonatomic, retain) NSString * DeviceName;
 
 //-(void) GetInfo;

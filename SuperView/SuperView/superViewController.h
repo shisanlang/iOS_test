@@ -11,5 +11,6 @@
 @interface superViewController : UIViewController
 
 - (void)superDoSthing;
+- (void)superDoSthingShow;
 
 @end

@@ -35,6 +35,12 @@
     NSLog(@"super dongsomething");
 }
 
+- (void)superDoSthingShow
+{
+    NSLog(@"super superDoSthingShow");
+    [self superDoSthing];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

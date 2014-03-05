@@ -21,7 +21,13 @@
     NSLog(@"sub dongsomething");
     
     //error
-    [self superDoSthing];
+//    [self superDoSthing];
+    [self superDoSthingShow];
+}
+
+- (void)superDoSthing
+{
+    NSLog(@"sub superDoSthing");
 }
 
 - (void)didReceiveMemoryWarning

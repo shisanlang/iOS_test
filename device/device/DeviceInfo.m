@@ -33,7 +33,7 @@
 @synthesize SystemVersion;
 @synthesize Model;
 @synthesize Version;
-
+@synthesize ShortVersion;
 @synthesize DeviceName;
 
 -(void) GetInfo {
@@ -43,6 +43,7 @@
 	self.SystemVersion = [[UIDevice currentDevice]systemVersion];
 	self.Model = [[UIDevice currentDevice]model];
     self.Version = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"];
+    self.ShortVersion = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
 	self.DeviceName = [[UIDevice currentDevice] name];
 }
 
@@ -518,7 +519,7 @@ void *threadFunc(void *arg) {
           self.LocalizedModel,
           self.Model,
           [self deviceStringInfo],
-          self.Version,
+          self.ShortVersion,
           @"",
           @"",
           [self getTotalMemory],//@"",

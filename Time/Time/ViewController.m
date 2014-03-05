@@ -33,6 +33,14 @@
     NSTimeZone* timeZone = [NSTimeZone timeZoneWithName:@"Asia/Shanghai"];
     [formater setTimeZone:timeZone];
 //    [formater release];
+    
+    //时间比较
+    NSTimeInterval secondsPerDay = 24*60*60;
+    NSDate *curDate2 = [NSDate date];
+    NSDate *yesterDay = [curDate2 addTimeInterval:-secondsPerDay];////ios4以上系统
+    NSTimeInterval secondsBetweenDates= [curDate2 timeIntervalSinceDate:yesterDay];
+    NSLog(@"yesterDay = %@,%@",yesterDay,[curDate2 laterDate:yesterDay]);
+    NSLog(@"secondsBetweenDates = %f,%f,%d", secondsBetweenDates, secondsPerDay, secondsBetweenDates>=secondsPerDay);
 }
 
 - (void)didReceiveMemoryWarning

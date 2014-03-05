@@ -300,6 +300,7 @@
 				E35675301744CFDE00A34973 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
