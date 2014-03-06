@@ -17,10 +17,11 @@
 {
     [super viewDidLoad];
     DeviceInfo * device = [[DeviceInfo alloc]init];
-    [device GetInfo];
-    [device print];
     [device PrintPro];
+    [device PrintAppKey];
     [device getThreadSize];
+    NSLog(@"%@",device);
+    
 }
 
 

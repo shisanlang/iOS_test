@@ -36,8 +36,119 @@
 @synthesize ShortVersion;
 @synthesize DeviceName;
 
+#pragma mark init
+- (id)init
+{
+    self = [super init];
+    if (self != nil) {
+        
+    }
+    [self GetInfo];
+    return self;
+}
+
+#pragma mark nslog
+- (NSString *)description
+{
+    NSArray * descWordArray = @[
+                                /********设备信息********/
+                                @"程序类型:", [self IsiPhoneSystem]?@"iPhone":@"iPad",
+                                @"设备:", [self deviceStringInfo],
+                                @"设备名称:", self.DeviceName,
+                                @"设备ID:", self.DeviceID,
+                                @"当前设备模型:", self.LocalizedModel,
+                                @"设备模型:", self.Model,
+                                @"具体设备:", [self deviceStringInfo],
+                                @"CPU:", @"",
+                                @"磁盘:", @"",
+                                @"内存:", [NSString stringWithFormat:@"%u", [self getTotalMemory]],
+                                @"分辨率:", [self getScreenSize],
+                                /********系统信息********/
+                                @"操作系统:", self.SystemName,
+                                @"操作系统版本:", self.SystemVersion,
+                                @"是否越狱:", [self isJailbroken]?@"是":@"否",
+                                @"应用程序个数:", @"",
+                                @"歌曲首数:", @"",
+                                /********网络信息********/
+                                @"是否为飞行模式:", @"否",
+                                @"主机名称:", [self hostname],
+                                @"当前网络连接状态:", @"可用",
+                                @"当前网络方式:", [self IsEnableWifi]?@"WIFI":[self IsEnable3G]?@"3G/GPRS":@"无网络",//@"wifi",
+                                @"网关IP地址:", @"127.0.0.1",
+                                @"DNS IP地址:", @"127.0.0.1",
+                                @"DHCP IP地址:", @"127.0.0.1",
+                                @"Mac地址:", [self macaddress],//@"8c-7c-2a-5b",
+                                @"IP地址v4:", [self localIPAddress],//[self getIPAddressForHost],//[self localWiFiIPAddress],//[self whatismyipdotcom],//@"127.0.0.1",
+                                @"IP地址v6:", [self getAddress],
+                                @"子网掩码:", @"255.255.255.0",
+                                /********APP信息********/
+                                @"本软件版本(Build):", self.Version,     //1.1
+                                @"本软件版本(Version):", self.ShortVersion   //1.1.0
+                                /**********************/
+                                
+                                ];
+    
+    
+    NSString * descWord = @"";
+    for (int i=0; i<[descWordArray count]; i++) {
+        descWord = [NSString stringWithFormat:@"%@%@", descWord,[descWordArray objectAtIndex:i]];
+        if (i%2!=0) {
+            descWord = [NSString stringWithFormat:@"%@%@", descWord, @"\n"];
+        }
+    }
+    return descWord;
+    
+}
+
+//未打印
+//    [self getThreadSize];
+
+//获取手机的imei
+//[[NSUserDefaults standardUserDefaults] valueForKey:@"SBFormattedPhoneNumber"];
+//获取手机的imei
+//#import "Message/NetworkController.h"
+//NetworkController *ntc=[[NetworkController sharedInstance] autorelease];
+//NSString *imeistring = [ntc IMEI];
+//imeistring就是获取的imei。 IMEI(International Mobile Equipment Identity)是国际移动设备身份码的缩写，
+//国际移动装备辨识码，是由15位数字组成的"电子串号"，它与每台手机一一对应，而且该码是全世界唯一的。
+
+- (void)PrintAppKey
+{
+        //获取系统info.plist文件中的键值对
+        NSDictionary *infoDict = [[NSBundle mainBundle] infoDictionary];
+        //获取软件的版本号
+        NSString *version = [infoDict objectForKey:@"CFBundleVersion"];
+        NSLog(@"版本号是=%@",version);
+
+        //打印系统plist中所有的键值对
+        for (id key in infoDict) {
+            NSLog(@"key:%@,value:%@",key,[infoDict objectForKey:key]);
+        }
+
+}
+
+- (void)PrintPro
+{
+    NSLog(@"\n/********进程信息********");
+    NSArray * processes = [self runningProcesses];
+    for (NSDictionary * dict in processes){
+        NSLog(@"%@ - %@", [dict objectForKey:@"ProcessID"], [dict objectForKey:@"ProcessName"]);
+    }
+}
+
+
+- (NSString *)debugDescription
+{
+    return @"debugDescription";
+}
+
+
+#pragma mark device info
+/*******************************************************设备信息**************************************************/
+
+
 -(void) GetInfo {
-	self.DeviceID = [[UIDevice currentDevice]uniqueIdentifier];     //UDID
+	self.DeviceID = @"";//[[UIDevice currentDevice]uniqueIdentifier];     //UDID
 	self.LocalizedModel = [[UIDevice currentDevice]localizedModel];
 	self.SystemName = [[UIDevice currentDevice]systemName];
 	self.SystemVersion = [[UIDevice currentDevice]systemVersion];
@@ -47,7 +158,76 @@
 	self.DeviceName = [[UIDevice currentDevice] name];
 }
 
+
+
+// 设备类型
+- (BOOL) IsiPhoneSystem {
+    return ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone);
+}
+// 是否wifi
+- (BOOL) IsEnableWifi {
+    //    return NO;
+    return ([[Reachability reachabilityForLocalWiFi] currentReachabilityStatus] != NotReachable);
+}
+// 是否3G
+- (BOOL) IsEnable3G {
+    return ([[Reachability reachabilityForInternetConnection] currentReachabilityStatus] != NotReachable);
+}
+//是否越狱
+- (BOOL)isJailbroken {
+    BOOL jailbroken = NO;
+    NSString *cydiaPath = @"/Applications/Cydia.app";
+    NSString *aptPath = @"/private/var/lib/apt/";
+    if ([[NSFileManager defaultManager] fileExistsAtPath:cydiaPath]) {
+        jailbroken = YES;
+    }
+    if ([[NSFileManager defaultManager] fileExistsAtPath:aptPath]) {
+        jailbroken = YES;
+    }
+    return jailbroken;
+}
+//显示网络连接状态 运营商右侧 转圈的
+//UIApplication *app = [UIApplication sharedApplication];
+//app.networkActivityIndicatorVisible = YES;
+
+
+//设备信息
+- (NSString *) deviceStringInfo
+{
+    struct utsname systemInfo;
+    uname(&systemInfo);
+    NSString *deviceString = [NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding];
+    
+    NSLog(@"NOTE: device type: %@", deviceString);
+    
+    if ([deviceString isEqualToString:@"iPhone1,1"])    return @"iPhone 1G";
+    if ([deviceString isEqualToString:@"iPhone1,2"])    return @"iPhone 3G";
+    if ([deviceString isEqualToString:@"iPhone2,1"])    return @"iPhone 3GS";
+    if ([deviceString isEqualToString:@"iPhone3,1"])    return @"iPhone 4";
+    if ([deviceString isEqualToString:@"iPhone4,1"])    return @"iPhone 4S";
+    if ([deviceString isEqualToString:@"iPhone3,2"])    return @"Verizon iPhone 4";
+    if ([deviceString isEqualToString:@"iPod1,1"])      return @"iPod Touch 1G";
+    if ([deviceString isEqualToString:@"iPod2,1"])      return @"iPod Touch 2G";
+    if ([deviceString isEqualToString:@"iPod3,1"])      return @"iPod Touch 3G";
+    if ([deviceString isEqualToString:@"iPod4,1"])      return @"iPod Touch 4G";
+    if ([deviceString isEqualToString:@"iPod5,1"])      return @"iPod Touch 5G";
+    if ([deviceString isEqualToString:@"iPad1,1"])      return @"iPad";
+    if ([deviceString isEqualToString:@"iPad2,1"])      return @"iPad 2 (WiFi)";
+    if ([deviceString isEqualToString:@"iPad2,2"])      return @"iPad 2 (GSM)";
+    if ([deviceString isEqualToString:@"iPad2,3"])      return @"iPad 2 (CDMA)";
+    if ([deviceString isEqualToString:@"i386"])         return @"Simulator";
+    if ([deviceString isEqualToString:@"x86_64"])       return @"Simulator";
+    
+    return deviceString;
+}
+
+
+#pragma mark network info
+/*******************************************************网络信息**************************************************/
+
+
 //取得ip
+
 -(NSString *)getAddress
 {
     char iphone_ip[255];
@@ -61,7 +241,10 @@
     }
     return [NSString stringWithFormat:@"%s",iphone_ip];
 }
+
+
 //取得mac地址
+
 - (NSString *) macaddress
 {
     int                    mib[6];
@@ -106,7 +289,9 @@
     return [outstring uppercaseString];
 }
 
+
 //wifi ip
+
 //- (NSString *) whatismyipdotcom
 //{
 //    NSError *error;
@@ -114,6 +299,7 @@
 //    NSString *ip = [NSString stringWithContentsOfURL:ipURL encoding:1 error:&error];
 //    return ip ? ip : [error localizedDescription];
 //}
+
 
 //- (NSString *) localWiFiIPAddress
 //{
@@ -138,6 +324,8 @@
 //    }
 //    return nil;
 //}
+
+
 //+ (NSString *) stringFromAddress: (const struct sockaddr *) address
 //{
 //    if(address && address->sa_family == AF_INET) {
@@ -147,6 +335,7 @@
 //    
 //    return nil;
 //}
+
 
 //+ (BOOL)addressFromString:(NSString *)IPAddress address:(struct sockaddr_in *)address
 //{
@@ -166,7 +355,10 @@
 //    
 //    return YES;
 //}
+
+
 //获取host的名称
+
 - (NSString *) hostname
 {
     char baseHostName[256]; // Thanks, Gunnar Larisch
@@ -180,7 +372,10 @@
         return [NSString stringWithFormat:@"%s.local", baseHostName];
     #endif
 }
+
+
 //从host获取地址
+
 //- (NSString *) getIPAddressForHost: (NSString *) theHost
 //{
 //    struct hostent *host = gethostbyname([theHost UTF8String]);
@@ -189,6 +384,7 @@
 //    NSString *addressString = [NSString stringWithCString:inet_ntoa(*list[0]) encoding:NSUTF8StringEncoding];
 //    return addressString;
 //}
+
 
 //这是本地host的IP地址
 - (NSString *) localIPAddress
@@ -215,36 +411,7 @@
 //    }
 //}
 
-// 设备类型
-- (BOOL) IsiPhoneSystem {
-    return ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone);
-}
-// 是否wifi
-- (BOOL) IsEnableWifi {
-//    return NO;
-    return ([[Reachability reachabilityForLocalWiFi] currentReachabilityStatus] != NotReachable);
-}
-
-// 是否3G
-- (BOOL) IsEnable3G {
-    return ([[Reachability reachabilityForInternetConnection] currentReachabilityStatus] != NotReachable);
-}
-//是否越狱
-- (BOOL)isJailbroken {  
-    BOOL jailbroken = NO;  
-    NSString *cydiaPath = @"/Applications/Cydia.app";  
-    NSString *aptPath = @"/private/var/lib/apt/";  
-    if ([[NSFileManager defaultManager] fileExistsAtPath:cydiaPath]) {  
-        jailbroken = YES;  
-    }  
-    if ([[NSFileManager defaultManager] fileExistsAtPath:aptPath]) {  
-        jailbroken = YES;  
-    }  
-    return jailbroken;  
-}  
-//显示网络连接状态 运营商右侧 转圈的
-//UIApplication *app = [UIApplication sharedApplication];
-//app.networkActivityIndicatorVisible = YES;
+/*******************************************************系统信息**************************************************/
 
 //CPU 内存
 - (NSString *) getSysInfoByName:(char *)typeSpecifier
@@ -291,35 +458,6 @@ void *threadFunc(void *arg) {
     pthread_create(&thread, NULL, threadFunc, NULL);
 }
 
-//设备信息
-- (NSString *) deviceStringInfo
-{
-    struct utsname systemInfo;
-    uname(&systemInfo);
-    NSString *deviceString = [NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding];
-    
-    NSLog(@"NOTE: device type: %@", deviceString);
-    
-    if ([deviceString isEqualToString:@"iPhone1,1"])    return @"iPhone 1G";
-    if ([deviceString isEqualToString:@"iPhone1,2"])    return @"iPhone 3G";
-    if ([deviceString isEqualToString:@"iPhone2,1"])    return @"iPhone 3GS";
-    if ([deviceString isEqualToString:@"iPhone3,1"])    return @"iPhone 4";
-    if ([deviceString isEqualToString:@"iPhone4,1"])    return @"iPhone 4S";
-    if ([deviceString isEqualToString:@"iPhone3,2"])    return @"Verizon iPhone 4";
-    if ([deviceString isEqualToString:@"iPod1,1"])      return @"iPod Touch 1G";
-    if ([deviceString isEqualToString:@"iPod2,1"])      return @"iPod Touch 2G";
-    if ([deviceString isEqualToString:@"iPod3,1"])      return @"iPod Touch 3G";
-    if ([deviceString isEqualToString:@"iPod4,1"])      return @"iPod Touch 4G";
-    if ([deviceString isEqualToString:@"iPod5,1"])      return @"iPod Touch 5G";
-    if ([deviceString isEqualToString:@"iPad1,1"])      return @"iPad";
-    if ([deviceString isEqualToString:@"iPad2,1"])      return @"iPad 2 (WiFi)";
-    if ([deviceString isEqualToString:@"iPad2,2"])      return @"iPad 2 (GSM)";
-    if ([deviceString isEqualToString:@"iPad2,3"])      return @"iPad 2 (CDMA)";
-    if ([deviceString isEqualToString:@"i386"])         return @"Simulator";
-    if ([deviceString isEqualToString:@"x86_64"])       return @"Simulator";
-    
-    return deviceString;
-}
 
 //获取CPU频率
 - (NSUInteger) getCpuFrequency
@@ -460,103 +598,10 @@ void *threadFunc(void *arg) {
     return nil;
 }
 
-//获取手机的imei
-//[[NSUserDefaults standardUserDefaults] valueForKey:@"SBFormattedPhoneNumber"];
-//获取手机的imei
-//#import "Message/NetworkController.h"
-//NetworkController *ntc=[[NetworkController sharedInstance] autorelease];
-//NSString *imeistring = [ntc IMEI];
-//imeistring就是获取的imei。 IMEI(International Mobile Equipment Identity)是国际移动设备身份码的缩写，
-//国际移动装备辨识码，是由15位数字组成的"电子串号"，它与每台手机一一对应，而且该码是全世界唯一的。
 
-- (void)PrintPro
-{
-    NSLog(@"\n/********进程信息********");
-    NSArray * processes = [self runningProcesses];
-    for (NSDictionary * dict in processes){
-        NSLog(@"%@ - %@", [dict objectForKey:@"ProcessID"], [dict objectForKey:@"ProcessName"]);
-    }
-}
--(void)print {
-    NSLog(
-          @"\
-          \n/********设备信息********/\
-          \n程序类型:%@\
-          \n设备名称:%@\
-          \n设备ID:%@\
-          \n当前设备模型:%@\
-          \n设备模型:%@\
-          \n具体设备:%@\
-          \n版本:%@\
-          \nCPU:%@\
-          \n磁盘:%@\
-          \n内存:%u\
-          \n分辨率:%@\
-          \n/********系统信息********/\
-          \n操作系统:%@\
-          \n操作系统版本:%@\
-          \n是否越狱:%@\
-          \n应用程序个数:%@\
-          \n歌曲首数:%@\
-          \n/********网络信息********/\
-          \n是否为飞行模式:%@\
-          \n主机名称:%@\
-          \n当前网络连接状态:%@\
-          \n当前网络方式:%@\
-          \n网关IP地址:%@\
-          \nDNS IP地址:%@\
-          \nDHCP IP地址:%@\
-          \nMac地址:%@\
-          \nIP地址v4:%@\
-          \nIP地址v6:%@\
-          \n子网掩码:%@\
-          \n/**********************/\
-          \n本软件版本:%@\
-          ",
-          [self IsiPhoneSystem]?@"iPhone":@"iPad",
-          self.DeviceName,
-          self.DeviceID,
-          self.LocalizedModel,
-          self.Model,
-          [self deviceStringInfo],
-          self.ShortVersion,
-          @"",
-          @"",
-          [self getTotalMemory],//@"",
-          [self getScreenSize],
-          //
-          self.SystemName,
-          self.SystemVersion,
-          [self isJailbroken]?@"是":@"否",
-          @"",
-          @"",
-          //
-          @"否",
-          [self hostname],
-          @"可用",
-          [self IsEnableWifi]?@"WIFI":[self IsEnable3G]?@"3G/GPRS":@"无网络",//@"wifi",
-          @"127.0.0.1",
-          @"127.0.0.1",
-          @"127.0.0.1",
-          [self macaddress],//@"8c-7c-2a-5b",
-          [self localIPAddress],//[self getIPAddressForHost],//[self localWiFiIPAddress],//[self whatismyipdotcom],//@"127.0.0.1",
-          [self getAddress],
-          @"255.255.255.0"
-          //
-          );
-        NSLog(@"device = %@",[self deviceStringInfo]);
-//    [self getThreadSize];
-//        //获取系统info.plist文件中的键值对
-//        NSDictionary *infoDict = [[NSBundle mainBundle] infoDictionary];
-//        //获取软件的版本号
-//        NSString *version = [infoDict objectForKey:@"CFBundleVersion"];
-//        NSLog(@"版本号是=%@",version);
-//
-//        //打印系统plist中所有的键值对
-//        for (id key in infoDict) {
-//            NSLog(@"key:%@,value:%@",key,[infoDict objectForKey:key]);
-//        }
-}
+
+
+
 
 //- (void)dealloc
 //{

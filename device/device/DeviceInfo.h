@@ -15,8 +15,8 @@
 	NSString * SystemName;		//iPhone OS
 	NSString * SystemVersion;	//4.2
 	NSString * Model;			//iPhone Simulator
-    NSString * Version;         //软件版本1.0.0
-    NSString * ShortVersion;    //软件版本1.0.0
+    NSString * Version;         //软件版本1.1.0
+    NSString * ShortVersion;    //软件版本1.1
     NSString * DeviceName;      //设备名称
 }
 
