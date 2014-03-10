@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EDA36CDC18CD9A6D00C4DDBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDA36CDB18CD9A6D00C4DDBA /* Foundation.framework */; };
+		EDA36CDE18CD9A6D00C4DDBA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDA36CDD18CD9A6D00C4DDBA /* CoreGraphics.framework */; };
+		EDA36CE018CD9A6D00C4DDBA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDA36CDF18CD9A6D00C4DDBA /* UIKit.framework */; };
+		EDA36CE618CD9A6D00C4DDBA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EDA36CE418CD9A6D00C4DDBA /* InfoPlist.strings */; };
+		EDA36CE818CD9A6D00C4DDBA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA36CE718CD9A6D00C4DDBA /* main.m */; };
+		EDA36CEC18CD9A6D00C4DDBA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA36CEB18CD9A6D00C4DDBA /* AppDelegate.m */; };
+		EDA36CEF18CD9A6D00C4DDBA /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDA36CED18CD9A6D00C4DDBA /* Main_iPhone.storyboard */; };
+		EDA36CF218CD9A6D00C4DDBA /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDA36CF018CD9A6D00C4DDBA /* Main_iPad.storyboard */; };
+		EDA36CF518CD9A6D00C4DDBA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA36CF418CD9A6D00C4DDBA /* ViewController.m */; };
+		EDA36CF718CD9A6D00C4DDBA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDA36CF618CD9A6D00C4DDBA /* Images.xcassets */; };
+		EDA36CFE18CD9A6D00C4DDBA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDA36CFD18CD9A6D00C4DDBA /* XCTest.framework */; };
+		EDA36CFF18CD9A6D00C4DDBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDA36CDB18CD9A6D00C4DDBA /* Foundation.framework */; };
+		EDA36D0018CD9A6D00C4DDBA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDA36CDF18CD9A6D00C4DDBA /* UIKit.framework */; };
+		EDA36D0818CD9A6D00C4DDBA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EDA36D0618CD9A6D00C4DDBA /* InfoPlist.strings */; };
+		EDA36D0A18CD9A6D00C4DDBA /* tagCloudTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA36D0918CD9A6D00C4DDBA /* tagCloudTests.m */; };
+		EDA36D2918CDAF7400C4DDBA /* tagcanvas-example.html in Resources */ = {isa = PBXBuildFile; fileRef = EDA36D2618CDAF7400C4DDBA /* tagcanvas-example.html */; };
+		EDA36D3818CDC67100C4DDBA /* 1.html in Resources */ = {isa = PBXBuildFile; fileRef = EDA36D3618CDC67100C4DDBA /* 1.html */; };
+		EDA36D3A18CDC69600C4DDBA /* 222.js in Resources */ = {isa = PBXBuildFile; fileRef = EDA36D3718CDC67100C4DDBA /* 222.js */; };
+		EDA36D3B18CDC9B600C4DDBA /* tagcanvas.min.js in Resources */ = {isa = PBXBuildFile; fileRef = EDA36D2718CDAF7400C4DDBA /* tagcanvas.min.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EDA36D0118CD9A6D00C4DDBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDA36CD018CD9A6D00C4DDBA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDA36CD718CD9A6D00C4DDBA;
+			remoteInfo = tagCloud;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EDA36CD818CD9A6D00C4DDBA /* tagCloud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tagCloud.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDA36CDB18CD9A6D00C4DDBA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EDA36CDD18CD9A6D00C4DDBA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EDA36CDF18CD9A6D00C4DDBA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EDA36CE318CD9A6D00C4DDBA /* tagCloud-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "tagCloud-Info.plist"; sourceTree = "<group>"; };
+		EDA36CE518CD9A6D00C4DDBA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EDA36CE718CD9A6D00C4DDBA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EDA36CE918CD9A6D00C4DDBA /* tagCloud-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "tagCloud-Prefix.pch"; sourceTree = "<group>"; };
+		EDA36CEA18CD9A6D00C4DDBA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EDA36CEB18CD9A6D00C4DDBA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EDA36CEE18CD9A6D00C4DDBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		EDA36CF118CD9A6D00C4DDBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		EDA36CF318CD9A6D00C4DDBA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EDA36CF418CD9A6D00C4DDBA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EDA36CF618CD9A6D00C4DDBA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EDA36CFC18CD9A6D00C4DDBA /* tagCloudTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tagCloudTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDA36CFD18CD9A6D00C4DDBA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		EDA36D0518CD9A6D00C4DDBA /* tagCloudTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "tagCloudTests-Info.plist"; sourceTree = "<group>"; };
+		EDA36D0718CD9A6D00C4DDBA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EDA36D0918CD9A6D00C4DDBA /* tagCloudTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tagCloudTests.m; sourceTree = "<group>"; };
+		EDA36D2618CDAF7400C4DDBA /* tagcanvas-example.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "tagcanvas-example.html"; sourceTree = "<group>"; };
+		EDA36D2718CDAF7400C4DDBA /* tagcanvas.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = tagcanvas.min.js; sourceTree = "<group>"; };
+		EDA36D3618CDC67100C4DDBA /* 1.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = 1.html; sourceTree = "<group>"; };
+		EDA36D3718CDC67100C4DDBA /* 222.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 222.js; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EDA36CD518CD9A6D00C4DDBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDA36CDE18CD9A6D00C4DDBA /* CoreGraphics.framework in Frameworks */,
+				EDA36CE018CD9A6D00C4DDBA /* UIKit.framework in Frameworks */,
+				EDA36CDC18CD9A6D00C4DDBA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDA36CF918CD9A6D00C4DDBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDA36CFE18CD9A6D00C4DDBA /* XCTest.framework in Frameworks */,
+				EDA36D0018CD9A6D00C4DDBA /* UIKit.framework in Frameworks */,
+				EDA36CFF18CD9A6D00C4DDBA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EDA36CCF18CD9A6D00C4DDBA = {
+			isa = PBXGroup;
+			children = (
+				EDA36CE118CD9A6D00C4DDBA /* tagCloud */,
+				EDA36D0318CD9A6D00C4DDBA /* tagCloudTests */,
+				EDA36CDA18CD9A6D00C4DDBA /* Frameworks */,
+				EDA36CD918CD9A6D00C4DDBA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EDA36CD918CD9A6D00C4DDBA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDA36CD818CD9A6D00C4DDBA /* tagCloud.app */,
+				EDA36CFC18CD9A6D00C4DDBA /* tagCloudTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDA36CDA18CD9A6D00C4DDBA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EDA36CDB18CD9A6D00C4DDBA /* Foundation.framework */,
+				EDA36CDD18CD9A6D00C4DDBA /* CoreGraphics.framework */,
+				EDA36CDF18CD9A6D00C4DDBA /* UIKit.framework */,
+				EDA36CFD18CD9A6D00C4DDBA /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EDA36CE118CD9A6D00C4DDBA /* tagCloud */ = {
+			isa = PBXGroup;
+			children = (
+				EDA36D3618CDC67100C4DDBA /* 1.html */,
+				EDA36D3718CDC67100C4DDBA /* 222.js */,
+				EDA36D2618CDAF7400C4DDBA /* tagcanvas-example.html */,
+				EDA36D2718CDAF7400C4DDBA /* tagcanvas.min.js */,
+				EDA36CEA18CD9A6D00C4DDBA /* AppDelegate.h */,
+				EDA36CEB18CD9A6D00C4DDBA /* AppDelegate.m */,
+				EDA36CED18CD9A6D00C4DDBA /* Main_iPhone.storyboard */,
+				EDA36CF018CD9A6D00C4DDBA /* Main_iPad.storyboard */,
+				EDA36CF318CD9A6D00C4DDBA /* ViewController.h */,
+				EDA36CF418CD9A6D00C4DDBA /* ViewController.m */,
+				EDA36CF618CD9A6D00C4DDBA /* Images.xcassets */,
+				EDA36CE218CD9A6D00C4DDBA /* Supporting Files */,
+			);
+			path = tagCloud;
+			sourceTree = "<group>";
+		};
+		EDA36CE218CD9A6D00C4DDBA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EDA36CE318CD9A6D00C4DDBA /* tagCloud-Info.plist */,
+				EDA36CE418CD9A6D00C4DDBA /* InfoPlist.strings */,
+				EDA36CE718CD9A6D00C4DDBA /* main.m */,
+				EDA36CE918CD9A6D00C4DDBA /* tagCloud-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EDA36D0318CD9A6D00C4DDBA /* tagCloudTests */ = {
+			isa = PBXGroup;
+			children = (
+				EDA36D0918CD9A6D00C4DDBA /* tagCloudTests.m */,
+				EDA36D0418CD9A6D00C4DDBA /* Supporting Files */,
+			);
+			path = tagCloudTests;
+			sourceTree = "<group>";
+		};
+		EDA36D0418CD9A6D00C4DDBA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EDA36D0518CD9A6D00C4DDBA /* tagCloudTests-Info.plist */,
+				EDA36D0618CD9A6D00C4DDBA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EDA36CD718CD9A6D00C4DDBA /* tagCloud */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDA36D0D18CD9A6D00C4DDBA /* Build configuration list for PBXNativeTarget "tagCloud" */;
+			buildPhases = (
+				EDA36CD418CD9A6D00C4DDBA /* Sources */,
+				EDA36CD518CD9A6D00C4DDBA /* Frameworks */,
+				EDA36CD618CD9A6D00C4DDBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tagCloud;
+			productName = tagCloud;
+			productReference = EDA36CD818CD9A6D00C4DDBA /* tagCloud.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EDA36CFB18CD9A6D00C4DDBA /* tagCloudTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDA36D1018CD9A6D00C4DDBA /* Build configuration list for PBXNativeTarget "tagCloudTests" */;
+			buildPhases = (
+				EDA36CF818CD9A6D00C4DDBA /* Sources */,
+				EDA36CF918CD9A6D00C4DDBA /* Frameworks */,
+				EDA36CFA18CD9A6D00C4DDBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDA36D0218CD9A6D00C4DDBA /* PBXTargetDependency */,
+			);
+			name = tagCloudTests;
+			productName = tagCloudTests;
+			productReference = EDA36CFC18CD9A6D00C4DDBA /* tagCloudTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EDA36CD018CD9A6D00C4DDBA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = dxd;
+				TargetAttributes = {
+					EDA36CFB18CD9A6D00C4DDBA = {
+						TestTargetID = EDA36CD718CD9A6D00C4DDBA;
+					};
+				};
+			};
+			buildConfigurationList = EDA36CD318CD9A6D00C4DDBA /* Build configuration list for PBXProject "tagCloud" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EDA36CCF18CD9A6D00C4DDBA;
+			productRefGroup = EDA36CD918CD9A6D00C4DDBA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EDA36CD718CD9A6D00C4DDBA /* tagCloud */,
+				EDA36CFB18CD9A6D00C4DDBA /* tagCloudTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EDA36CD618CD9A6D00C4DDBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDA36D3B18CDC9B600C4DDBA /* tagcanvas.min.js in Resources */,
+				EDA36D3A18CDC69600C4DDBA /* 222.js in Resources */,
+				EDA36D3818CDC67100C4DDBA /* 1.html in Resources */,
+				EDA36CF218CD9A6D00C4DDBA /* Main_iPad.storyboard in Resources */,
+				EDA36CF718CD9A6D00C4DDBA /* Images.xcassets in Resources */,
+				EDA36CEF18CD9A6D00C4DDBA /* Main_iPhone.storyboard in Resources */,
+				EDA36D2918CDAF7400C4DDBA /* tagcanvas-example.html in Resources */,
+				EDA36CE618CD9A6D00C4DDBA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDA36CFA18CD9A6D00C4DDBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDA36D0818CD9A6D00C4DDBA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EDA36CD418CD9A6D00C4DDBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDA36CF518CD9A6D00C4DDBA /* ViewController.m in Sources */,
+				EDA36CEC18CD9A6D00C4DDBA /* AppDelegate.m in Sources */,
+				EDA36CE818CD9A6D00C4DDBA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDA36CF818CD9A6D00C4DDBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDA36D0A18CD9A6D00C4DDBA /* tagCloudTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EDA36D0218CD9A6D00C4DDBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDA36CD718CD9A6D00C4DDBA /* tagCloud */;
+			targetProxy = EDA36D0118CD9A6D00C4DDBA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EDA36CE418CD9A6D00C4DDBA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDA36CE518CD9A6D00C4DDBA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EDA36CED18CD9A6D00C4DDBA /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDA36CEE18CD9A6D00C4DDBA /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		EDA36CF018CD9A6D00C4DDBA /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDA36CF118CD9A6D00C4DDBA /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		EDA36D0618CD9A6D00C4DDBA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDA36D0718CD9A6D00C4DDBA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EDA36D0B18CD9A6D00C4DDBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EDA36D0C18CD9A6D00C4DDBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EDA36D0E18CD9A6D00C4DDBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "tagCloud/tagCloud-Prefix.pch";
+				INFOPLIST_FILE = "tagCloud/tagCloud-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EDA36D0F18CD9A6D00C4DDBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "tagCloud/tagCloud-Prefix.pch";
+				INFOPLIST_FILE = "tagCloud/tagCloud-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EDA36D1118CD9A6D00C4DDBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/tagCloud.app/tagCloud";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "tagCloud/tagCloud-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "tagCloudTests/tagCloudTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		EDA36D1218CD9A6D00C4DDBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/tagCloud.app/tagCloud";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "tagCloud/tagCloud-Prefix.pch";
+				INFOPLIST_FILE = "tagCloudTests/tagCloudTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EDA36CD318CD9A6D00C4DDBA /* Build configuration list for PBXProject "tagCloud" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDA36D0B18CD9A6D00C4DDBA /* Debug */,
+				EDA36D0C18CD9A6D00C4DDBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDA36D0D18CD9A6D00C4DDBA /* Build configuration list for PBXNativeTarget "tagCloud" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDA36D0E18CD9A6D00C4DDBA /* Debug */,
+				EDA36D0F18CD9A6D00C4DDBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDA36D1018CD9A6D00C4DDBA /* Build configuration list for PBXNativeTarget "tagCloudTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDA36D1118CD9A6D00C4DDBA /* Debug */,
+				EDA36D1218CD9A6D00C4DDBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EDA36CD018CD9A6D00C4DDBA /* Project object */;
+}
