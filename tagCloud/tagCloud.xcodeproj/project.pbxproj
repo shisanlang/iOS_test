@@ -22,10 +22,10 @@
 		EDA36D0018CD9A6D00C4DDBA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDA36CDF18CD9A6D00C4DDBA /* UIKit.framework */; };
 		EDA36D0818CD9A6D00C4DDBA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EDA36D0618CD9A6D00C4DDBA /* InfoPlist.strings */; };
 		EDA36D0A18CD9A6D00C4DDBA /* tagCloudTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA36D0918CD9A6D00C4DDBA /* tagCloudTests.m */; };
-		EDA36D2918CDAF7400C4DDBA /* tagcanvas-example.html in Resources */ = {isa = PBXBuildFile; fileRef = EDA36D2618CDAF7400C4DDBA /* tagcanvas-example.html */; };
 		EDA36D3818CDC67100C4DDBA /* 1.html in Resources */ = {isa = PBXBuildFile; fileRef = EDA36D3618CDC67100C4DDBA /* 1.html */; };
 		EDA36D3A18CDC69600C4DDBA /* 222.js in Resources */ = {isa = PBXBuildFile; fileRef = EDA36D3718CDC67100C4DDBA /* 222.js */; };
-		EDA36D3B18CDC9B600C4DDBA /* tagcanvas.min.js in Resources */ = {isa = PBXBuildFile; fileRef = EDA36D2718CDAF7400C4DDBA /* tagcanvas.min.js */; };
+		EDA36D3E18CEBEC200C4DDBA /* tagcanvas-example.html in Resources */ = {isa = PBXBuildFile; fileRef = EDA36D3C18CEBEC200C4DDBA /* tagcanvas-example.html */; };
+		EDA36D3F18CEBEC200C4DDBA /* tagcanvas.min.js in Resources */ = {isa = PBXBuildFile; fileRef = EDA36D3D18CEBEC200C4DDBA /* tagcanvas.min.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,10 +59,10 @@
 		EDA36D0518CD9A6D00C4DDBA /* tagCloudTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "tagCloudTests-Info.plist"; sourceTree = "<group>"; };
 		EDA36D0718CD9A6D00C4DDBA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EDA36D0918CD9A6D00C4DDBA /* tagCloudTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tagCloudTests.m; sourceTree = "<group>"; };
-		EDA36D2618CDAF7400C4DDBA /* tagcanvas-example.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "tagcanvas-example.html"; sourceTree = "<group>"; };
-		EDA36D2718CDAF7400C4DDBA /* tagcanvas.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = tagcanvas.min.js; sourceTree = "<group>"; };
 		EDA36D3618CDC67100C4DDBA /* 1.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = 1.html; sourceTree = "<group>"; };
 		EDA36D3718CDC67100C4DDBA /* 222.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 222.js; sourceTree = "<group>"; };
+		EDA36D3C18CEBEC200C4DDBA /* tagcanvas-example.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "tagcanvas-example.html"; sourceTree = "<group>"; };
+		EDA36D3D18CEBEC200C4DDBA /* tagcanvas.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = tagcanvas.min.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,10 +122,10 @@
 		EDA36CE118CD9A6D00C4DDBA /* tagCloud */ = {
 			isa = PBXGroup;
 			children = (
+				EDA36D3C18CEBEC200C4DDBA /* tagcanvas-example.html */,
+				EDA36D3D18CEBEC200C4DDBA /* tagcanvas.min.js */,
 				EDA36D3618CDC67100C4DDBA /* 1.html */,
 				EDA36D3718CDC67100C4DDBA /* 222.js */,
-				EDA36D2618CDAF7400C4DDBA /* tagcanvas-example.html */,
-				EDA36D2718CDAF7400C4DDBA /* tagcanvas.min.js */,
 				EDA36CEA18CD9A6D00C4DDBA /* AppDelegate.h */,
 				EDA36CEB18CD9A6D00C4DDBA /* AppDelegate.m */,
 				EDA36CED18CD9A6D00C4DDBA /* Main_iPhone.storyboard */,
@@ -243,13 +243,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDA36D3B18CDC9B600C4DDBA /* tagcanvas.min.js in Resources */,
+				EDA36D3F18CEBEC200C4DDBA /* tagcanvas.min.js in Resources */,
+				EDA36D3E18CEBEC200C4DDBA /* tagcanvas-example.html in Resources */,
 				EDA36D3A18CDC69600C4DDBA /* 222.js in Resources */,
 				EDA36D3818CDC67100C4DDBA /* 1.html in Resources */,
 				EDA36CF218CD9A6D00C4DDBA /* Main_iPad.storyboard in Resources */,
 				EDA36CF718CD9A6D00C4DDBA /* Images.xcassets in Resources */,
 				EDA36CEF18CD9A6D00C4DDBA /* Main_iPhone.storyboard in Resources */,
-				EDA36D2918CDAF7400C4DDBA /* tagcanvas-example.html in Resources */,
 				EDA36CE618CD9A6D00C4DDBA /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
