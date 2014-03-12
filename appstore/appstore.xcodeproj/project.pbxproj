@@ -24,6 +24,7 @@
 		CE95E84513DFB58D00C3438F /* appstoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE95E84413DFB58D00C3438F /* appstoreTests.m */; };
 		E382A94E16F2FF89003B219A /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E382A94D16F2FF89003B219A /* StoreKit.framework */; };
 		E382A95816F305E9003B219A /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E382A95716F305E9003B219A /* PassKit.framework */; };
+		ED2914CB18D03EBC00FAF0DD /* MyPass.pkpass in Resources */ = {isa = PBXBuildFile; fileRef = ED2914CA18D03EBC00FAF0DD /* MyPass.pkpass */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		E382A95516F30448003B219A /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		E382A95616F30449003B219A /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		E382A95716F305E9003B219A /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
+		ED2914CA18D03EBC00FAF0DD /* MyPass.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; path = MyPass.pkpass; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 		CE95E81B13DFB58C00C3438F /* appstore */ = {
 			isa = PBXGroup;
 			children = (
+				ED2914CA18D03EBC00FAF0DD /* MyPass.pkpass */,
 				CE95E82413DFB58C00C3438F /* appstoreAppDelegate.h */,
 				CE95E82513DFB58C00C3438F /* appstoreAppDelegate.m */,
 				CE95E82713DFB58C00C3438F /* MainWindow.xib */,
@@ -245,6 +248,7 @@
 			files = (
 				CE95E82013DFB58C00C3438F /* InfoPlist.strings in Resources */,
 				CE95E82913DFB58C00C3438F /* MainWindow.xib in Resources */,
+				ED2914CB18D03EBC00FAF0DD /* MyPass.pkpass in Resources */,
 				CE95E82F13DFB58D00C3438F /* RootViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,7 +366,7 @@
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "FF2BB495-3528-4EEF-AD72-294A74329D76";
 				SDKROOT = iphoneos;
 			};
@@ -377,7 +381,7 @@
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 			};
@@ -387,12 +391,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Liu Bing (MMS9337JP5)";
+				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "appstore/appstore-Prefix.pch";
+				GCC_VERSION = "";
 				INFOPLIST_FILE = "appstore/appstore-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LIBRARY_SEARCH_PATHS = (
@@ -400,7 +406,7 @@
 					"\"$(SRCROOT)/appstore/SDKExport\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "FF2BB495-3528-4EEF-AD72-294A74329D76";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -409,10 +415,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_IDENTITY = "";
+				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "appstore/appstore-Prefix.pch";
+				GCC_VERSION = "";
 				INFOPLIST_FILE = "appstore/appstore-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LIBRARY_SEARCH_PATHS = (

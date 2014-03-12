@@ -63,6 +63,37 @@
     if (cell == nil) {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
     }
+    
+    switch (indexPath.row) {
+        case 0:
+            cell.textLabel.text = @"AppStore 下载(app内打开)";
+            break;
+        case 1:
+            cell.textLabel.text = @"AppStore 下载1";
+            break;
+        case 2:
+            cell.textLabel.text = @"AppStore 下载2";
+            break;
+        case 3:
+            cell.textLabel.text = @"评论1";
+            break;
+        case 4:
+            cell.textLabel.text = @"评论2";
+            break;
+        case 5:
+            cell.textLabel.text = @"PassBook";
+            break;
+        case 6:
+            cell.textLabel.text = @"微信";
+            break;
+        case 7:
+            cell.textLabel.text = @"";
+            break;
+            
+        default:
+            break;
+    }
+    
 
     // Configure the cell.
     return cell;
@@ -119,35 +150,61 @@
     [detailViewController release];
 	*/
     
-    
     // app store
-    /**
-    SKStoreProductViewController *skVC=[SKStoreProductViewController new];
-    skVC.delegate=self;
-    NSDictionary *dict = [NSDictionary dictionaryWithObject:@"573140028" forKey:SKStoreProductParameterITunesItemIdentifier];
-    [skVC loadProductWithParameters:dict completionBlock:nil];
-    [self presentViewController:skVC animated:YES completion:nil];
-    /**/
-    //@"395133418"  可在itunes的连接中找到
+    if (indexPath.row == 0) {
+        
+        /**/
+        SKStoreProductViewController *skVC=[SKStoreProductViewController new];
+        skVC.delegate=self;
+        NSDictionary *dict = [NSDictionary dictionaryWithObject:@"573140028" forKey:SKStoreProductParameterITunesItemIdentifier];
+        [skVC loadProductWithParameters:dict completionBlock:nil];
+        [self presentViewController:skVC animated:YES completion:nil];
+        /**/
+        //@"395133418"  可在itunes的连接中找到
+        
+    } else if (indexPath.row == 1) {
+        
+        NSString *iTunesLink = @"http://phobos.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=425583856&mt=8";
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:iTunesLink]];
+        
+    } else if (indexPath.row == 2) {
+        
+        NSString *iTunesLink = @"http://itunes.apple.com/cn/app/id425583856?mt=8";
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:iTunesLink]];
     
-    
+    //2 打开评论
+    } else if (indexPath.row == 3) {
+        
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"itms-apps://ax.itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=425583856"]];
+        
+    } else if (indexPath.row == 4) {
+        
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"itms-apps://phobos.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=425583856"]];
+        
     //passbook
-//    NSData *data = [NSData dataWithContentsOfURL:(NSURL *)passbookUrl];
-    /**
-    NSData *data=[[NSData alloc]initWithContentsOfFile:[self passPath]];
-    NSError *err;
-    PKPass *pass=[[PKPass alloc]initWithData:data error:&err];
-    if (!err) {
-        PKAddPassesViewController *vc=[[PKAddPassesViewController alloc]initWithPass:pass];
-        [vc setDelegate:self];
-        [self presentViewController:vc animated:YES completion:nil];
-    }
-    /**/
-    
+    } else if (indexPath.row == 5) {
+        
+//        NSURL * passbookUrl = [NSURL URLWithString:@"http://iyoapp.com/test/api/ios/passbook/example.php"];
+//        NSData *data = [NSData dataWithContentsOfURL:(NSURL *)passbookUrl];
+        /**/
+         NSData *data=[[NSData alloc]initWithContentsOfFile:[self passPath]];
+         NSError *err;
+         PKPass *pass=[[PKPass alloc]initWithData:data error:&err];
+         if (!err) {
+         PKAddPassesViewController *vc=[[PKAddPassesViewController alloc]initWithPass:pass];
+         [vc setDelegate:self];
+         [self presentViewController:vc animated:YES completion:nil];
+         }
+         /**/
+        
     //weixin
-    //http://weixin.qq.com/r/ZXV7dFbE92iIh0cXnyBB       robot_9
-    NSString *str = [NSString stringWithFormat:@"weixin://qr/%@",@"ZXV7dFbE92iIh0cXnyBB"];
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:str]];
+    } else if (indexPath.row == 6) {
+        
+        //http://weixin.qq.com/r/ZXV7dFbE92iIh0cXnyBB       robot_9
+        NSString *str = [NSString stringWithFormat:@"weixin://qr/%@",@"ZXV7dFbE92iIh0cXnyBB"];
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:str]];
+    }
+    
 }
 
 //app store

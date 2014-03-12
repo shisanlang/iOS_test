@@ -20,11 +20,6 @@
     // Override point for customization after application launch.
     // Add the navigation controller's view to the window and display.
     
-    // 1
-    //NSString *iTunesLink = @"http://phobos.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=425583856&mt=8";
-    
-//    NSString *iTunesLink = @"http://itunes.apple.com/cn/app/id425583856?mt=8";
-//    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:iTunesLink]];
     
     //2 打开评论
 //    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"itms-apps://ax.itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=425583856"]];
