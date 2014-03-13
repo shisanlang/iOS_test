@@ -18,6 +18,7 @@
 		E37A5ADB174CC1D60010A329 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E37A5ADA174CC1D60010A329 /* Default-568h@2x.png */; };
 		E37A5ADE174CC1D60010A329 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E37A5ADD174CC1D60010A329 /* ViewController.m */; };
 		E37A5AE1174CC1D60010A329 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E37A5ADF174CC1D60010A329 /* ViewController.xib */; };
+		EDFA194118D2233C004EFAEC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFA194018D2233C004EFAEC /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		E37A5ADC174CC1D60010A329 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		E37A5ADD174CC1D60010A329 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E37A5AE0174CC1D60010A329 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		EDFA194018D2233C004EFAEC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDFA194118D2233C004EFAEC /* AVFoundation.framework in Frameworks */,
 				E37A5AC5174CC1D60010A329 /* UIKit.framework in Frameworks */,
 				E37A5AC7174CC1D60010A329 /* Foundation.framework in Frameworks */,
 				E37A5AC9174CC1D60010A329 /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +76,7 @@
 		E37A5AC3174CC1D60010A329 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EDFA194018D2233C004EFAEC /* AVFoundation.framework */,
 				E37A5AC4174CC1D60010A329 /* UIKit.framework */,
 				E37A5AC6174CC1D60010A329 /* Foundation.framework */,
 				E37A5AC8174CC1D60010A329 /* CoreGraphics.framework */,
@@ -298,6 +302,7 @@
 				E37A5AE6174CC1D60010A329 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
