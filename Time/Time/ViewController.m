@@ -18,9 +18,33 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    //    NSArray *languages = [NSLocale preferredLanguages];
+    //    NSString *currentLanguage = [languages objectAtIndex:0];
+    
+    
+//    NSString * modified = @"2011-01-12 12:34:25";
+//    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+//    //[dateFormatter setLocale:[[[NSLocale alloc] initWithLocaleIdentifier:@"en_US"] autorelease]];
+//    [dateFormatter setTimeStyle:NSDateFormatterNoStyle];
+//    [dateFormatter setDateStyle:NSDateFormatterMediumStyle];
+//    [dateFormatter setTimeZone:[NSTimeZone timeZoneWithAbbreviation:@"UTC"]];
+//    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+//    NSDate *date4 = [dateFormatter dateFromString:modified];
+//    NSLog(@"date=%@",date4);
+
+    
     
     NSDateFormatter *formater = [[ NSDateFormatter alloc] init];
+//    [formater setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"en_US"]];
+//    [formater setLocale:[NSLocale currentLocale]];
+//    [formater setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"zh_CN"]];
+    [formater setTimeZone:[NSTimeZone timeZoneWithAbbreviation:@"UTC"]];//模拟器使用电脑时区
+//    NSTimeZone* timeZone2 = [NSTimeZone timeZoneWithName:@"Asia/Shanghai"];
+//    NSTimeZone* timeZone3 = [NSTimeZone localTimeZone];
+//    [formater setTimeZone:timeZone3];
+//    [formater setDateStyle:kCFDateFormatterFullStyle];
     [formater setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    
     NSDate *date=[formater dateFromString:@"2011-04-22 11:03:38"];
     NSLog(@"%@",date);
 
@@ -41,6 +65,28 @@
     NSTimeInterval secondsBetweenDates= [curDate2 timeIntervalSinceDate:yesterDay];
     NSLog(@"yesterDay = %@,%@",yesterDay,[curDate2 laterDate:yesterDay]);
     NSLog(@"secondsBetweenDates = %f,%f,%d", secondsBetweenDates, secondsPerDay, secondsBetweenDates>=secondsPerDay);
+    
+    
+    
+    
+    //时间戳 - now
+    NSDate* dat = [NSDate dateWithTimeIntervalSinceNow:0];
+    NSTimeInterval a=[dat timeIntervalSince1970];
+    NSString *timeString = [NSString stringWithFormat:@"%.0f", a];
+    NSLog(@"timestring = %@,%ld",timeString,(long)a);
+    
+    NSLog(@"%ld",time(NULL));
+    
+    
+    //ago  几天前 几周前
+    NSString * strTime = @"2013年12月22日 16:13";
+    NSDateFormatter *formaterAgo = [[ NSDateFormatter alloc] init];
+//    [formaterAgo setTimeStyle:timeZone];
+    [formaterAgo setDateFormat:@"yyyy年MM月dd日 HH:mm"];
+    NSDate * dateAgo = [formaterAgo dateFromString:strTime];
+    NSTimeInterval ago = [dateAgo timeIntervalSince1970];
+    NSString *timeString2 = [NSString stringWithFormat:@"%.0f", ago];
+    NSLog(@"ago = %@,%@",dateAgo,timeString2);
 }
 
 - (void)didReceiveMemoryWarning
