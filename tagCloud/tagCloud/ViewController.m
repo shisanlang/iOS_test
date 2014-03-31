@@ -57,6 +57,37 @@
     [iWebView loadRequest:request];
 }
 
+//- (void)webViewDidFinishLoad:(UIWebView *)webView {
+//    NSString * stringHotWord = @"document.getElementById('tags').innerHTML='<ul>";
+//    for (int i=0; i<(self.ArrayhotWord).count; i++) {
+//        stringHotWord = [NSString stringWithFormat:@"%@%@%@%@%@%@",
+//                         stringHotWord,
+//                         @"<li><a href=\"#?",
+//                         [self.ArrayhotWord objectAtIndex:i],
+//                         @"\" target=\"_blank\">",
+//                         [self.ArrayhotWord objectAtIndex:i],
+//                         @"</a></li>"];
+//    }
+//    stringHotWord = [NSString stringWithFormat:@"%@%@",stringHotWord,@"</ul>'"];
+//    [webView stringByEvaluatingJavaScriptFromString:stringHotWord];
+//    [webView stringByEvaluatingJavaScriptFromString:@"changeshape('hcylinder');"];
+//}
+//- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
+//{
+//    
+//    DLog(@"%@",request.URL.host);
+//    DLog(@"%@",request.URL.port);
+//    DLog(@"%@",request.URL.user);
+//    DLog(@"%@",request.URL.password);
+//    DLog(@"%@",request.URL.fragment);
+//    DLog(@"%@",request.URL.parameterString);
+//    DLog(@"query= %@",request.URL.query);
+//    DLog(@"%@",request.URL.relativePath);
+//    DLog(@"%@",request.URL.path);
+//    DLog(@"%@",request.URL.pathExtension);
+//    return YES;
+//}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
