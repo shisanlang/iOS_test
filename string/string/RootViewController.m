@@ -14,17 +14,17 @@
 
 - (void)viewDidLoad
 {
-//    NSString * str;
-//    NSLog(@"str = %u",[str hash]);
-//    NSLog(@"str = %@,%@",str==nil ? @"true" : @"false",str);
-//    if (str) {NSLog(@"str = ture");} else {NSLog(@"str = false");}
-//    NSLog(@"str = %@",str ? @"true" : @"false");
-//    str = @"";
-//    NSLog(@"str = %@",str ? @"true" : @"false");
-//    str = @"str";
-//    NSLog(@"str = %@",str ? @"true" : @"false");
-//    int num = 0;
-//    NSLog(@"num = %d",num ? 1 : 0);
+    NSString * str;
+    NSLog(@"str = %u",[str hash]);
+    NSLog(@"str = %@,%@",str==nil ? @"true" : @"false",str);
+    if (str) {NSLog(@"str2 = ture");} else {NSLog(@"str2 = false");}
+    NSLog(@"str = %@",str ? @"true" : @"false");
+    str = @"";
+    NSLog(@"str = %@",str ? @"true" : @"false");
+    str = @"str";
+    NSLog(@"str = %@",str ? @"true" : @"false");
+    int num = 0;
+    NSLog(@"num = %d",num ? 1 : 0);
     
 //    NSArray * ReviceDataArray = [ReviceData componentsSeparatedByString:@";"];
 

@@ -41,7 +41,7 @@
         NSLog(@"%@=%@",str,[dic objectForKey:str]);
     }
     
-    NSLog(@"dic=%d",[dic count]);
+    NSLog(@"dic count=%d",[dic count]);
     
     NSLog(@"dic=%@",[dic allValues]);
     
