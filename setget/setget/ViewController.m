@@ -20,7 +20,10 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     _userinfo = [[UserInfo alloc]initWithFrame:CGRectMake(10, 10, 100, 30)];
-    _userinfo.name
+    _userinfo.name = @"1";
+    _userinfo.name = @"1";
+    _userinfo.name = @"123";
+    NSLog(@"log = %@",_userinfo.name);
 }
 
 - (void)didReceiveMemoryWarning

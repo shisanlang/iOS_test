@@ -10,6 +10,8 @@
 
 @implementation UserInfo
 
+@synthesize name = _name;
+
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
@@ -25,14 +27,17 @@
     {
         [_name release];
         _name = [name retain];  //[name copy]
+        NSLog(@"set = %@",_name);
     }
 }
 
 
-- (NSString*)getName
+- (NSString*)name
 {
+    NSLog(@"get = %@", _name);
     return _name;
 }
+
 
 /*
 // Only override drawRect: if you perform custom drawing.
