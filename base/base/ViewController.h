@@ -16,6 +16,7 @@
 }
 
 @property(nonatomic,retain)NSString *user;
+@property(nonatomic,retain)NSString *name;
 
 
 

@@ -20,6 +20,8 @@
 		E389E0581760776000244328 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E389E0571760776000244328 /* Default.png */; };
 		E389E05A1760776D00244328 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E389E0591760776D00244328 /* Default@2x.png */; };
 		E389E05C1760777200244328 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E389E05B1760777200244328 /* Default-568h@2x.png */; };
+		EDA7CCA31924936200775140 /* test1.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDA7CCA21924936200775140 /* test1.xib */; };
+		EDA7CCA51924936B00775140 /* test2.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDA7CCA41924936B00775140 /* test2.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		E389E0571760776000244328 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		E389E0591760776D00244328 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		E389E05B1760777200244328 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		EDA7CCA21924936200775140 /* test1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = test1.xib; sourceTree = "<group>"; };
+		EDA7CCA41924936B00775140 /* test2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = test2.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,8 @@
 				E313BB49175EE92100AE4E52 /* ViewController.m */,
 				E313BB4B175EE92100AE4E52 /* ViewController.xib */,
 				E313BB37175EE92100AE4E52 /* Supporting Files */,
+				EDA7CCA21924936200775140 /* test1.xib */,
+				EDA7CCA41924936B00775140 /* test2.xib */,
 			);
 			path = xib;
 			sourceTree = "<group>";
@@ -167,10 +173,12 @@
 				E313BB3B175EE92100AE4E52 /* InfoPlist.strings in Resources */,
 				E313BB4D175EE92100AE4E52 /* ViewController.xib in Resources */,
 				E389E0541760771900244328 /* Icon.png in Resources */,
+				EDA7CCA31924936200775140 /* test1.xib in Resources */,
 				E389E0561760771F00244328 /* Icon@2x.png in Resources */,
 				E389E0581760776000244328 /* Default.png in Resources */,
 				E389E05A1760776D00244328 /* Default@2x.png in Resources */,
 				E389E05C1760777200244328 /* Default-568h@2x.png in Resources */,
+				EDA7CCA51924936B00775140 /* test2.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

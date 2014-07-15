@@ -22,6 +22,7 @@
 		E3C6398117F13EDC00B1DD73 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E3C6397F17F13EDC00B1DD73 /* InfoPlist.strings */; };
 		E3C6398317F13EDC00B1DD73 /* locationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E3C6398217F13EDC00B1DD73 /* locationTests.m */; };
 		E3C6398D17F13F1900B1DD73 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3C6398C17F13F1900B1DD73 /* CoreLocation.framework */; };
+		EDD77DB3192A4389000CB99E /* 河北.gpx in Resources */ = {isa = PBXBuildFile; fileRef = EDD77DB2192A4389000CB99E /* 河北.gpx */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +46,6 @@
 		E3C6396517F13EDB00B1DD73 /* location-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "location-Prefix.pch"; sourceTree = "<group>"; };
 		E3C6396617F13EDB00B1DD73 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E3C6396717F13EDB00B1DD73 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E3C6396A17F13EDB00B1DD73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E3C6396C17F13EDB00B1DD73 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		E3C6396D17F13EDB00B1DD73 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E3C6396F17F13EDB00B1DD73 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -55,6 +55,13 @@
 		E3C6398017F13EDC00B1DD73 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E3C6398217F13EDC00B1DD73 /* locationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = locationTests.m; sourceTree = "<group>"; };
 		E3C6398C17F13F1900B1DD73 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		ED4633DC192E7E260003572D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		ED4633DD192E7E260003572D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		ED4633DE192E7E260003572D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		ED4633DF192E84B00003572D /* 北京.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "北京.gpx"; sourceTree = "<group>"; };
+		EDA486FB192B1EF3001B06E7 /* 上海.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "上海.gpx"; sourceTree = "<group>"; };
+		EDA486FC192B1F07001B06E7 /* 江苏.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "江苏.gpx"; sourceTree = "<group>"; };
+		EDD77DB2192A4389000CB99E /* 河北.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "河北.gpx"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +130,10 @@
 				E3C6396D17F13EDB00B1DD73 /* ViewController.m */,
 				E3C6396F17F13EDB00B1DD73 /* Images.xcassets */,
 				E3C6395E17F13EDB00B1DD73 /* Supporting Files */,
+				EDD77DB2192A4389000CB99E /* 河北.gpx */,
+				EDA486FC192B1F07001B06E7 /* 江苏.gpx */,
+				EDA486FB192B1EF3001B06E7 /* 上海.gpx */,
+				ED4633DF192E84B00003572D /* 北京.gpx */,
 			);
 			path = location;
 			sourceTree = "<group>";
@@ -215,6 +226,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = E3C6394B17F13EDB00B1DD73;
 			productRefGroup = E3C6395517F13EDB00B1DD73 /* Products */;
@@ -233,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3C6397017F13EDB00B1DD73 /* Images.xcassets in Resources */,
+				EDD77DB3192A4389000CB99E /* 河北.gpx in Resources */,
 				E3C6396217F13EDB00B1DD73 /* InfoPlist.strings in Resources */,
 				E3C6396B17F13EDB00B1DD73 /* Main.storyboard in Resources */,
 			);
@@ -282,6 +295,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				E3C6396117F13EDB00B1DD73 /* en */,
+				ED4633DD192E7E260003572D /* zh-Hans */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -289,7 +303,7 @@
 		E3C6396917F13EDB00B1DD73 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E3C6396A17F13EDB00B1DD73 /* Base */,
+				ED4633DC192E7E260003572D /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -298,6 +312,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				E3C6398017F13EDC00B1DD73 /* en */,
+				ED4633DE192E7E260003572D /* zh-Hans */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -464,6 +479,7 @@
 				E3C6398817F13EDC00B1DD73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E3C6398917F13EDC00B1DD73 /* Build configuration list for PBXNativeTarget "locationTests" */ = {
 			isa = XCConfigurationList;
@@ -472,6 +488,7 @@
 				E3C6398B17F13EDC00B1DD73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

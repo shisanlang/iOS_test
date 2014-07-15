@@ -23,6 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		ED160A5B19418AB700E84738 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		EDD76BC6193F805200806DF3 /* swift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = swift; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDD76BC9193F805200806DF3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				EDD76BC9193F805200806DF3 /* main.swift */,
+				ED160A5B19418AB700E84738 /* MyPlayground.playground */,
 			);
 			path = swift;
 			sourceTree = "<group>";
@@ -233,6 +235,7 @@
 				EDD76BCF193F805200806DF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

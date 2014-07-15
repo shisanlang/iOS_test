@@ -13,6 +13,9 @@
 
 @property(nonatomic,retain) UILabel * PlaceLabel;
 @property(nonatomic,retain) UILabel * PlaceLabel2;
+
+@property(nonatomic,retain) UILabel * PlaceLabel3;
+
 @property(nonatomic,retain) CLLocationManager *locationManager;
 
 @end

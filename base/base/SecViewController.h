@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface SecViewController : UIViewController
+{
+//    NSString * _aid;
+}
+
+@property(nonatomic,retain)NSString * aid;
 
 @end

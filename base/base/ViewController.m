@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "SecViewController.h"
 
 
 @interface ViewController ()
@@ -16,7 +17,7 @@
 @implementation ViewController
 
 @synthesize user=_user;//
-
+@synthesize name;
 
 - (void)viewDidLoad
 {
@@ -62,6 +63,21 @@
     
     int i=0x16;
     NSLog(@"i - 7 = %d",i - 7);
+    
+    
+    //21
+    name = @"dxd";
+    NSLog(@"name retaincount = %d",name.retainCount);
+    
+    
+    //
+    UIButton * but = [UIButton buttonWithType:UIButtonTypeCustom];
+    but.frame = CGRectMake(20, 100, 80, 20);
+    [but setTitle:@"but" forState:UIControlStateNormal];
+    [but addTarget:self action:@selector(butTouchUp) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:but];
+    
+    
 }
 
 //- (void)setUser:(NSString *)username
@@ -76,7 +92,13 @@
 //    return _user;
 //}
 
-
+- (void)butTouchUp
+{
+    SecViewController * secVC = [[SecViewController alloc]init];
+    secVC.aid = @"123";
+    [self.navigationController pushViewController:secVC animated:YES];
+    [secVC release];
+}
 
 - (void)didReceiveMemoryWarning
 {

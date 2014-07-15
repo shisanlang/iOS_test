@@ -106,6 +106,38 @@
     NSString * strCmp2 = [[NSString alloc]init];
     NSLog(@"strCmp = %d,%d",strCmp1 == @"",strCmp2 == @"");
     
+    //
+    NSString * str_1 = @"1.0.4";
+    NSString * str_2 = @"1.0.3";
+    NSString * str_3 = @"1.1.3";
+    NSString * str_4 = @"2.0";
+    if (str_1<str_2) {
+        NSLog(@"str_1<str_2");
+    } else {
+        NSLog(@"str_1>=str_2");
+    }
+    if (str_1>str_3) {
+        NSLog(@"str_1>str_3");
+    } else {
+        NSLog(@"str_1<=str_3");
+    }
+    if (str_1>str_4) {
+        NSLog(@"str_1>str_4");
+    } else {
+        NSLog(@"str_1<=str_4");
+    }
+    BOOL bo = NO;
+    NSLog(@"%d",bo);
+    bo = YES;
+    NSLog(@"%d",bo);
+    BOOL bOld = [str_2 compare:str_1 options:NSNumericSearch];
+    NSLog(@"bOld = %d",bOld);
+    if (bOld) {
+        NSLog(@"YES");
+    } else {
+        NSLog(@"NO");
+    }
+    
     [super viewDidLoad];
 }
 

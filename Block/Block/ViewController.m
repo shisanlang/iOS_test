@@ -37,6 +37,14 @@
     
     //2
     [self testAccessVariable];
+
+    
+    //3
+//    int x = 123;
+//    void (^printXAndY)(int) = ^(int y) {
+//        x = x + y; // error
+//        printf("%d %d\n", x, y);
+//    };
 }
 
 - (void)testAccessVariable

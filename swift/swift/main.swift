@@ -8,5 +8,8 @@
 
 import Foundation
 
+var name = "十三郎"
 println("Hello, World!")
+println(name);
 
+var a : Int = 3

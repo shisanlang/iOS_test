@@ -1,37 +1,21 @@
 //
 //  AppDelegate.m
-//  base
+//  gotopage
 //
-//  Created by duan on 13-6-8.
-//  Copyright (c) 2013年 duan. All rights reserved.
+//  Created by dxd on 14-7-14.
+//  Copyright (c) 2014年 dxd. All rights reserved.
 //
 
 #import "AppDelegate.h"
 
-#import "ViewController.h"
-
 @implementation AppDelegate
-
-- (void)dealloc
-{
-    [_window release];
-    [_viewController release];
-    [super dealloc];
-}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
-    
-    self.viewController = [[[ViewController alloc] initWithNibName:@"ViewController" bundle:nil] autorelease];
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:self.viewController];
-    self.window.rootViewController = nav;
-    [nav release];
-    [self.window makeKeyAndVisible];
     return YES;
 }
-
+							
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

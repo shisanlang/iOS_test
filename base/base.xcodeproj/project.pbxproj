@@ -18,6 +18,7 @@
 		E3EC3F311763355A0048F332 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E3EC3F301763355A0048F332 /* Default-568h@2x.png */; };
 		E3EC3F341763355A0048F332 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3EC3F331763355A0048F332 /* ViewController.m */; };
 		E3EC3F371763355A0048F332 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3EC3F351763355A0048F332 /* ViewController.xib */; };
+		EDA7CCA1192354A500775140 /* SecViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA7CCA0192354A500775140 /* SecViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		E3EC3F321763355A0048F332 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		E3EC3F331763355A0048F332 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E3EC3F361763355A0048F332 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		EDA7CC9F192354A500775140 /* SecViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecViewController.h; sourceTree = "<group>"; };
+		EDA7CCA0192354A500775140 /* SecViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				E3EC3F331763355A0048F332 /* ViewController.m */,
 				E3EC3F351763355A0048F332 /* ViewController.xib */,
 				E3EC3F211763355A0048F332 /* Supporting Files */,
+				EDA7CC9F192354A500775140 /* SecViewController.h */,
+				EDA7CCA0192354A500775140 /* SecViewController.m */,
 			);
 			path = base;
 			sourceTree = "<group>";
@@ -173,6 +178,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDA7CCA1192354A500775140 /* SecViewController.m in Sources */,
 				E3EC3F271763355A0048F332 /* main.m in Sources */,
 				E3EC3F2B1763355A0048F332 /* AppDelegate.m in Sources */,
 				E3EC3F341763355A0048F332 /* ViewController.m in Sources */,

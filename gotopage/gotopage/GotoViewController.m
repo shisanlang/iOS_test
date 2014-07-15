@@ -1,18 +1,18 @@
 //
-//  SecViewController.m
-//  base
+//  GotoViewController.m
+//  gotopage
 //
-//  Created by dxd on 14-5-14.
-//  Copyright (c) 2014年 duan. All rights reserved.
+//  Created by dxd on 14-7-14.
+//  Copyright (c) 2014年 dxd. All rights reserved.
 //
 
-#import "SecViewController.h"
+#import "GotoViewController.h"
 
-@interface SecViewController ()
+@interface GotoViewController ()
 
 @end
 
-@implementation SecViewController
+@implementation GotoViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,12 +27,6 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor whiteColor];
-    
-    UILabel * lable21 = [[UILabel alloc ]init];
-    lable21.frame = CGRectMake(50, 100, 100, 20);
-    lable21.text = [NSString stringWithFormat:@"页面2:%@",_aid];
-    [self.view addSubview:lable21];
 }
 
 - (void)didReceiveMemoryWarning
