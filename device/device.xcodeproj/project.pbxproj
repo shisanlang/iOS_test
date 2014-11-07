@@ -225,7 +225,7 @@
 			name = deviceTests;
 			productName = deviceTests;
 			productReference = CE3301EE145573250065D5C7 /* deviceTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 /* End PBXNativeTarget section */
 

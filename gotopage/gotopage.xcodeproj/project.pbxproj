@@ -399,6 +399,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "gotopage/gotopage-Prefix.pch";
 				INFOPLIST_FILE = "gotopage/gotopage-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -412,6 +413,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "gotopage/gotopage-Prefix.pch";
 				INFOPLIST_FILE = "gotopage/gotopage-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -476,6 +478,7 @@
 				ED04B1ED1973BC78003626A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ED04B1EE1973BC78003626A6 /* Build configuration list for PBXNativeTarget "gotopageTests" */ = {
 			isa = XCConfigurationList;
@@ -484,6 +487,7 @@
 				ED04B1F01973BC78003626A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

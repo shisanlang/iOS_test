@@ -13,11 +13,19 @@
 
 @end
 
+
 @implementation ViewController
             
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    NSArray * sortByArray = @[
+                              [NSString stringWithUTF8String:NR_CONST_SORT[0]],
+                              [NSString stringWithUTF8String:NR_CONST_SORT[1]],
+                              [NSString stringWithUTF8String:NR_CONST_SORT[2]]
+                              ];
+    
 }
 
 - (void)didReceiveMemoryWarning {

@@ -1,0 +1,48 @@
+PODS:
+  - AFNetworking (1.3.0)
+  - ISO8601DateFormatterValueTransformer (0.6.0):
+    - RKValueTransformers (~> 1.1.0)
+  - RestKit (0.23.3):
+    - RestKit/Core
+  - RestKit/Core (0.23.3):
+    - RestKit/CoreData
+    - RestKit/Network
+    - RestKit/ObjectMapping
+  - RestKit/CoreData (0.23.3):
+    - RestKit/ObjectMapping
+  - RestKit/Network (0.23.3):
+    - AFNetworking (~> 1.3.0)
+    - RestKit/ObjectMapping
+    - RestKit/Support
+    - SOCKit
+  - RestKit/ObjectMapping (0.23.3):
+    - ISO8601DateFormatterValueTransformer (~> 0.6.0)
+    - RestKit/Support
+    - RKValueTransformers (~> 1.1.0)
+  - RestKit/Support (0.23.3):
+    - TransitionKit (= 2.1.0)
+  - RKValueTransformers (1.1.0)
+  - SDWebImage (3.7.1):
+    - SDWebImage/Core
+  - SDWebImage/Core (3.7.1)
+  - SOCKit (1.1)
+  - SVProgressHUD (1.0)
+  - TransitionKit (2.1.0)
+
+DEPENDENCIES:
+  - AFNetworking (= 1.3.0)
+  - RestKit (~> 0.23.3)
+  - SDWebImage (~> 3.7.1)
+  - SVProgressHUD (~> 1.0)
+
+SPEC CHECKSUMS:
+  AFNetworking: 5c9ad4a4033a58dc7aa4680be246a5f19c09eb3d
+  ISO8601DateFormatterValueTransformer: a705384ea6531255258e25b6480ba1180db703a0
+  RestKit: 193a35cddae5198388977abaedad129f8acb978b
+  RKValueTransformers: b705e7b4651b9206b94600408462b74554bba969
+  SDWebImage: 116e88633b5b416ea0ca4b334a4ac59cf72dd38d
+  SOCKit: d8d0dd3688ae1026c12367570da8fa8e1a6980fb
+  SVProgressHUD: 5034c6e22b8c2ca3e09402e48d41ed0340aa1c50
+  TransitionKit: 6a6f3ddda38ae758778aa889dcb930e4f8d64edc
+
+COCOAPODS: 0.34.2

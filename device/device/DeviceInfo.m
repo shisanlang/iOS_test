@@ -33,7 +33,7 @@
 @synthesize SystemVersion;
 @synthesize Model;
 @synthesize Version;
-@synthesize ShortVersion;
+@synthesize BuildVersion;
 @synthesize DeviceName;
 
 #pragma mark init
@@ -82,8 +82,8 @@
                                 @"IP地址v6:", [self getAddress],
                                 @"子网掩码:", @"255.255.255.0",
                                 /********APP信息********/
-                                @"本软件版本(Build):", self.Version,     //1.1
-                                @"本软件版本(Version):", self.ShortVersion   //1.1.0
+                                @"本软件版本(Build):", self.BuildVersion,     //1.1
+                                @"本软件版本(Version):", self.Version   //1.1.0
                                 /**********************/
                                 
                                 ];
@@ -153,8 +153,8 @@
 	self.SystemName = [[UIDevice currentDevice]systemName];
 	self.SystemVersion = [[UIDevice currentDevice]systemVersion];
 	self.Model = [[UIDevice currentDevice]model];
-    self.Version = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"];
-    self.ShortVersion = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
+    self.Version = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
+    self.BuildVersion = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"];
 	self.DeviceName = [[UIDevice currentDevice] name];
 }
 

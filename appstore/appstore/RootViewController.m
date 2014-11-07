@@ -158,9 +158,28 @@
         skVC.delegate=self;
         NSDictionary *dict = [NSDictionary dictionaryWithObject:@"573140028" forKey:SKStoreProductParameterITunesItemIdentifier];
         [skVC loadProductWithParameters:dict completionBlock:nil];
-        [self presentViewController:skVC animated:YES completion:nil];
+        [self presentViewController:skVC animated:YES completion:nil];//放入completionBlock里，右上角就没有商店 按钮
         /**/
         //@"395133418"  可在itunes的连接中找到
+        
+        
+        //方法2
+//        NSString * appID = @"835609516";
+//        
+//        Class isAllow = NSClassFromString(@"SKStoreProductViewController");
+//        if (isAllow != nil) {
+//            SKStoreProductViewController *sKStoreProductViewController = [[SKStoreProductViewController alloc] init];
+//            //            [sKStoreProductViewController.view setFrame:CGRectMake(0, 200, 320, 200)];
+//            [sKStoreProductViewController setDelegate:self];
+//            [sKStoreProductViewController loadProductWithParameters:@{SKStoreProductParameterITunesItemIdentifier: appID}
+//                                                    completionBlock:^(BOOL result, NSError *error) {
+//                                                        if (result) {
+//                                                            [self presentViewController:sKStoreProductViewController animated:YES completion:nil];
+//                                                        }else{
+//                                                            NSLog(@"error:%@",error);
+//                                                        }
+//                                                    }];
+//        }
         
     } else if (indexPath.row == 1) {
         
