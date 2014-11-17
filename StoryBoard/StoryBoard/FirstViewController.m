@@ -17,6 +17,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    /*
+     CCCompeletViewController *compeletVc  = [self.storyboard instantiateViewControllerWithIdentifier:@"CompeletViewController"];
+     compeletVc.flag = 0;
+     [self.navigationController pushViewController:compeletVc animated:YES];
+     */
 }
 
 - (void)didReceiveMemoryWarning {
