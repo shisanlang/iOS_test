@@ -80,14 +80,14 @@
     
 	// Configure the cell.
     
-    if (indexPath.row==[SubItemList count]) {
+    if (indexPath.row==[SubItemList count] || NO) {
         static NSString *CellIdentifier = @"DataCellLast";
         
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
         if (cell == nil) {
             cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+            DLog(@"cell 1 create");
         }
-        
         
         LoadMoreLabel=[[UILabel alloc] initWithFrame:CGRectMake(0, 0, 320, 54)];
         LoadMoreLabel.text=@"点击加载更多...";
@@ -106,9 +106,11 @@
         CarServiceCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
         if (cell == nil) {
             cell = [[[CarServiceCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+            DLog(@"cell 2 create");
         }
+        DLog(@"cell 2 = %x", cell);
         
-//        cell.textLabel.text = [self.SubItemList objectAtIndex:indexPath.row];
+        cell.textLabel.text = [self.SubItemList objectAtIndex:indexPath.row];
         return cell;
     }
     
@@ -325,3 +327,21 @@
 }
 
 @end
+
+////table awakeFromNib
+////ios8分隔线1
+//if ([self respondsToSelector:@selector(setSeparatorInset:)]) {
+//    [self setSeparatorInset:UIEdgeInsetsZero];
+//}
+//if ([self respondsToSelector:@selector(setLayoutMargins:)]) {
+//    [self setLayoutMargins:UIEdgeInsetsZero];
+//}
+//
+////cell awakeFromNib
+////ios8分隔线2
+//if ([self respondsToSelector:@selector(setSeparatorInset:)]) {
+//    [self setSeparatorInset:UIEdgeInsetsZero];
+//}
+//if ([self respondsToSelector:@selector(setLayoutMargins:)]) {
+//    [self setLayoutMargins:UIEdgeInsetsZero];
+//}

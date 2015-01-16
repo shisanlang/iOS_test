@@ -9,7 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
-
+{
+    IBOutlet UIButton * goXibButton;
+    IBOutlet NSLayoutConstraint * labelLeftConstraint;
+    IBOutlet NSLayoutConstraint * labelWidthConstraint;
+}
 
 @end
 

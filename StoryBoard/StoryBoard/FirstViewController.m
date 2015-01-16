@@ -7,6 +7,7 @@
 //
 
 #import "FirstViewController.h"
+#import "XibViewController.h"
 
 @interface FirstViewController ()
 
@@ -22,6 +23,12 @@
      compeletVc.flag = 0;
      [self.navigationController pushViewController:compeletVc animated:YES];
      */
+    
+}
+
+- (IBAction)goXib:(id)sender {
+     XibViewController *xibVC = [[XibViewController alloc] initWithNibName:@"XibViewController" bundle:nil];
+    [self.navigationController pushViewController:xibVC animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

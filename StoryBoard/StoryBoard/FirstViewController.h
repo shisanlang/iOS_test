@@ -9,7 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface FirstViewController : UIViewController
-
+{
+    
+}
+- (IBAction)goXib:(id)sender;
 
 @end
 

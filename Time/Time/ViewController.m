@@ -78,6 +78,14 @@
     NSLog(@"%ld",time(NULL));
     
     
+    //时间戳  - 时间
+    NSDateFormatter *formaterI2T = [[ NSDateFormatter alloc] init];
+    [formaterI2T setDateFormat:@"yyyy年MM月dd日 HH:mm"];
+    NSDate *confromTimesp = [NSDate dateWithTimeIntervalSince1970:1296035591];
+    NSLog(@"1296035591  = %@",confromTimesp);
+    NSString *confromTimespStr = [formaterI2T stringFromDate:confromTimesp];
+    NSLog(@"confromTimespStr =  %@",confromTimespStr);
+    
     //ago  几天前 几周前
     NSString * strTime = @"2013年12月22日 16:13";
     NSDateFormatter *formaterAgo = [[ NSDateFormatter alloc] init];
