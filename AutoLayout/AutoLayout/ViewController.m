@@ -67,15 +67,11 @@
     NSLog(@"viewdic = %@",viewsDictionary);
     id label4_ho = [NSLayoutConstraint constraintsWithVisualFormat:@"[label3]-20-[label4]-20-|" options:0 metrics:nil views:viewsDictionary];
     [self.view addConstraints:label4_ho];
-    id label4_ve = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-[120-[label4(==label3)]" options:0 metrics:nil views:viewsDictionary];//120的80+40计算问题；120=label3.height问题
+    id label4_ve = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-120-[label4(==label3)]" options:0 metrics:nil views:viewsDictionary];//120的80+40计算问题；120=label3.height问题
     [self.view addConstraints:label4_ve];
     
-    
-    labelLeftConstraint  = [NSLayoutConstraint constraintWithItem:goXibButton attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeLeft multiplier:1 constant:10];
-    
-    labelWidthConstraint = [NSLayoutConstraint constraintWithItem:goXibButton attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1.0 constant:200];
-    //    [goXibButton layoutIfNeeded];
-    
+    labelWidthConstraint.constant = 300;
+    labelLeftConstraint.constant = 10;
 }
 
 - (void)didReceiveMemoryWarning {

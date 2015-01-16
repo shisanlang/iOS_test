@@ -10,7 +10,7 @@
 
 @interface ViewController : UIViewController
 {
-    IBOutlet UIButton * goXibButton;
+    IBOutlet UILabel * autolayoutLabel;
     IBOutlet NSLayoutConstraint * labelLeftConstraint;
     IBOutlet NSLayoutConstraint * labelWidthConstraint;
 }
