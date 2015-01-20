@@ -72,6 +72,47 @@
     return filename;
 }
 
+#pragma mark iOS 用其它应用打开文件
+- (IBAction)downloadDoc:(id)sender {
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    NSString *downloadFile = [documentsDirectory stringByAppendingPathComponent:@"test.docx"];
+    //    NSURL *bURL = [NSURL URLWithString:downloadFile relativeToURL:baseUrl];
+    if ([self downloadFile:@"http://iyoapp.com/test/files" :downloadFile]) {
+        //        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:USER_CONTRACT_INFO[@"download"]]];//[NSURL fileURLWithPath:downloadFile]
+        UIDocumentInteractionController * documentController = [UIDocumentInteractionController interactionControllerWithURL:[NSURL fileURLWithPath:downloadFile]];
+        
+        //        documentController.delegate = self;
+        documentController.UTI = @"com.microsoft.word.doc";
+        
+        [documentController presentOpenInMenuFromRect:CGRectMake(760, 20, 100, 100) inView:self.view animated:YES];
+    }
+    
+}
+//UTI:
+//https://developer.apple.com/library/mac/documentation/Miscellaneous/Reference/UTIRef/Articles/System-DeclaredUniformTypeIdentifiers.html
+
+-(BOOL)downloadFile:(NSString *)urlstr :(NSString *)savePath
+{
+    NSURL *url=[NSURL URLWithString:urlstr];
+    NSURLRequest *request=[NSURLRequest requestWithURL:url];
+    NSError *error=nil;
+    NSData *data = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:&error];
+    if([data length]>0)
+    {
+        NSLog(@"下载成功");
+        if([data writeToFile:savePath atomically:YES]){NSLog(@"保存成功");}
+        else{NSLog(@"保存失败");}
+        return YES;
+    }
+    else
+    {
+        NSLog(@"下载失败，失败原因：%@",error);
+        return NO;
+    }
+}
+
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
