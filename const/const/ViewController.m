@@ -25,7 +25,9 @@
                               [NSString stringWithUTF8String:NR_CONST_SORT[1]],
                               [NSString stringWithUTF8String:NR_CONST_SORT[2]]
                               ];
-    
+    NSLog(@"pi = %f",G_PI);
+    V_II = 13123;
+    NSLog(@"v_i = %d",V_II);
 }
 
 - (void)didReceiveMemoryWarning {

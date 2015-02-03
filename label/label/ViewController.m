@@ -49,9 +49,9 @@
         .size.height = 80
     };
     label2.frame = rect;
-    label2 = {
-        .backgroundColor = [UIColor redColor],
-    };
+//    label2 = {
+//        .backgroundColor = [UIColor redColor],
+//    };
     [self.view addSubview:label2];
 }
 

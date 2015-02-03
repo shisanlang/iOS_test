@@ -26,6 +26,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ED41E8A71A809CF300DD7594 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		ED41E8A81A80A17D00DD7594 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		ED76CC2919A5D7C00099D1D9 /* const.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = const.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED76CC2D19A5D7C00099D1D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED76CC2E19A5D7C00099D1D9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				ED76CC3619A5D7C00099D1D9 /* Main.storyboard */,
 				ED76CC3919A5D7C00099D1D9 /* Images.xcassets */,
 				ED76CC2C19A5D7C00099D1D9 /* Supporting Files */,
+				ED41E8A81A80A17D00DD7594 /* Header.h */,
 			);
 			path = const;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 			children = (
 				ED76CC2D19A5D7C00099D1D9 /* Info.plist */,
 				ED76CC2E19A5D7C00099D1D9 /* main.m */,
+				ED41E8A71A809CF300DD7594 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -334,6 +338,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = const/PrefixHeader.pch;
 				INFOPLIST_FILE = const/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -345,6 +352,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = const/PrefixHeader.pch;
 				INFOPLIST_FILE = const/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -406,6 +416,7 @@
 				ED76CC4B19A5D7C00099D1D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ED76CC4C19A5D7C00099D1D9 /* Build configuration list for PBXNativeTarget "constTests" */ = {
 			isa = XCConfigurationList;
@@ -414,6 +425,7 @@
 				ED76CC4E19A5D7C00099D1D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -24,6 +24,10 @@
     
     //
     NSLog(@"%d,%d,%d,%d",[@"" intValue],[@"null" intValue],[@"23df5" intValue],[@"abc43" intValue]);
+    
+    //去0 %.f
+    float i = 312.0102305600012345600;
+    NSLog(@"i = %@",[NSString stringWithFormat:@"%A",i]);
 }
 
 - (void)viewDidUnload
