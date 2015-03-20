@@ -82,8 +82,8 @@
                                 @"IP地址v6:", [self getAddress],
                                 @"子网掩码:", @"255.255.255.0",
                                 /********APP信息********/
-                                @"本软件版本(Build):", self.BuildVersion,     //1.1
-                                @"本软件版本(Version):", self.Version   //1.1.0
+                                @"本软件版本(Build):", self.BuildVersion,     //1.1.0
+                                @"本软件版本(Version):", self.Version   //1.1
                                 /**********************/
                                 
                                 ];

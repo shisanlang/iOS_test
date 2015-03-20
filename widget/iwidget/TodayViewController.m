@@ -36,6 +36,10 @@
     completionHandler(NCUpdateResultNewData);
 }
 
+- (UIEdgeInsets)widgetMarginInsetsForProposedMarginInsets:(UIEdgeInsets)defaultMarginInsets {
+    return UIEdgeInsetsZero;
+}
+
 - (IBAction)touchUp:(id)sender {
     [self.extensionContext openURL:[NSURL URLWithString:@"iwidget://"] completionHandler:^(BOOL isyes){}];
 }

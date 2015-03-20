@@ -553,6 +553,7 @@
 				ED6AAC081ABACB4B004C810A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ED6AAC091ABACB4B004C810A /* Build configuration list for PBXNativeTarget "widgetTests" */ = {
 			isa = XCConfigurationList;
@@ -561,6 +562,7 @@
 				ED6AAC0B1ABACB4B004C810A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ED6AAC1F1ABACB99004C810A /* Build configuration list for PBXNativeTarget "iwidget" */ = {
 			isa = XCConfigurationList;
@@ -569,6 +571,7 @@
 				ED6AAC211ABACB99004C810A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
