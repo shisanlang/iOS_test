@@ -1,0 +1,44 @@
+
+inputTextViewPlaceholder = [[UILabel alloc]initWithFrame:CGRectMake(13, 24, 297 ,90)];
+inputTextViewPlaceholder.backgroundColor = C_CLEAR_COLOR;
+inputTextViewPlaceholder.text = txtPlaceholder;
+inputTextViewPlaceholder.textColor = C_GRAY2_COLOR;
+inputTextViewPlaceholder.font = FONT_SB;
+inputTextViewPlaceholder.numberOfLines = 0;
+[self.view addSubview:inputTextViewPlaceholder];
+[inputTextViewPlaceholder release];
+
+self.inputTextView = [[[UITextView alloc] initWithFrame:CGRectMake(13, 24, 297 ,134)] autorelease];
+self.inputTextView.textColor = [UIColor blackColor];
+self.inputTextView.font = FONT_BS;
+self.inputTextView.delegate = self;//设置它的委托方法
+self.inputTextView.backgroundColor = C_CLEAR_COLOR;
+self.inputTextView.returnKeyType = UIReturnKeyDefault;//返回键的类型
+self.inputTextView.keyboardType = UIKeyboardTypeDefault;//键盘类型
+self.inputTextView.scrollEnabled = YES;//是否可以拖动
+[self.view addSubview: self.inputTextView];
+[self.inputTextView release];
+
+
+    
+
+- (void) textViewDidBeginEditing:(UITextView *)textView
+{
+    if ([textView.text isEqualToString:@""]) {
+        inputTextViewPlaceholder.text = txtPlaceholder;
+    } else {
+        inputTextViewPlaceholder.text = @"";
+    }
+}
+
+- (void)textViewDidChange:(UITextView *)textView
+{
+    if ([textView.text isEqualToString:@""]) {
+        inputTextViewPlaceholder.text = txtPlaceholder;
+    } else {
+        inputTextViewPlaceholder.text = @"";
+    }
+}
+
+
+
