@@ -54,35 +54,75 @@
         cirButton.backgroundColor = [self randomColor];
 //        cirButton.backgroundColor = [cirArray[i] objectForKey:@"color"];
         cirButton.frame = CGRectMake(0, 0, dia, dia);
-        cirButton.center = CGPointMake([self xNum:i], [self yNum:i]);
+//        cirButton.center = CGPointMake([self xNum:i], [self yNum:i]);
         [self.view addSubview:cirButton];
-        NSLog(@"%d=%f,%f",i,[self xNum:i], [self yNum:i]);
+        
+
+//        NSLog(@"第%d圈%d个",i,[self totalWithLap:i]);
+        NSLog(@"%d:第%d圈",i,[self numWithLap:i]);
+//        NSLog(@"%d=%f,%f",i,[self xNum:i], [self yNum:i]);
     }
 }
+
+//一圈几个
+- (int)totalWithLap:(int)n {
+    //    NSLog(@"%d",(i==0)?1:6*i);
+    return (n==0)?1:360/(60/pow(2, n));//根据角度算
+}
+//- (int)roundCout:(int)i {
+//
+//}
 
 //第几圈
-- (double)roundNum:(int)i {
-//        NSLog(@"%d = %f",i,[self roundNum:i]);
-    return (i+6-1)/6;  //A被除数，B除数。（A+B-1)/B
+- (int)numWithLap:(int)n {
+    int i = 0;
+    while (1) {
+        int b = [self totalWithLap:i];
+        n = n-[self totalWithLap:i];
+        if (n<0) {
+            break;
+        }
+        i++;
+    }
+    return i;
+//    return (i+6-1)/6;  //A被除数，B除数。（A+B-1)/B
 }
 
+//- (int)roundNum:(int)i {
+//
+//}
+
+
+
 //第几圈 第几个
-- (double)geNum:(int)n {
-    int cNum = 1;
-    for (int i=0; i<[self roundNum:n]; i++) {
-        cNum = cNum + [self roundNum:i]*6;
+- (int)gNum:(int)n {
+    NSLog(@"n = %d,%d,%d",n,[self numWithLap:n],[self geNum:[self numWithLap:n]] );
+    return (int)(n-[self geNum:[self numWithLap:n]-1]);
+}
+
+//之前圈几个
+- (int)geNum:(int)n {
+    int cNum = 0;
+    for (int i=0; i<n; i++) {//[self roundNum:n]
+        cNum = cNum + [self totalWithLap:i];//[self roundNum:i]*6;
     }
 //    NSLog(@"cnum %d= %d",n,cNum);
-    return cNum;
+    return (cNum<0)?0:cNum;
 }
 
 //度数
+- (double)radianNum:(int)i {
+    return M_PI*2/(6*[self geNum:i]);
+}
+
+//x y
 - (double)xNum:(int)i {
     if (i==0) {
         return cx;
     } else {
         //根据 度数，直径 求x,y
-        return cos(M_PI*2/(6*[self geNum:i])) * dia;
+        return [self radianNum:i]*360/M_PI;
+//        return cos([self radianNum:i]) * dia * (([self radianNum:i]>M_PI_2 && [self radianNum:i]<M_PI_2*3)?1:-1);
     }
 }
 
@@ -91,7 +131,7 @@
         return cy;
     } else {
         //根据 度数，直径 求x,y
-        return sin(M_PI*2/(6*[self geNum:i])) * dia;
+        return sin([self radianNum:i]) * dia * (([self radianNum:i]>M_PI_2 && [self radianNum:i]<M_PI_2*3)?1:-1);
     }
 }
 
