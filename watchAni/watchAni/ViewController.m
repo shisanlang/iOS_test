@@ -48,7 +48,7 @@
                            ];
     
     
-    for (int i=0; i<40; i++) {//cirArray.count
+    for (int i=0; i<50; i++) {//cirArray.count
         UIButton * cirButton = [UIButton buttonWithType:UIButtonTypeCustom];
         cirButton.tag = i;
         cirButton.backgroundColor = [self randomColor];
@@ -59,25 +59,21 @@
         
 
 //        NSLog(@"第%d圈%d个",i,[self totalWithLap:i]);
-        NSLog(@"%d:第%d圈",i,[self numWithLap:i]);
+//        NSLog(@"%d:第%d圈",i,[self numWithLap:i]);
+        NSLog(@"%d:第%d个",i,[self numPerLap:i]);
 //        NSLog(@"%d=%f,%f",i,[self xNum:i], [self yNum:i]);
     }
 }
 
 //一圈几个
 - (int)totalWithLap:(int)n {
-    //    NSLog(@"%d",(i==0)?1:6*i);
-    return (n==0)?1:360/(60/pow(2, n));//根据角度算
+    return (n==0)?1:360/(60/pow(2, n-1));//根据角度算
 }
-//- (int)roundCout:(int)i {
-//
-//}
 
 //第几圈
 - (int)numWithLap:(int)n {
     int i = 0;
     while (1) {
-        int b = [self totalWithLap:i];
         n = n-[self totalWithLap:i];
         if (n<0) {
             break;
@@ -85,16 +81,17 @@
         i++;
     }
     return i;
-//    return (i+6-1)/6;  //A被除数，B除数。（A+B-1)/B
 }
 
-//- (int)roundNum:(int)i {
-//
-//}
-
-
-
 //第几圈 第几个
+- (int)numPerLap:(int)n {
+    int lapNum = [self numWithLap:n]-1;
+    for (int i=0; i<lapNum; i++) {
+        n = n - [self totalWithLap:i];
+    }
+    return n;
+}
+
 - (int)gNum:(int)n {
     NSLog(@"n = %d,%d,%d",n,[self numWithLap:n],[self geNum:[self numWithLap:n]] );
     return (int)(n-[self geNum:[self numWithLap:n]-1]);
