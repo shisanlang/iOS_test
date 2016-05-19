@@ -7,68 +7,64 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EDF080881CE9E04100E1DB57 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF080871CE9E04100E1DB57 /* main.m */; };
-		EDF0808B1CE9E04100E1DB57 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF0808A1CE9E04100E1DB57 /* AppDelegate.m */; };
-		EDF0808E1CE9E04100E1DB57 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF0808D1CE9E04100E1DB57 /* ViewController.m */; };
-		EDF080911CE9E04100E1DB57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDF0808F1CE9E04100E1DB57 /* Main.storyboard */; };
-		EDF080931CE9E04100E1DB57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDF080921CE9E04100E1DB57 /* Assets.xcassets */; };
-		EDF080961CE9E04100E1DB57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDF080941CE9E04100E1DB57 /* LaunchScreen.storyboard */; };
-		EDF080A11CE9E04100E1DB57 /* SwiftBridgeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF080A01CE9E04100E1DB57 /* SwiftBridgeTests.m */; };
-		EDF080AC1CE9E04100E1DB57 /* SwiftBridgeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF080AB1CE9E04100E1DB57 /* SwiftBridgeUITests.m */; };
+		EDF080D01CED7BEF00E1DB57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF080CF1CED7BEF00E1DB57 /* AppDelegate.swift */; };
+		EDF080D21CED7BEF00E1DB57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF080D11CED7BEF00E1DB57 /* ViewController.swift */; };
+		EDF080D51CED7BEF00E1DB57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDF080D31CED7BEF00E1DB57 /* Main.storyboard */; };
+		EDF080D71CED7BEF00E1DB57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDF080D61CED7BEF00E1DB57 /* Assets.xcassets */; };
+		EDF080DA1CED7BEF00E1DB57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDF080D81CED7BEF00E1DB57 /* LaunchScreen.storyboard */; };
+		EDF080E51CED7BEF00E1DB57 /* SwiftBridgeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF080E41CED7BEF00E1DB57 /* SwiftBridgeTests.swift */; };
+		EDF080F01CED7BEF00E1DB57 /* SwiftBridgeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF080EF1CED7BEF00E1DB57 /* SwiftBridgeUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		EDF0809D1CE9E04100E1DB57 /* PBXContainerItemProxy */ = {
+		EDF080E11CED7BEF00E1DB57 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = EDF0807B1CE9E04100E1DB57 /* Project object */;
+			containerPortal = EDF080C41CED7BEF00E1DB57 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = EDF080821CE9E04100E1DB57;
+			remoteGlobalIDString = EDF080CB1CED7BEF00E1DB57;
 			remoteInfo = SwiftBridge;
 		};
-		EDF080A81CE9E04100E1DB57 /* PBXContainerItemProxy */ = {
+		EDF080EC1CED7BEF00E1DB57 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = EDF0807B1CE9E04100E1DB57 /* Project object */;
+			containerPortal = EDF080C41CED7BEF00E1DB57 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = EDF080821CE9E04100E1DB57;
+			remoteGlobalIDString = EDF080CB1CED7BEF00E1DB57;
 			remoteInfo = SwiftBridge;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EDF080831CE9E04100E1DB57 /* SwiftBridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftBridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EDF080871CE9E04100E1DB57 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		EDF080891CE9E04100E1DB57 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		EDF0808A1CE9E04100E1DB57 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EDF0808C1CE9E04100E1DB57 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EDF0808D1CE9E04100E1DB57 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		EDF080901CE9E04100E1DB57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		EDF080921CE9E04100E1DB57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EDF080951CE9E04100E1DB57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		EDF080971CE9E04100E1DB57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EDF0809C1CE9E04100E1DB57 /* SwiftBridgeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftBridgeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EDF080A01CE9E04100E1DB57 /* SwiftBridgeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwiftBridgeTests.m; sourceTree = "<group>"; };
-		EDF080A21CE9E04100E1DB57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EDF080A71CE9E04100E1DB57 /* SwiftBridgeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftBridgeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EDF080AB1CE9E04100E1DB57 /* SwiftBridgeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwiftBridgeUITests.m; sourceTree = "<group>"; };
-		EDF080AD1CE9E04100E1DB57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDF080CC1CED7BEF00E1DB57 /* SwiftBridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftBridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDF080CF1CED7BEF00E1DB57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EDF080D11CED7BEF00E1DB57 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EDF080D41CED7BEF00E1DB57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EDF080D61CED7BEF00E1DB57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EDF080D91CED7BEF00E1DB57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EDF080DB1CED7BEF00E1DB57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDF080E01CED7BEF00E1DB57 /* SwiftBridgeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftBridgeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDF080E41CED7BEF00E1DB57 /* SwiftBridgeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftBridgeTests.swift; sourceTree = "<group>"; };
+		EDF080E61CED7BEF00E1DB57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDF080EB1CED7BEF00E1DB57 /* SwiftBridgeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftBridgeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDF080EF1CED7BEF00E1DB57 /* SwiftBridgeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftBridgeUITests.swift; sourceTree = "<group>"; };
+		EDF080F11CED7BEF00E1DB57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		EDF080801CE9E04100E1DB57 /* Frameworks */ = {
+		EDF080C91CED7BEF00E1DB57 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EDF080991CE9E04100E1DB57 /* Frameworks */ = {
+		EDF080DD1CED7BEF00E1DB57 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EDF080A41CE9E04100E1DB57 /* Frameworks */ = {
+		EDF080E81CED7BEF00E1DB57 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -78,64 +74,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		EDF0807A1CE9E04100E1DB57 = {
+		EDF080C31CED7BEF00E1DB57 = {
 			isa = PBXGroup;
 			children = (
-				EDF080851CE9E04100E1DB57 /* SwiftBridge */,
-				EDF0809F1CE9E04100E1DB57 /* SwiftBridgeTests */,
-				EDF080AA1CE9E04100E1DB57 /* SwiftBridgeUITests */,
-				EDF080841CE9E04100E1DB57 /* Products */,
+				EDF080CE1CED7BEF00E1DB57 /* SwiftBridge */,
+				EDF080E31CED7BEF00E1DB57 /* SwiftBridgeTests */,
+				EDF080EE1CED7BEF00E1DB57 /* SwiftBridgeUITests */,
+				EDF080CD1CED7BEF00E1DB57 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		EDF080841CE9E04100E1DB57 /* Products */ = {
+		EDF080CD1CED7BEF00E1DB57 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EDF080831CE9E04100E1DB57 /* SwiftBridge.app */,
-				EDF0809C1CE9E04100E1DB57 /* SwiftBridgeTests.xctest */,
-				EDF080A71CE9E04100E1DB57 /* SwiftBridgeUITests.xctest */,
+				EDF080CC1CED7BEF00E1DB57 /* SwiftBridge.app */,
+				EDF080E01CED7BEF00E1DB57 /* SwiftBridgeTests.xctest */,
+				EDF080EB1CED7BEF00E1DB57 /* SwiftBridgeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EDF080851CE9E04100E1DB57 /* SwiftBridge */ = {
+		EDF080CE1CED7BEF00E1DB57 /* SwiftBridge */ = {
 			isa = PBXGroup;
 			children = (
-				EDF080891CE9E04100E1DB57 /* AppDelegate.h */,
-				EDF0808A1CE9E04100E1DB57 /* AppDelegate.m */,
-				EDF0808C1CE9E04100E1DB57 /* ViewController.h */,
-				EDF0808D1CE9E04100E1DB57 /* ViewController.m */,
-				EDF0808F1CE9E04100E1DB57 /* Main.storyboard */,
-				EDF080921CE9E04100E1DB57 /* Assets.xcassets */,
-				EDF080941CE9E04100E1DB57 /* LaunchScreen.storyboard */,
-				EDF080971CE9E04100E1DB57 /* Info.plist */,
-				EDF080861CE9E04100E1DB57 /* Supporting Files */,
+				EDF080CF1CED7BEF00E1DB57 /* AppDelegate.swift */,
+				EDF080D11CED7BEF00E1DB57 /* ViewController.swift */,
+				EDF080D31CED7BEF00E1DB57 /* Main.storyboard */,
+				EDF080D61CED7BEF00E1DB57 /* Assets.xcassets */,
+				EDF080D81CED7BEF00E1DB57 /* LaunchScreen.storyboard */,
+				EDF080DB1CED7BEF00E1DB57 /* Info.plist */,
 			);
 			path = SwiftBridge;
 			sourceTree = "<group>";
 		};
-		EDF080861CE9E04100E1DB57 /* Supporting Files */ = {
+		EDF080E31CED7BEF00E1DB57 /* SwiftBridgeTests */ = {
 			isa = PBXGroup;
 			children = (
-				EDF080871CE9E04100E1DB57 /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		EDF0809F1CE9E04100E1DB57 /* SwiftBridgeTests */ = {
-			isa = PBXGroup;
-			children = (
-				EDF080A01CE9E04100E1DB57 /* SwiftBridgeTests.m */,
-				EDF080A21CE9E04100E1DB57 /* Info.plist */,
+				EDF080E41CED7BEF00E1DB57 /* SwiftBridgeTests.swift */,
+				EDF080E61CED7BEF00E1DB57 /* Info.plist */,
 			);
 			path = SwiftBridgeTests;
 			sourceTree = "<group>";
 		};
-		EDF080AA1CE9E04100E1DB57 /* SwiftBridgeUITests */ = {
+		EDF080EE1CED7BEF00E1DB57 /* SwiftBridgeUITests */ = {
 			isa = PBXGroup;
 			children = (
-				EDF080AB1CE9E04100E1DB57 /* SwiftBridgeUITests.m */,
-				EDF080AD1CE9E04100E1DB57 /* Info.plist */,
+				EDF080EF1CED7BEF00E1DB57 /* SwiftBridgeUITests.swift */,
+				EDF080F11CED7BEF00E1DB57 /* Info.plist */,
 			);
 			path = SwiftBridgeUITests;
 			sourceTree = "<group>";
@@ -143,13 +128,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EDF080821CE9E04100E1DB57 /* SwiftBridge */ = {
+		EDF080CB1CED7BEF00E1DB57 /* SwiftBridge */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EDF080B01CE9E04100E1DB57 /* Build configuration list for PBXNativeTarget "SwiftBridge" */;
+			buildConfigurationList = EDF080F41CED7BEF00E1DB57 /* Build configuration list for PBXNativeTarget "SwiftBridge" */;
 			buildPhases = (
-				EDF0807F1CE9E04100E1DB57 /* Sources */,
-				EDF080801CE9E04100E1DB57 /* Frameworks */,
-				EDF080811CE9E04100E1DB57 /* Resources */,
+				EDF080C81CED7BEF00E1DB57 /* Sources */,
+				EDF080C91CED7BEF00E1DB57 /* Frameworks */,
+				EDF080CA1CED7BEF00E1DB57 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -157,68 +142,69 @@
 			);
 			name = SwiftBridge;
 			productName = SwiftBridge;
-			productReference = EDF080831CE9E04100E1DB57 /* SwiftBridge.app */;
+			productReference = EDF080CC1CED7BEF00E1DB57 /* SwiftBridge.app */;
 			productType = "com.apple.product-type.application";
 		};
-		EDF0809B1CE9E04100E1DB57 /* SwiftBridgeTests */ = {
+		EDF080DF1CED7BEF00E1DB57 /* SwiftBridgeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EDF080B31CE9E04100E1DB57 /* Build configuration list for PBXNativeTarget "SwiftBridgeTests" */;
+			buildConfigurationList = EDF080F71CED7BEF00E1DB57 /* Build configuration list for PBXNativeTarget "SwiftBridgeTests" */;
 			buildPhases = (
-				EDF080981CE9E04100E1DB57 /* Sources */,
-				EDF080991CE9E04100E1DB57 /* Frameworks */,
-				EDF0809A1CE9E04100E1DB57 /* Resources */,
+				EDF080DC1CED7BEF00E1DB57 /* Sources */,
+				EDF080DD1CED7BEF00E1DB57 /* Frameworks */,
+				EDF080DE1CED7BEF00E1DB57 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				EDF0809E1CE9E04100E1DB57 /* PBXTargetDependency */,
+				EDF080E21CED7BEF00E1DB57 /* PBXTargetDependency */,
 			);
 			name = SwiftBridgeTests;
 			productName = SwiftBridgeTests;
-			productReference = EDF0809C1CE9E04100E1DB57 /* SwiftBridgeTests.xctest */;
+			productReference = EDF080E01CED7BEF00E1DB57 /* SwiftBridgeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		EDF080A61CE9E04100E1DB57 /* SwiftBridgeUITests */ = {
+		EDF080EA1CED7BEF00E1DB57 /* SwiftBridgeUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EDF080B61CE9E04100E1DB57 /* Build configuration list for PBXNativeTarget "SwiftBridgeUITests" */;
+			buildConfigurationList = EDF080FA1CED7BEF00E1DB57 /* Build configuration list for PBXNativeTarget "SwiftBridgeUITests" */;
 			buildPhases = (
-				EDF080A31CE9E04100E1DB57 /* Sources */,
-				EDF080A41CE9E04100E1DB57 /* Frameworks */,
-				EDF080A51CE9E04100E1DB57 /* Resources */,
+				EDF080E71CED7BEF00E1DB57 /* Sources */,
+				EDF080E81CED7BEF00E1DB57 /* Frameworks */,
+				EDF080E91CED7BEF00E1DB57 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				EDF080A91CE9E04100E1DB57 /* PBXTargetDependency */,
+				EDF080ED1CED7BEF00E1DB57 /* PBXTargetDependency */,
 			);
 			name = SwiftBridgeUITests;
 			productName = SwiftBridgeUITests;
-			productReference = EDF080A71CE9E04100E1DB57 /* SwiftBridgeUITests.xctest */;
+			productReference = EDF080EB1CED7BEF00E1DB57 /* SwiftBridgeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		EDF0807B1CE9E04100E1DB57 /* Project object */ = {
+		EDF080C41CED7BEF00E1DB57 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = QianHai;
 				TargetAttributes = {
-					EDF080821CE9E04100E1DB57 = {
+					EDF080CB1CED7BEF00E1DB57 = {
 						CreatedOnToolsVersion = 7.3;
 					};
-					EDF0809B1CE9E04100E1DB57 = {
+					EDF080DF1CED7BEF00E1DB57 = {
 						CreatedOnToolsVersion = 7.3;
-						TestTargetID = EDF080821CE9E04100E1DB57;
+						TestTargetID = EDF080CB1CED7BEF00E1DB57;
 					};
-					EDF080A61CE9E04100E1DB57 = {
+					EDF080EA1CED7BEF00E1DB57 = {
 						CreatedOnToolsVersion = 7.3;
-						TestTargetID = EDF080821CE9E04100E1DB57;
+						TestTargetID = EDF080CB1CED7BEF00E1DB57;
 					};
 				};
 			};
-			buildConfigurationList = EDF0807E1CE9E04100E1DB57 /* Build configuration list for PBXProject "SwiftBridge" */;
+			buildConfigurationList = EDF080C71CED7BEF00E1DB57 /* Build configuration list for PBXProject "SwiftBridge" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -226,37 +212,37 @@
 				en,
 				Base,
 			);
-			mainGroup = EDF0807A1CE9E04100E1DB57;
-			productRefGroup = EDF080841CE9E04100E1DB57 /* Products */;
+			mainGroup = EDF080C31CED7BEF00E1DB57;
+			productRefGroup = EDF080CD1CED7BEF00E1DB57 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EDF080821CE9E04100E1DB57 /* SwiftBridge */,
-				EDF0809B1CE9E04100E1DB57 /* SwiftBridgeTests */,
-				EDF080A61CE9E04100E1DB57 /* SwiftBridgeUITests */,
+				EDF080CB1CED7BEF00E1DB57 /* SwiftBridge */,
+				EDF080DF1CED7BEF00E1DB57 /* SwiftBridgeTests */,
+				EDF080EA1CED7BEF00E1DB57 /* SwiftBridgeUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		EDF080811CE9E04100E1DB57 /* Resources */ = {
+		EDF080CA1CED7BEF00E1DB57 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDF080961CE9E04100E1DB57 /* LaunchScreen.storyboard in Resources */,
-				EDF080931CE9E04100E1DB57 /* Assets.xcassets in Resources */,
-				EDF080911CE9E04100E1DB57 /* Main.storyboard in Resources */,
+				EDF080DA1CED7BEF00E1DB57 /* LaunchScreen.storyboard in Resources */,
+				EDF080D71CED7BEF00E1DB57 /* Assets.xcassets in Resources */,
+				EDF080D51CED7BEF00E1DB57 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EDF0809A1CE9E04100E1DB57 /* Resources */ = {
+		EDF080DE1CED7BEF00E1DB57 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EDF080A51CE9E04100E1DB57 /* Resources */ = {
+		EDF080E91CED7BEF00E1DB57 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -266,60 +252,59 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		EDF0807F1CE9E04100E1DB57 /* Sources */ = {
+		EDF080C81CED7BEF00E1DB57 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDF0808E1CE9E04100E1DB57 /* ViewController.m in Sources */,
-				EDF0808B1CE9E04100E1DB57 /* AppDelegate.m in Sources */,
-				EDF080881CE9E04100E1DB57 /* main.m in Sources */,
+				EDF080D21CED7BEF00E1DB57 /* ViewController.swift in Sources */,
+				EDF080D01CED7BEF00E1DB57 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EDF080981CE9E04100E1DB57 /* Sources */ = {
+		EDF080DC1CED7BEF00E1DB57 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDF080A11CE9E04100E1DB57 /* SwiftBridgeTests.m in Sources */,
+				EDF080E51CED7BEF00E1DB57 /* SwiftBridgeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EDF080A31CE9E04100E1DB57 /* Sources */ = {
+		EDF080E71CED7BEF00E1DB57 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDF080AC1CE9E04100E1DB57 /* SwiftBridgeUITests.m in Sources */,
+				EDF080F01CED7BEF00E1DB57 /* SwiftBridgeUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		EDF0809E1CE9E04100E1DB57 /* PBXTargetDependency */ = {
+		EDF080E21CED7BEF00E1DB57 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EDF080821CE9E04100E1DB57 /* SwiftBridge */;
-			targetProxy = EDF0809D1CE9E04100E1DB57 /* PBXContainerItemProxy */;
+			target = EDF080CB1CED7BEF00E1DB57 /* SwiftBridge */;
+			targetProxy = EDF080E11CED7BEF00E1DB57 /* PBXContainerItemProxy */;
 		};
-		EDF080A91CE9E04100E1DB57 /* PBXTargetDependency */ = {
+		EDF080ED1CED7BEF00E1DB57 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EDF080821CE9E04100E1DB57 /* SwiftBridge */;
-			targetProxy = EDF080A81CE9E04100E1DB57 /* PBXContainerItemProxy */;
+			target = EDF080CB1CED7BEF00E1DB57 /* SwiftBridge */;
+			targetProxy = EDF080EC1CED7BEF00E1DB57 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EDF0808F1CE9E04100E1DB57 /* Main.storyboard */ = {
+		EDF080D31CED7BEF00E1DB57 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				EDF080901CE9E04100E1DB57 /* Base */,
+				EDF080D41CED7BEF00E1DB57 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		EDF080941CE9E04100E1DB57 /* LaunchScreen.storyboard */ = {
+		EDF080D81CED7BEF00E1DB57 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				EDF080951CE9E04100E1DB57 /* Base */,
+				EDF080D91CED7BEF00E1DB57 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -327,7 +312,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		EDF080AE1CE9E04100E1DB57 /* Debug */ = {
+		EDF080F21CED7BEF00E1DB57 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -368,11 +353,12 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		EDF080AF1CE9E04100E1DB57 /* Release */ = {
+		EDF080F31CED7BEF00E1DB57 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -411,7 +397,7 @@
 			};
 			name = Release;
 		};
-		EDF080B11CE9E04100E1DB57 /* Debug */ = {
+		EDF080F51CED7BEF00E1DB57 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -422,7 +408,7 @@
 			};
 			name = Debug;
 		};
-		EDF080B21CE9E04100E1DB57 /* Release */ = {
+		EDF080F61CED7BEF00E1DB57 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -433,7 +419,7 @@
 			};
 			name = Release;
 		};
-		EDF080B41CE9E04100E1DB57 /* Debug */ = {
+		EDF080F81CED7BEF00E1DB57 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -445,7 +431,7 @@
 			};
 			name = Debug;
 		};
-		EDF080B51CE9E04100E1DB57 /* Release */ = {
+		EDF080F91CED7BEF00E1DB57 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -457,7 +443,7 @@
 			};
 			name = Release;
 		};
-		EDF080B71CE9E04100E1DB57 /* Debug */ = {
+		EDF080FB1CED7BEF00E1DB57 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = SwiftBridgeUITests/Info.plist;
@@ -468,7 +454,7 @@
 			};
 			name = Debug;
 		};
-		EDF080B81CE9E04100E1DB57 /* Release */ = {
+		EDF080FC1CED7BEF00E1DB57 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = SwiftBridgeUITests/Info.plist;
@@ -482,40 +468,40 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EDF0807E1CE9E04100E1DB57 /* Build configuration list for PBXProject "SwiftBridge" */ = {
+		EDF080C71CED7BEF00E1DB57 /* Build configuration list for PBXProject "SwiftBridge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EDF080AE1CE9E04100E1DB57 /* Debug */,
-				EDF080AF1CE9E04100E1DB57 /* Release */,
+				EDF080F21CED7BEF00E1DB57 /* Debug */,
+				EDF080F31CED7BEF00E1DB57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EDF080B01CE9E04100E1DB57 /* Build configuration list for PBXNativeTarget "SwiftBridge" */ = {
+		EDF080F41CED7BEF00E1DB57 /* Build configuration list for PBXNativeTarget "SwiftBridge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EDF080B11CE9E04100E1DB57 /* Debug */,
-				EDF080B21CE9E04100E1DB57 /* Release */,
+				EDF080F51CED7BEF00E1DB57 /* Debug */,
+				EDF080F61CED7BEF00E1DB57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		EDF080B31CE9E04100E1DB57 /* Build configuration list for PBXNativeTarget "SwiftBridgeTests" */ = {
+		EDF080F71CED7BEF00E1DB57 /* Build configuration list for PBXNativeTarget "SwiftBridgeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EDF080B41CE9E04100E1DB57 /* Debug */,
-				EDF080B51CE9E04100E1DB57 /* Release */,
+				EDF080F81CED7BEF00E1DB57 /* Debug */,
+				EDF080F91CED7BEF00E1DB57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		EDF080B61CE9E04100E1DB57 /* Build configuration list for PBXNativeTarget "SwiftBridgeUITests" */ = {
+		EDF080FA1CED7BEF00E1DB57 /* Build configuration list for PBXNativeTarget "SwiftBridgeUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EDF080B71CE9E04100E1DB57 /* Debug */,
-				EDF080B81CE9E04100E1DB57 /* Release */,
+				EDF080FB1CED7BEF00E1DB57 /* Debug */,
+				EDF080FC1CED7BEF00E1DB57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = EDF0807B1CE9E04100E1DB57 /* Project object */;
+	rootObject = EDF080C41CED7BEF00E1DB57 /* Project object */;
 }
