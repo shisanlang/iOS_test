@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED0638911CEDA7EC0076E4F7 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0638901CEDA7EC0076E4F7 /* AboutViewController.swift */; };
 		ED8973071CED8A38002387E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8973061CED8A38002387E8 /* main.m */; };
 		ED89730A1CED8A38002387E8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8973091CED8A38002387E8 /* AppDelegate.m */; };
 		ED89730D1CED8A38002387E8 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED89730C1CED8A38002387E8 /* FirstViewController.m */; };
@@ -16,6 +17,7 @@
 		ED8973181CED8A38002387E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED8973161CED8A38002387E8 /* LaunchScreen.storyboard */; };
 		ED8973231CED8A38002387E8 /* SwiftBridgeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8973221CED8A38002387E8 /* SwiftBridgeTests.m */; };
 		ED89732E1CED8A38002387E8 /* SwiftBridgeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED89732D1CED8A38002387E8 /* SwiftBridgeUITests.m */; };
+		FFD5942EFE20A120850664E3 /* Pods_SwiftBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53D026035DE18C198F8E48BF /* Pods_SwiftBridge.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		53D026035DE18C198F8E48BF /* Pods_SwiftBridge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftBridge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2DC389023924B629732C170 /* Pods-SwiftBridge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftBridge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftBridge/Pods-SwiftBridge.debug.xcconfig"; sourceTree = "<group>"; };
+		ED0638841CEDA0730076E4F7 /* SwiftBridge-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftBridge-Bridging-Header.h"; sourceTree = "<group>"; };
+		ED0638901CEDA7EC0076E4F7 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		ED8973021CED8A38002387E8 /* SwiftBridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftBridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED8973061CED8A38002387E8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ED8973081CED8A38002387E8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -54,6 +60,7 @@
 		ED8973291CED8A38002387E8 /* SwiftBridgeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftBridgeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED89732D1CED8A38002387E8 /* SwiftBridgeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwiftBridgeUITests.m; sourceTree = "<group>"; };
 		ED89732F1CED8A38002387E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6D562D7AA089B6AD25F49C9 /* Pods-SwiftBridge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftBridge.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftBridge/Pods-SwiftBridge.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFD5942EFE20A120850664E3 /* Pods_SwiftBridge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +89,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		082ED973AEC02F121B2D85B9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53D026035DE18C198F8E48BF /* Pods_SwiftBridge.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		459B83423D3A92420D466FF1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A2DC389023924B629732C170 /* Pods-SwiftBridge.debug.xcconfig */,
+				F6D562D7AA089B6AD25F49C9 /* Pods-SwiftBridge.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		ED8972F91CED8A38002387E8 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +113,8 @@
 				ED8973211CED8A38002387E8 /* SwiftBridgeTests */,
 				ED89732C1CED8A38002387E8 /* SwiftBridgeUITests */,
 				ED8973031CED8A38002387E8 /* Products */,
+				459B83423D3A92420D466FF1 /* Pods */,
+				082ED973AEC02F121B2D85B9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,6 +131,7 @@
 		ED8973041CED8A38002387E8 /* SwiftBridge */ = {
 			isa = PBXGroup;
 			children = (
+				ED89733B1CED8A53002387E8 /* Swift */,
 				ED8973081CED8A38002387E8 /* AppDelegate.h */,
 				ED8973091CED8A38002387E8 /* AppDelegate.m */,
 				ED89730B1CED8A38002387E8 /* FirstViewController.h */,
@@ -145,6 +173,15 @@
 			path = SwiftBridgeUITests;
 			sourceTree = "<group>";
 		};
+		ED89733B1CED8A53002387E8 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				ED0638841CEDA0730076E4F7 /* SwiftBridge-Bridging-Header.h */,
+				ED0638901CEDA7EC0076E4F7 /* AboutViewController.swift */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,9 +189,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED8973321CED8A38002387E8 /* Build configuration list for PBXNativeTarget "SwiftBridge" */;
 			buildPhases = (
+				1338FE882754CB48446D0CBC /* Check Pods Manifest.lock */,
 				ED8972FE1CED8A38002387E8 /* Sources */,
 				ED8972FF1CED8A38002387E8 /* Frameworks */,
 				ED8973001CED8A38002387E8 /* Resources */,
+				4ED8397EAEF4BAA8C14A090E /* Embed Pods Frameworks */,
+				B71A8FC46B167CF5F66CDB5A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -270,6 +310,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1338FE882754CB48446D0CBC /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4ED8397EAEF4BAA8C14A090E /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftBridge/Pods-SwiftBridge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B71A8FC46B167CF5F66CDB5A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftBridge/Pods-SwiftBridge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ED8972FE1CED8A38002387E8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -278,6 +366,7 @@
 				ED8973101CED8A38002387E8 /* SecondViewController.m in Sources */,
 				ED89730A1CED8A38002387E8 /* AppDelegate.m in Sources */,
 				ED89730D1CED8A38002387E8 /* FirstViewController.m in Sources */,
+				ED0638911CEDA7EC0076E4F7 /* AboutViewController.swift in Sources */,
 				ED8973071CED8A38002387E8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -370,7 +459,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -409,7 +498,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -419,23 +508,35 @@
 		};
 		ED8973331CED8A38002387E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2DC389023924B629732C170 /* Pods-SwiftBridge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: xiaodong duan (2255L8QY7V)";
 				INFOPLIST_FILE = SwiftBridge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.neeqm.SwiftBridge;
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftBridge/Swift/SwiftBridge-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		ED8973341CED8A38002387E8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6D562D7AA089B6AD25F49C9 /* Pods-SwiftBridge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SwiftBridge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.neeqm.SwiftBridge;
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftBridge/Swift/SwiftBridge-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -504,6 +605,7 @@
 				ED8973341CED8A38002387E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ED8973351CED8A38002387E8 /* Build configuration list for PBXNativeTarget "SwiftBridgeTests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +614,7 @@
 				ED8973371CED8A38002387E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ED8973381CED8A38002387E8 /* Build configuration list for PBXNativeTarget "SwiftBridgeUITests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +623,7 @@
 				ED89733A1CED8A38002387E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
