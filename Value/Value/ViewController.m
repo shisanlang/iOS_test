@@ -28,6 +28,24 @@
     //去0 %.f
     float i = 312.0102305600012345600;
     NSLog(@"i = %@",[NSString stringWithFormat:@"%A",i]);
+    
+    //
+    id result = nil;
+    if ([result[@"errorcode"] intValue] == 0) {
+        NSLog(@"aaa");
+    } else {
+        NSLog(@"bbb");
+    }
+    
+    //string to 16
+    NSString * hexString = @"ffafe7";//65143
+//    unsigned long long hex = 0;
+//    NSScanner *scanner = [NSScanner scannerWithString:hexString];
+//    BOOL b1 = [scanner scanHexLongLong:&hex];
+    
+    NSUInteger hex = strtoul([hexString UTF8String],0,16);
+    
+    
 }
 
 - (void)viewDidUnload
