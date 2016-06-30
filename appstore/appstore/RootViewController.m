@@ -194,11 +194,13 @@
     //2 打开评论
     } else if (indexPath.row == 3) {
         
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"itms-apps://ax.itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=425583856"]];
+//        @"itms-apps://ax.itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=1102296510"
+        NSString * urlString = @"http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=1102296510&pageNumber=0&sortOrdering=2&type=Purple+Software&mt=8";
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:urlString]];
         
     } else if (indexPath.row == 4) {
         
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"itms-apps://phobos.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=425583856"]];
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"itms-apps://phobos.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=1102296510"]];
         
     //passbook
     } else if (indexPath.row == 5) {

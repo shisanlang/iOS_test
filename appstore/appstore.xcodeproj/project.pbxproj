@@ -211,7 +211,7 @@
 			name = appstoreTests;
 			productName = appstoreTests;
 			productReference = CE95E83513DFB58D00C3438F /* appstoreTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -366,7 +366,7 @@
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "FF2BB495-3528-4EEF-AD72-294A74329D76";
 				SDKROOT = iphoneos;
 			};
@@ -381,7 +381,7 @@
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 			};
@@ -400,7 +400,7 @@
 				GCC_PREFIX_HEADER = "appstore/appstore-Prefix.pch";
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "appstore/appstore-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/appstore/SDKExport\"",
@@ -422,7 +422,7 @@
 				GCC_PREFIX_HEADER = "appstore/appstore-Prefix.pch";
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "appstore/appstore-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/appstore/SDKExport\"",
