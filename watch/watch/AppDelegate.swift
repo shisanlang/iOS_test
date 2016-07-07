@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  watch
 //
-//  Created by dxd on 14/11/20.
-//  Copyright (c) 2014年 dxd. All rights reserved.
+//  Created by 十三郎 on 16/7/7.
+//  Copyright © 2016年 QianHai. All rights reserved.
 //
 
 import UIKit

@@ -2,12 +2,12 @@
 //  watchTests.swift
 //  watchTests
 //
-//  Created by dxd on 14/11/20.
-//  Copyright (c) 2014年 dxd. All rights reserved.
+//  Created by 十三郎 on 16/7/7.
+//  Copyright © 2016年 QianHai. All rights reserved.
 //
 
-import UIKit
 import XCTest
+@testable import watch
 
 class watchTests: XCTestCase {
     
@@ -23,12 +23,12 @@ class watchTests: XCTestCase {
     
     func testExample() {
         // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
-        self.measureBlock() {
+        self.measureBlock {
             // Put the code you want to measure the time of here.
         }
     }
