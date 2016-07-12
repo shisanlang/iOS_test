@@ -22,6 +22,17 @@ class AboutViewController: UIViewController {
         button.setTitle("go next", forState: UIControlState.Normal);
         button .addTarget(self, action: #selector(AboutViewController.goNext(_:)), forControlEvents: UIControlEvents.TouchUpInside);
         self.view.addSubview(button);
+        
+        
+        let a = "aa"
+        let b = 2
+        let c = a+String(b)
+        let d = "d\(b)"
+        var webs = ["baidu","sohu"]
+        var user = ["name":"dxd","sex":"man"]
+        
+        
+        
     }
     
     func goNext(sender:AnyObject) {

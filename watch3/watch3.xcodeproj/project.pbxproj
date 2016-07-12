@@ -382,7 +382,7 @@
 						DevelopmentTeam = 2J2958B885;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -712,7 +712,6 @@
 		ED0F2BDE1D2E7C1300BC80F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "watch31 Extension/watch31 Extension.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "watch31 Extension/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -731,7 +730,6 @@
 		ED0F2BDF1D2E7C1300BC80F6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "watch31 Extension/watch31 Extension.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "watch31 Extension/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
