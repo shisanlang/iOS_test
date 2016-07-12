@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>code</key>
+		<string>833325.oc</string>
+		<key>name</key>
+		<string>德迈斯</string>
+	</dict>
+	<dict>
+		<key>code</key>
+		<string>832979.oc</string>
+		<key>name</key>
+		<string>弘天生物</string>
+	</dict>
+	<dict>
+		<key>code</key>
+		<string>830899.oc</string>
+		<key>name</key>
+		<string>联讯证券</string>
+	</dict>
+	<dict>
+		<key>code</key>
+		<string>831056.oc</string>
+		<key>name</key>
+		<string>千叶药包</string>
+	</dict>
+	<dict>
+		<key>code</key>
+		<string>832424.oc</string>
+		<key>name</key>
+		<string>科海股份</string>
+	</dict>
+</array>
+</plist>
