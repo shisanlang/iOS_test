@@ -13,6 +13,7 @@
 @end
 
 #define dia 100   //直径
+#define sep 5     //间隔
 #define cx self.view.center.x
 #define cy self.view.center.y
 
@@ -21,6 +22,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+//    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePan:)];
+//    [self.view setUserInteractionEnabled:YES];
+//    [self.view addGestureRecognizer:pan];
     
     //
     float x = 0;//画布大小
@@ -54,14 +59,17 @@
         cirButton.backgroundColor = [self randomColor];
 //        cirButton.backgroundColor = [cirArray[i] objectForKey:@"color"];
         cirButton.frame = CGRectMake(0, 0, dia, dia);
-//        cirButton.center = CGPointMake([self xNum:i], [self yNum:i]);
+        cirButton.layer.masksToBounds = YES;
+        cirButton.layer.cornerRadius = dia/2;
+        cirButton.center = CGPointMake([self xNum:i], [self yNum:i]);
         [self.view addSubview:cirButton];
         
 
 //        NSLog(@"第%d圈%d个",i,[self totalWithLap:i]);
 //        NSLog(@"%d:第%d圈",i,[self numWithLap:i]);
-        NSLog(@"%d:第%d个",i,[self numPerLap:i]);
-//        NSLog(@"%d=%f,%f",i,[self xNum:i], [self yNum:i]);
+//        NSLog(@"%d:第%d个",i,[self numPerLap:i]);
+//        NSLog(@"%d:%f度/弧度",i,[self radianNum:i]);
+//        NSLog(@"坐标:%d=%f,%f",i,[self xNum:i], [self yNum:i]);
     }
 }
 
@@ -86,30 +94,32 @@
 //第几圈 第几个
 - (int)numPerLap:(int)n {
     int lapNum = [self numWithLap:n]-1;
-    for (int i=0; i<lapNum; i++) {
+//    NSLog(@"lam = %d",lapNum);
+    for (int i=0; i<=lapNum; i++) {
         n = n - [self totalWithLap:i];
     }
-    return n;
+    return n+1;
 }
 
-- (int)gNum:(int)n {
-    NSLog(@"n = %d,%d,%d",n,[self numWithLap:n],[self geNum:[self numWithLap:n]] );
-    return (int)(n-[self geNum:[self numWithLap:n]-1]);
-}
+//- (int)gNum:(int)n {
+//    NSLog(@"n = %d,%d,%d",n,[self numWithLap:n],[self geNum:[self numWithLap:n]] );
+//    return (int)(n-[self geNum:[self numWithLap:n]-1]);
+//}
 
-//之前圈几个
-- (int)geNum:(int)n {
-    int cNum = 0;
-    for (int i=0; i<n; i++) {//[self roundNum:n]
-        cNum = cNum + [self totalWithLap:i];//[self roundNum:i]*6;
-    }
-//    NSLog(@"cnum %d= %d",n,cNum);
-    return (cNum<0)?0:cNum;
-}
+////之前圈几个
+//- (int)geNum:(int)n {
+//    int cNum = 0;
+//    for (int i=0; i<n; i++) {//[self roundNum:n]
+//        cNum = cNum + [self totalWithLap:i];//[self roundNum:i]*6;
+//    }
+////    NSLog(@"cnum %d= %d",n,cNum);
+//    return (cNum<0)?0:cNum;
+//}
 
 //度数
-- (double)radianNum:(int)i {
-    return M_PI*2/(6*[self geNum:i]);
+- (double)radianNum:(int)n {
+//    return 360/[self totalWithLap:[self numWithLap:n]] * [self numPerLap:n];
+    return 2*M_PI/[self totalWithLap:[self numWithLap:n]] * [self numPerLap:n];
 }
 
 //x y
@@ -118,8 +128,7 @@
         return cx;
     } else {
         //根据 度数，直径 求x,y
-        return [self radianNum:i]*360/M_PI;
-//        return cos([self radianNum:i]) * dia * (([self radianNum:i]>M_PI_2 && [self radianNum:i]<M_PI_2*3)?1:-1);
+        return cos([self radianNum:i]) * (dia+sep)*[self numWithLap:i] +cx;//* (([self radianNum:i]>M_PI_2 && [self radianNum:i]<M_PI_2*3)?1:-1)
     }
 }
 
@@ -128,9 +137,47 @@
         return cy;
     } else {
         //根据 度数，直径 求x,y
-        return sin([self radianNum:i]) * dia * (([self radianNum:i]>M_PI_2 && [self radianNum:i]<M_PI_2*3)?1:-1);
+        return sin([self radianNum:i]) * (dia+sep)*[self numWithLap:i] +cy;//* (([self radianNum:i]>M_PI_2 && [self radianNum:i]<M_PI_2*3)?1:-1)
     }
 }
+
+//手势
+//- (void) handlePan: (UIPanGestureRecognizer *)rec{
+////    NSLog(@"xxoo---xxoo---xxoo");
+////    CGPoint point = [rec locationInView:self.view];
+//    CGPoint point = [rec translationInView:self.view];
+////    CGPoint point = [rec velocityInView:self.view];
+//    NSLog(@"%f,%f",point.x,point.y);
+////    rec.view.center = CGPointMake(rec.view.center.x + point.x, rec.view.center.y + point.y);
+////    [rec setTranslation:CGPointMake(0, 0) inView:self.view];
+////    [UIView animateWithDuration:.2 animations:^(){
+////        
+////    }];
+//    for (int i=0; i<50; i++) {
+//        UIButton * but = (UIButton*)[self.view viewWithTag:i];
+//        but.frame = CGRectMake(but.frame.origin.x+point.x, but.frame.origin.y+point.y, but.frame.size.width, but.frame.size.height);
+//    }
+//    rec.view.center = CGPointMake(rec.view.center.x, rec.view.center.y);
+//    [rec setTranslation:CGPointMake(0, 0) inView:self.view];
+//
+//}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    UITouch *touch = [touches anyObject];
+    bPoint = [touch locationInView:self.view];
+}
+
+- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
+    UITouch *touch = [touches anyObject];
+    CGPoint mPoint = [touch locationInView:self.view];
+    CGPoint point = CGPointMake(mPoint.x-bPoint.x, mPoint.y-bPoint.y);
+    
+    for (int i=0; i<50; i++) {
+        UIButton * but = (UIButton*)[self.view viewWithTag:i];
+        but.frame = CGRectMake(but.frame.origin.x+point.x/10, but.frame.origin.y+point.y/10, but.frame.size.width, but.frame.size.height);
+    }
+}
+
 
 //随机颜色
 -(UIColor *) randomColor
