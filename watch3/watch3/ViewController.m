@@ -19,26 +19,26 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-//    NSArray * stocklist = @[
-//                            @{@"code":@"830899.oc",@"name":@"联讯证券"},
-//                            @{@"code":@"831056.oc",@"name":@"千叶药包"},
-//                            @{@"code":@"833325.oc",@"name":@"德迈斯"}
-//                            ];
-//    [[NSUserDefaults standardUserDefaults] setObject:stocklist forKey:@"stock"];
-//    [[NSUserDefaults standardUserDefaults] synchronize];
-//    
+    NSArray * stocklist = @[
+                            @{@"code":@"830899.oc",@"name":@"联讯证券"},
+                            @{@"code":@"831056.oc",@"name":@"千叶药包"},
+                            @{@"code":@"833325.oc",@"name":@"德迈斯"}
+                            ];
+    [[NSUserDefaults standardUserDefaults] setObject:stocklist forKey:@"stock"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
 //    NSLog(@"DOCUMENT_PATH = %@",DOCUMENT_PATH);
-//    
-//    NSFileManager* fileManager = [NSFileManager defaultManager];
-//    NSURL* storeUrl = [fileManager containerURLForSecurityApplicationGroupIdentifier:@"group.com.neeqm.watch3"];
-//    storeUrl = [storeUrl URLByAppendingPathComponent:@"local_mystock.plist"];
-//    if (![fileManager fileExistsAtPath:storeUrl.path]) {
-//        NSError * error = nil;
-//        NSURL * sUrl = [[NSBundle mainBundle] URLForResource:@"local_mystock" withExtension:@"plist"];
-//        BOOL b = [fileManager copyItemAtURL:sUrl toURL:storeUrl error:&error];
+    
+    NSFileManager* fileManager = [NSFileManager defaultManager];
+    NSURL* storeUrl = [fileManager containerURLForSecurityApplicationGroupIdentifier:@"group.com.neeqm.watch3"];
+    storeUrl = [storeUrl URLByAppendingPathComponent:@"local_mystock.plist"];
+    if (![fileManager fileExistsAtPath:storeUrl.path]) {
+        NSError * error = nil;
+        NSURL * sUrl = [[NSBundle mainBundle] URLForResource:@"local_mystock" withExtension:@"plist"];
+        BOOL b = [fileManager copyItemAtURL:sUrl toURL:storeUrl error:&error];
 //        NSLog(@"b=%@",b?@"yes":@"no");
-//    }
-//    NSLog(@"%@", storeUrl);
+    }
+    NSLog(@"%@", storeUrl);
 }
 
 
