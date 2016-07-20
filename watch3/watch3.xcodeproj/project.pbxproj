@@ -23,6 +23,8 @@
 		ED0F2BD61D2E7C1300BC80F6 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0F2BD51D2E7C1300BC80F6 /* NotificationController.swift */; };
 		ED0F2BD81D2E7C1300BC80F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED0F2BD71D2E7C1300BC80F6 /* Assets.xcassets */; };
 		ED0F2BDC1D2E7C1300BC80F6 /* watch31.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = ED0F2BBE1D2E7C1200BC80F6 /* watch31.app */; };
+		ED44D68E1D3C883F00045EC1 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED44D68D1D3C883F00045EC1 /* WatchConnectivity.framework */; };
+		ED44D6921D3C8C1900045EC1 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED44D6911D3C8C1900045EC1 /* WatchConnectivity.framework */; };
 		EDC2F1FA1D34EAAD009E5C19 /* local_mystock.plist in Resources */ = {isa = PBXBuildFile; fileRef = EDC2F1F91D34EAAD009E5C19 /* local_mystock.plist */; };
 /* End PBXBuildFile section */
 
@@ -110,6 +112,8 @@
 		ED0F2BD51D2E7C1300BC80F6 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		ED0F2BD71D2E7C1300BC80F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED0F2BD91D2E7C1300BC80F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED44D68D1D3C883F00045EC1 /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = System/Library/Frameworks/WatchConnectivity.framework; sourceTree = SDKROOT; };
+		ED44D6911D3C8C1900045EC1 /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS2.2.sdk/System/Library/Frameworks/WatchConnectivity.framework; sourceTree = DEVELOPER_DIR; };
 		EDC2F1F61D34DA9E009E5C19 /* watch3.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = watch3.entitlements; sourceTree = "<group>"; };
 		EDC2F1F71D34DAD3009E5C19 /* watch31 Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "watch31 Extension.entitlements"; sourceTree = "<group>"; };
 		EDC2F1F81D34DAD6009E5C19 /* watch31.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = watch31.entitlements; sourceTree = "<group>"; };
@@ -121,6 +125,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED44D68E1D3C883F00045EC1 /* WatchConnectivity.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +147,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED44D6921D3C8C1900045EC1 /* WatchConnectivity.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +157,8 @@
 		ED0F2B7D1D2E7C0600BC80F6 = {
 			isa = PBXGroup;
 			children = (
+				ED44D6911D3C8C1900045EC1 /* WatchConnectivity.framework */,
+				ED44D68D1D3C883F00045EC1 /* WatchConnectivity.framework */,
 				ED0F2B881D2E7C0600BC80F6 /* watch3 */,
 				ED0F2BA21D2E7C0600BC80F6 /* watch3Tests */,
 				ED0F2BAD1D2E7C0600BC80F6 /* watch3UITests */,

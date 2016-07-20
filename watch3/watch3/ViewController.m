@@ -7,8 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "WatchConnectivity/WatchConnectivity.h"
 
-@interface ViewController ()
+@interface ViewController () <WCSessionDelegate>
 
 @end
 
@@ -39,6 +40,89 @@
 //        NSLog(@"b=%@",b?@"yes":@"no");
     }
     NSLog(@"%@", storeUrl);
+    
+    
+    
+    UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.frame = CGRectMake(100, 100, 150, 40);
+    button.backgroundColor = [UIColor orangeColor];
+    [button setTitle:@"传输文件到手表" forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(tranferTouchUp) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
+    
+}
+
+- (void)tranferTouchUp {
+    if ([WCSession isSupported]) {
+        WCSession * session = [WCSession defaultSession];
+        session.delegate = self;
+        [session activateSession];
+        
+        if (session.isPaired) {
+            if (session.watchAppInstalled) {
+//                NSURL * sUrl = [[NSBundle mainBundle] URLForResource:@"local_mystock" withExtension:@"plist"];
+//                [session transferFile:sUrl metadata:nil];
+                NSArray * stocklist = @[
+                                        @{@"code":@"830899.oc",@"name":@"联讯证券"},
+                                        @{@"code":@"831056.oc",@"name":@"千叶药包"},
+                                        @{@"code":@"833325.oc",@"name":@"德迈斯"}
+                                        ];
+//                [session transferUserInfo:@{@"stock_list":stocklist}];
+            }
+            
+            
+        } else {
+            NSLog(@"no paired");
+        }
+    }
+}
+
+- (void)session:(WCSession *)session didReceiveMessage:(nonnull NSDictionary<NSString *,id> *)message replyHandler:(nonnull void (^)(NSDictionary<NSString *,id> * _Nonnull))replyHandler{
+    
+    NSLog(@"message=%@",message);
+    if ([[message valueForKey:@"action"] isEqualToString:@"stocklist"]) {
+        
+        NSArray * stocklist = @[
+                                @{@"code":@"830899.oc",@"name":@"联讯证券"},
+                                @{@"code":@"831056.oc",@"name":@"千叶药包"},
+                                @{@"code":@"833325.oc",@"name":@"德迈斯"}
+                                ];
+        
+        NSDictionary* response = @{@"action" : @"mystock",@"stocklist":stocklist} ;
+
+        replyHandler(response);
+    }
+    
+//    if ([[message valueForKey:@"action"] isEqualToString:@"stocklist"]) {
+//        
+//        if ([WCSession isSupported]) {
+//            WCSession * session = [WCSession defaultSession];
+//            session.delegate = self;
+//            [session activateSession];
+//            
+//            if(session.reachable){
+//                NSLog(@"session.reachable");
+//            }
+//            
+//            if (session.isPaired) {
+//                if (session.watchAppInstalled) {
+//                    
+//                    NSArray * stocklist = @[
+//                                            @{@"code":@"830899.oc",@"name":@"联讯证券"},
+//                                            @{@"code":@"831056.oc",@"name":@"千叶药包"},
+//                                            @{@"code":@"833325.oc",@"name":@"德迈斯"}
+//                                            ];
+//                    
+//                } else {
+//                    NSLog(@"isn't installed");
+//                }
+//                
+//                
+//            } else {
+//                NSLog(@"no paired");
+//            }
+//        }
+//    }
 }
 
 

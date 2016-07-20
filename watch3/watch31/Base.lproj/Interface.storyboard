@@ -12,7 +12,7 @@
                     <items>
                         <table alignment="left" id="Psd-7y-Cmk">
                             <items>
-                                <tableRow identifier="tablecell" id="jFv-2c-Ua4">
+                                <tableRow identifier="tablecell" id="jFv-2c-Ua4" customClass="MainRowType" customModule="watch31_Extension">
                                     <group key="rootItem" width="1" height="58.5" alignment="left" layout="vertical" id="rSZ-nu-qEG">
                                         <items>
                                             <group width="1" height="23.5" alignment="left" id="4jN-SJ-pU5">
@@ -34,6 +34,12 @@
                                             </group>
                                         </items>
                                     </group>
+                                    <connections>
+                                        <outlet property="stockCode" destination="SYi-Hc-Rel" id="i8U-4m-ob1"/>
+                                        <outlet property="stockName" destination="Ftg-GH-NUP" id="c73-Fl-rIU"/>
+                                        <outlet property="stockPrice" destination="zOm-HY-tgQ" id="Bo3-QI-MeM"/>
+                                        <outlet property="stockZdf" destination="uGh-8j-xaY" id="UaL-PW-zsV"/>
+                                    </connections>
                                 </tableRow>
                             </items>
                         </table>
