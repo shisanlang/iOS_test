@@ -47,16 +47,23 @@ class InterfaceController: WKInterfaceController,WCSessionDelegate {
             if session.reachable {
                 session.sendMessage(["action":"stocklist"], replyHandler: {(reponse: [String : AnyObject]) ->Void in
                     
-                    NSLog("mystock=%@", reponse["mystock"] as! NSString)
+                    if reponse["stocklist"] != nil {
+                        self.mystock = reponse["stocklist"] as! NSArray
+                        self.reloadTable()
+                    }
                     
                     }, errorHandler: {(error)->Void in  print(error);})
             }
             
             
-            
+            self.reloadTable()
         }
         
         // Configure interface objects here.
+        
+    }
+    
+    func reloadTable() {
         stockList.setNumberOfRows(mystock.count, withRowType: "tablecell")
         
         for i in 0...mystock.count-1 {
