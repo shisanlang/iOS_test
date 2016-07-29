@@ -9,12 +9,26 @@
 import UIKit
 import Alamofire
 
-class NewsListViewController: UIViewController {
+class NewsListViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
+    @IBOutlet weak var listTableView:UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        
+        //table
+        var cellNib = UINib(nibName: "NewsListTableViewCell", bundle: nil)
+        
+        self.listTableView.registerNib(cellNib, forCellReuseIdentifier: "NewsListTableViewCell")
+        self.listTableView.rowHeight = 60
+        self.listTableView.delegate = self
+        self.listTableView.dataSource = self
+        
+        
+        
         Alamofire.request(.GET, "http://test.apis.neeqm.cn/news/list",parameters: ["page":"2","limit":"10","shortsubcol":"index"])
             .responseJSON { response in
                 print(response.result.value)
@@ -28,6 +42,16 @@ class NewsListViewController: UIViewController {
     }
     
 
+    //table
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 15
+    }
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        var cell = tableView.dequeueReusableCellWithIdentifier("NewsListTableViewCell", forIndexPath: indexPath) as? NewsListTableViewCell
+        return cell!
+    }
+    
+    
     /*
     // MARK: - Navigation
 
@@ -38,4 +62,5 @@ class NewsListViewController: UIViewController {
     }
     */
 
+    
 }
