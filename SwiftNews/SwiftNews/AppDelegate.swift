@@ -19,8 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         self.window?.backgroundColor = UIColor.whiteColor()
         
-        let vc1:UIViewController = FirstViewController()
-        let vc2:SecondViewController = SecondViewController()
+        let vc1:UIViewController = NewsListViewController()
+        let vc2:MeViewController = MeViewController()
         
         let nav1 = UINavigationController(rootViewController: vc1)
         nav1.tabBarItem = UITabBarItem(title: "首页", image: UIImage(named: ""), tag: 1)

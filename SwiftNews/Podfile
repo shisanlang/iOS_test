@@ -1,20 +1,20 @@
 # Uncomment this line to define a global platform for your project
 # platform :ios, '8.0'
 # Uncomment this line if you're using Swift
-# use_frameworks!
+use_frameworks!
 
 target 'SwiftNews' do
 
 platform :ios, '8.0'
 
 pod 'Alamofire', '~> 3.4'			#net	import Alamofire
-#pod 'SVProgressHUD'					#hud 	
 pod 'SwiftyJSON'					#json
-#pod 'MJRefresh'						#下拉	#import "MJRefresh.h"
+#pod 'SVProgressHUD'				#hud 	
+#pod 'MJRefresh'					#下拉	#import "MJRefresh.h"
 
 
-#pod 'ChameleonFramework/Swift'		#颜色	import ChameleonFramework	#import "Chameleon.h"
-#pod 'PKRevealController'			#侧滑	
+pod 'ChameleonFramework/Swift'		#颜色	import ChameleonFramework	#import "Chameleon.h"
+#pod 'PKRevealController'			#侧滑
 #pod 'FontAwesomeKit', '~> 2.2.0'	#酷字体
 #pod 'IAPHelper'						#内购	
 #pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift2'	#动画框架
