@@ -1,0 +1,546 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ED21F2011D7E9FAF008318CC /* 3.ppt in Resources */ = {isa = PBXBuildFile; fileRef = EDADE0281D7D99550021C07B /* 3.ppt */; };
+		ED21F2041D7FE47C008318CC /* PPT2ImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED21F2031D7FE47C008318CC /* PPT2ImageController.m */; };
+		EDADDFF31D7D6BBB0021C07B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDADDFF21D7D6BBB0021C07B /* main.m */; };
+		EDADDFF61D7D6BBB0021C07B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDADDFF51D7D6BBB0021C07B /* AppDelegate.m */; };
+		EDADDFF91D7D6BBB0021C07B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDADDFF81D7D6BBB0021C07B /* ViewController.m */; };
+		EDADDFFC1D7D6BBB0021C07B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDADDFFA1D7D6BBB0021C07B /* Main.storyboard */; };
+		EDADDFFE1D7D6BBB0021C07B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDADDFFD1D7D6BBB0021C07B /* Assets.xcassets */; };
+		EDADE0011D7D6BBB0021C07B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDADDFFF1D7D6BBB0021C07B /* LaunchScreen.storyboard */; };
+		EDADE00C1D7D6BBB0021C07B /* pptTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EDADE00B1D7D6BBB0021C07B /* pptTests.m */; };
+		EDADE0171D7D6BBB0021C07B /* pptUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EDADE0161D7D6BBB0021C07B /* pptUITests.m */; };
+		EDADE0261D7D99390021C07B /* 1.doc in Resources */ = {isa = PBXBuildFile; fileRef = EDADE0241D7D99390021C07B /* 1.doc */; };
+		EDADE0271D7D99390021C07B /* 2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = EDADE0251D7D99390021C07B /* 2.pdf */; };
+		EDCA5D531D81161400B7FAEF /* 4.pptx in Resources */ = {isa = PBXBuildFile; fileRef = EDCA5D521D8114E800B7FAEF /* 4.pptx */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EDADE0081D7D6BBB0021C07B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDADDFE61D7D6BBB0021C07B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDADDFED1D7D6BBB0021C07B;
+			remoteInfo = ppt;
+		};
+		EDADE0131D7D6BBB0021C07B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDADDFE61D7D6BBB0021C07B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDADDFED1D7D6BBB0021C07B;
+			remoteInfo = ppt;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ED21F2021D7FE47C008318CC /* PPT2ImageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPT2ImageController.h; sourceTree = "<group>"; };
+		ED21F2031D7FE47C008318CC /* PPT2ImageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPT2ImageController.m; sourceTree = "<group>"; };
+		EDADDFEE1D7D6BBB0021C07B /* ppt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ppt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDADDFF21D7D6BBB0021C07B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EDADDFF41D7D6BBB0021C07B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EDADDFF51D7D6BBB0021C07B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EDADDFF71D7D6BBB0021C07B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EDADDFF81D7D6BBB0021C07B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EDADDFFB1D7D6BBB0021C07B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EDADDFFD1D7D6BBB0021C07B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EDADE0001D7D6BBB0021C07B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EDADE0021D7D6BBB0021C07B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDADE0071D7D6BBB0021C07B /* pptTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pptTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDADE00B1D7D6BBB0021C07B /* pptTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pptTests.m; sourceTree = "<group>"; };
+		EDADE00D1D7D6BBB0021C07B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDADE0121D7D6BBB0021C07B /* pptUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pptUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDADE0161D7D6BBB0021C07B /* pptUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pptUITests.m; sourceTree = "<group>"; };
+		EDADE0181D7D6BBB0021C07B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDADE0241D7D99390021C07B /* 1.doc */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1.doc; sourceTree = "<group>"; };
+		EDADE0251D7D99390021C07B /* 2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 2.pdf; sourceTree = "<group>"; };
+		EDADE0281D7D99550021C07B /* 3.ppt */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3.ppt; sourceTree = "<group>"; };
+		EDCA5D521D8114E800B7FAEF /* 4.pptx */ = {isa = PBXFileReference; lastKnownFileType = file; path = 4.pptx; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EDADDFEB1D7D6BBB0021C07B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDADE0041D7D6BBB0021C07B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDADE00F1D7D6BBB0021C07B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EDADDFE51D7D6BBB0021C07B = {
+			isa = PBXGroup;
+			children = (
+				EDADDFF01D7D6BBB0021C07B /* ppt */,
+				EDADE00A1D7D6BBB0021C07B /* pptTests */,
+				EDADE0151D7D6BBB0021C07B /* pptUITests */,
+				EDADDFEF1D7D6BBB0021C07B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EDADDFEF1D7D6BBB0021C07B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDADDFEE1D7D6BBB0021C07B /* ppt.app */,
+				EDADE0071D7D6BBB0021C07B /* pptTests.xctest */,
+				EDADE0121D7D6BBB0021C07B /* pptUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDADDFF01D7D6BBB0021C07B /* ppt */ = {
+			isa = PBXGroup;
+			children = (
+				EDADDFF41D7D6BBB0021C07B /* AppDelegate.h */,
+				EDADDFF51D7D6BBB0021C07B /* AppDelegate.m */,
+				EDADDFF71D7D6BBB0021C07B /* ViewController.h */,
+				EDADDFF81D7D6BBB0021C07B /* ViewController.m */,
+				ED21F2021D7FE47C008318CC /* PPT2ImageController.h */,
+				ED21F2031D7FE47C008318CC /* PPT2ImageController.m */,
+				EDADDFFA1D7D6BBB0021C07B /* Main.storyboard */,
+				EDADDFFD1D7D6BBB0021C07B /* Assets.xcassets */,
+				EDADDFFF1D7D6BBB0021C07B /* LaunchScreen.storyboard */,
+				EDADE0021D7D6BBB0021C07B /* Info.plist */,
+				EDADE0241D7D99390021C07B /* 1.doc */,
+				EDADE0251D7D99390021C07B /* 2.pdf */,
+				EDADE0281D7D99550021C07B /* 3.ppt */,
+				EDCA5D521D8114E800B7FAEF /* 4.pptx */,
+				EDADDFF11D7D6BBB0021C07B /* Supporting Files */,
+			);
+			path = ppt;
+			sourceTree = "<group>";
+		};
+		EDADDFF11D7D6BBB0021C07B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EDADDFF21D7D6BBB0021C07B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EDADE00A1D7D6BBB0021C07B /* pptTests */ = {
+			isa = PBXGroup;
+			children = (
+				EDADE00B1D7D6BBB0021C07B /* pptTests.m */,
+				EDADE00D1D7D6BBB0021C07B /* Info.plist */,
+			);
+			path = pptTests;
+			sourceTree = "<group>";
+		};
+		EDADE0151D7D6BBB0021C07B /* pptUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EDADE0161D7D6BBB0021C07B /* pptUITests.m */,
+				EDADE0181D7D6BBB0021C07B /* Info.plist */,
+			);
+			path = pptUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EDADDFED1D7D6BBB0021C07B /* ppt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDADE01B1D7D6BBB0021C07B /* Build configuration list for PBXNativeTarget "ppt" */;
+			buildPhases = (
+				EDADDFEA1D7D6BBB0021C07B /* Sources */,
+				EDADDFEB1D7D6BBB0021C07B /* Frameworks */,
+				EDADDFEC1D7D6BBB0021C07B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ppt;
+			productName = ppt;
+			productReference = EDADDFEE1D7D6BBB0021C07B /* ppt.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EDADE0061D7D6BBB0021C07B /* pptTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDADE01E1D7D6BBB0021C07B /* Build configuration list for PBXNativeTarget "pptTests" */;
+			buildPhases = (
+				EDADE0031D7D6BBB0021C07B /* Sources */,
+				EDADE0041D7D6BBB0021C07B /* Frameworks */,
+				EDADE0051D7D6BBB0021C07B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDADE0091D7D6BBB0021C07B /* PBXTargetDependency */,
+			);
+			name = pptTests;
+			productName = pptTests;
+			productReference = EDADE0071D7D6BBB0021C07B /* pptTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EDADE0111D7D6BBB0021C07B /* pptUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDADE0211D7D6BBB0021C07B /* Build configuration list for PBXNativeTarget "pptUITests" */;
+			buildPhases = (
+				EDADE00E1D7D6BBB0021C07B /* Sources */,
+				EDADE00F1D7D6BBB0021C07B /* Frameworks */,
+				EDADE0101D7D6BBB0021C07B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDADE0141D7D6BBB0021C07B /* PBXTargetDependency */,
+			);
+			name = pptUITests;
+			productName = pptUITests;
+			productReference = EDADE0121D7D6BBB0021C07B /* pptUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EDADDFE61D7D6BBB0021C07B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = QianHai;
+				TargetAttributes = {
+					EDADDFED1D7D6BBB0021C07B = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					EDADE0061D7D6BBB0021C07B = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = EDADDFED1D7D6BBB0021C07B;
+					};
+					EDADE0111D7D6BBB0021C07B = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = EDADDFED1D7D6BBB0021C07B;
+					};
+				};
+			};
+			buildConfigurationList = EDADDFE91D7D6BBB0021C07B /* Build configuration list for PBXProject "ppt" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EDADDFE51D7D6BBB0021C07B;
+			productRefGroup = EDADDFEF1D7D6BBB0021C07B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EDADDFED1D7D6BBB0021C07B /* ppt */,
+				EDADE0061D7D6BBB0021C07B /* pptTests */,
+				EDADE0111D7D6BBB0021C07B /* pptUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EDADDFEC1D7D6BBB0021C07B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDCA5D531D81161400B7FAEF /* 4.pptx in Resources */,
+				ED21F2011D7E9FAF008318CC /* 3.ppt in Resources */,
+				EDADE0011D7D6BBB0021C07B /* LaunchScreen.storyboard in Resources */,
+				EDADDFFE1D7D6BBB0021C07B /* Assets.xcassets in Resources */,
+				EDADE0271D7D99390021C07B /* 2.pdf in Resources */,
+				EDADDFFC1D7D6BBB0021C07B /* Main.storyboard in Resources */,
+				EDADE0261D7D99390021C07B /* 1.doc in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDADE0051D7D6BBB0021C07B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDADE0101D7D6BBB0021C07B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EDADDFEA1D7D6BBB0021C07B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDADDFF91D7D6BBB0021C07B /* ViewController.m in Sources */,
+				ED21F2041D7FE47C008318CC /* PPT2ImageController.m in Sources */,
+				EDADDFF61D7D6BBB0021C07B /* AppDelegate.m in Sources */,
+				EDADDFF31D7D6BBB0021C07B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDADE0031D7D6BBB0021C07B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDADE00C1D7D6BBB0021C07B /* pptTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDADE00E1D7D6BBB0021C07B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDADE0171D7D6BBB0021C07B /* pptUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EDADE0091D7D6BBB0021C07B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDADDFED1D7D6BBB0021C07B /* ppt */;
+			targetProxy = EDADE0081D7D6BBB0021C07B /* PBXContainerItemProxy */;
+		};
+		EDADE0141D7D6BBB0021C07B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDADDFED1D7D6BBB0021C07B /* ppt */;
+			targetProxy = EDADE0131D7D6BBB0021C07B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EDADDFFA1D7D6BBB0021C07B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDADDFFB1D7D6BBB0021C07B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EDADDFFF1D7D6BBB0021C07B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDADE0001D7D6BBB0021C07B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EDADE0191D7D6BBB0021C07B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EDADE01A1D7D6BBB0021C07B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EDADE01C1D7D6BBB0021C07B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ppt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.neeqm.ppt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EDADE01D1D7D6BBB0021C07B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ppt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.neeqm.ppt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EDADE01F1D7D6BBB0021C07B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = pptTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.neeqm.pptTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ppt.app/ppt";
+			};
+			name = Debug;
+		};
+		EDADE0201D7D6BBB0021C07B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = pptTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.neeqm.pptTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ppt.app/ppt";
+			};
+			name = Release;
+		};
+		EDADE0221D7D6BBB0021C07B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = pptUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.neeqm.pptUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ppt;
+			};
+			name = Debug;
+		};
+		EDADE0231D7D6BBB0021C07B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = pptUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.neeqm.pptUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ppt;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EDADDFE91D7D6BBB0021C07B /* Build configuration list for PBXProject "ppt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDADE0191D7D6BBB0021C07B /* Debug */,
+				EDADE01A1D7D6BBB0021C07B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDADE01B1D7D6BBB0021C07B /* Build configuration list for PBXNativeTarget "ppt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDADE01C1D7D6BBB0021C07B /* Debug */,
+				EDADE01D1D7D6BBB0021C07B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDADE01E1D7D6BBB0021C07B /* Build configuration list for PBXNativeTarget "pptTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDADE01F1D7D6BBB0021C07B /* Debug */,
+				EDADE0201D7D6BBB0021C07B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDADE0211D7D6BBB0021C07B /* Build configuration list for PBXNativeTarget "pptUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDADE0221D7D6BBB0021C07B /* Debug */,
+				EDADE0231D7D6BBB0021C07B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EDADDFE61D7D6BBB0021C07B /* Project object */;
+}

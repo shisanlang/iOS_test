@@ -20,11 +20,11 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    NSLog(@"win = %f", self.window.frame.size.height);
+//    NSLog(@"win = %f", self.window.frame.size.height);
     ViewController * vc = [[ViewController alloc]init];
-    NSLog(@"vc = %f",vc.view.frame.size.height);
+//    NSLog(@"vc = %f",vc.view.frame.size.height);
     NavViewController * nav = [[NavViewController alloc]initWithRootViewController:vc];
-    NSLog(@"nav = %f",nav.view.frame.size.height);
+//    NSLog(@"nav = %f",nav.view.frame.size.height);
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
     return YES;
