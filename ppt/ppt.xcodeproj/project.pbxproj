@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED08FBF71D82CF0D00AB2319 /* 5.ppt in Resources */ = {isa = PBXBuildFile; fileRef = ED08FBF61D82CF0D00AB2319 /* 5.ppt */; };
 		ED21F2011D7E9FAF008318CC /* 3.ppt in Resources */ = {isa = PBXBuildFile; fileRef = EDADE0281D7D99550021C07B /* 3.ppt */; };
 		ED21F2041D7FE47C008318CC /* PPT2ImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED21F2031D7FE47C008318CC /* PPT2ImageController.m */; };
 		EDADDFF31D7D6BBB0021C07B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDADDFF21D7D6BBB0021C07B /* main.m */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ED08FBF61D82CF0D00AB2319 /* 5.ppt */ = {isa = PBXFileReference; lastKnownFileType = file; path = 5.ppt; sourceTree = "<group>"; };
 		ED21F2021D7FE47C008318CC /* PPT2ImageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPT2ImageController.h; sourceTree = "<group>"; };
 		ED21F2031D7FE47C008318CC /* PPT2ImageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPT2ImageController.m; sourceTree = "<group>"; };
 		EDADDFEE1D7D6BBB0021C07B /* ppt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ppt.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,6 +128,7 @@
 				EDADE0251D7D99390021C07B /* 2.pdf */,
 				EDADE0281D7D99550021C07B /* 3.ppt */,
 				EDCA5D521D8114E800B7FAEF /* 4.pptx */,
+				ED08FBF61D82CF0D00AB2319 /* 5.ppt */,
 				EDADDFF11D7D6BBB0021C07B /* Supporting Files */,
 			);
 			path = ppt;
@@ -265,6 +268,7 @@
 				EDADE0011D7D6BBB0021C07B /* LaunchScreen.storyboard in Resources */,
 				EDADDFFE1D7D6BBB0021C07B /* Assets.xcassets in Resources */,
 				EDADE0271D7D99390021C07B /* 2.pdf in Resources */,
+				ED08FBF71D82CF0D00AB2319 /* 5.ppt in Resources */,
 				EDADDFFC1D7D6BBB0021C07B /* Main.storyboard in Resources */,
 				EDADE0261D7D99390021C07B /* 1.doc in Resources */,
 			);

@@ -31,7 +31,7 @@
     [button addTarget:self action:@selector(buttonTouchUp) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
     
-    samplepdf = [[NSMutableArray alloc]initWithObjects:@"1.doc",@"3.ppt",@"4.pptx", nil];
+    samplepdf = [[NSMutableArray alloc]initWithObjects:@"1.doc",@"3.ppt",@"4.pptx",@"5.ppt", nil];
     
     
 //    imageV1 = [[UIImageView alloc]initWithFrame:CGRectMake(0, 150, 150, 50)];
@@ -47,7 +47,7 @@
 
 - (void)buttonTouchUp {
     
-    NSString * filePath = samplepdf[2];
+    NSString * filePath = samplepdf[3];
     NSString * fn = [filePath stringByDeletingPathExtension];
     NSString * fe = [filePath pathExtension];
     NSString * pathppt = [[NSBundle mainBundle] pathForResource:fn ofType:fe];
