@@ -95,6 +95,19 @@
     NSTimeInterval ago = [dateAgo timeIntervalSince1970];
     NSString *timeString2 = [NSString stringWithFormat:@"%.0f", ago];
     NSLog(@"ago = %@,%@",dateAgo,timeString2);
+    
+    //将UTC日期字符串转为本地时间字符串
+    NSString * utcDate = @"2018-05-12T12:03:34+00:00";
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    //输入格式
+    [dateFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ssZ"];
+    NSTimeZone *localTimeZone = [NSTimeZone localTimeZone];
+    [dateFormatter setTimeZone:localTimeZone];
+    NSDate *dateFormatted = [dateFormatter dateFromString:utcDate];
+    //输出格式
+    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    NSString *dateString = [dateFormatter stringFromDate:dateFormatted];
+    NSLog(@"dateString=%@",dateString);
 }
 
 - (void)didReceiveMemoryWarning
